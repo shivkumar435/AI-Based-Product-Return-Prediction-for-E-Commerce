@@ -1,0 +1,2001 @@
+Customer_Age,Gender,Product_Category,Product_Price,Discount,Quantity,Payment_Method,Delivery_Time,Shipping_Distance,Previous_Returns,Customer_Rating,Order_Frequency,Return_Status
+56,Male,Sports,71.16,2.79,1,Credit Card,2,375.33,8,5,17,1
+69,Female,Beauty,224.71,6.46,10,Credit Card,10,496.16,2,4,5,0
+46,Female,Beauty,228.13,2.89,6,Cash on Delivery,4,201.41,0,1,45,0
+32,Female,Home & Kitchen,479.46,42.25,7,Cash on Delivery,8,210.95,1,1,13,1
+60,Female,Electronics,218.39,2.95,10,Cash on Delivery,13,90.29,5,3,42,0
+25,Male,Sports,276.92,13.58,8,Net Banking,10,62.34,9,1,15,1
+38,Male,Electronics,268.96,5.19,1,Cash on Delivery,2,291.47,9,5,15,1
+56,Male,Electronics,320.2,14.77,4,Net Banking,9,185.32,8,4,18,0
+36,Female,Home & Kitchen,375.38,4.53,5,UPI,14,44.76,2,2,50,1
+40,Male,Electronics,116.4,33.4,2,Credit Card,1,444.06,9,2,2,1
+28,Male,Sports,266.72,6.67,1,Credit Card,13,103.19,1,5,23,0
+28,Female,Shoes,413.83,42.59,8,Debit Card,2,375.55,10,1,43,0
+41,Female,Beauty,234.24,40.86,6,UPI,15,144.7,0,2,13,0
+70,Male,Shoes,142.84,0.68,5,Cash on Delivery,2,407.39,1,1,43,1
+53,Male,Electronics,329.08,44.79,9,Cash on Delivery,11,63.61,2,5,4,1
+57,Male,Shoes,412.76,1.45,2,UPI,13,379.26,6,2,47,1
+41,Male,Sports,36.25,11.98,10,Cash on Delivery,15,53.57,1,3,25,0
+20,Male,Sports,389.51,1.62,8,Debit Card,14,226.22,4,4,11,0
+39,Male,Electronics,411.72,16.79,10,Net Banking,6,368.33,1,1,50,0
+70,Female,Home & Kitchen,233.45,25.69,9,Credit Card,15,90.74,6,1,48,1
+19,Female,Shoes,491.74,39.83,1,UPI,14,146.4,9,1,42,1
+41,Female,Home & Kitchen,394.42,16.9,7,Credit Card,7,433.06,7,1,12,1
+61,Male,Home & Kitchen,387.96,35.27,8,Net Banking,13,443.13,7,5,13,1
+47,Female,Clothing,375.18,9.38,3,UPI,15,27.24,7,5,9,0
+55,Male,Electronics,79.55,37.53,4,Net Banking,15,88.2,9,5,45,1
+19,Male,Beauty,112.53,11.8,3,Cash on Delivery,3,63.15,8,5,38,0
+38,Female,Sports,234.68,7.18,7,Cash on Delivery,11,93.95,0,2,6,1
+50,Male,Sports,135.68,9.27,9,Cash on Delivery,9,485.24,0,5,43,1
+29,Male,Electronics,210.54,9.1,3,Net Banking,5,278.07,9,2,43,0
+39,Female,Books,444.79,25.64,6,Net Banking,5,236.72,1,3,10,0
+61,Female,Books,413.04,42.24,8,Net Banking,11,492.31,10,5,23,1
+42,Female,Books,316.87,3.98,6,Credit Card,12,280.69,5,3,15,0
+66,Male,Beauty,429.77,35.35,2,Net Banking,4,332.25,0,5,45,1
+44,Female,Sports,392.97,32.72,7,Cash on Delivery,9,169.72,4,3,23,1
+59,Female,Electronics,217.35,43.63,2,Debit Card,8,194.15,4,4,40,0
+45,Male,Sports,104.53,12.21,2,Net Banking,12,299.23,3,3,37,1
+33,Female,Home & Kitchen,259.53,22.51,2,Debit Card,4,39.54,10,2,34,1
+32,Female,Shoes,369.43,46.29,1,Cash on Delivery,4,131.66,4,1,16,1
+64,Female,Shoes,221.03,33.0,1,Net Banking,2,102.42,0,3,45,1
+68,Male,Sports,335.05,19.44,7,Credit Card,9,12.87,10,1,41,1
+61,Male,Clothing,51.69,6.57,5,Credit Card,3,270.77,10,4,47,1
+69,Male,Beauty,375.26,13.12,3,Debit Card,4,282.72,5,4,32,1
+20,Male,Books,407.29,29.06,1,Credit Card,14,195.05,6,2,38,1
+54,Female,Beauty,354.88,35.91,10,Credit Card,7,138.02,7,2,40,1
+68,Male,Beauty,483.8,6.22,6,Credit Card,10,327.77,1,3,46,1
+24,Male,Home & Kitchen,414.19,29.98,1,Cash on Delivery,8,71.66,6,5,5,1
+38,Female,Beauty,452.03,27.52,9,Credit Card,8,261.71,5,4,17,0
+26,Female,Shoes,467.12,25.7,2,UPI,4,385.2,8,1,22,1
+56,Female,Home & Kitchen,401.67,34.51,1,Net Banking,15,86.33,7,5,39,1
+35,Male,Electronics,338.76,41.87,7,Credit Card,7,377.86,10,4,41,0
+21,Male,Beauty,7.83,16.15,6,Credit Card,10,381.59,3,3,48,0
+42,Male,Beauty,235.58,44.45,6,Credit Card,1,34.66,8,4,18,0
+31,Female,Electronics,287.73,8.03,5,UPI,6,14.3,0,2,28,1
+67,Female,Beauty,155.49,8.65,4,Credit Card,6,487.1,10,1,13,0
+26,Male,Electronics,162.46,13.34,4,Credit Card,6,100.72,5,1,50,1
+43,Female,Home & Kitchen,480.77,5.98,3,Net Banking,12,411.96,7,2,42,1
+70,Female,Shoes,446.4,11.52,10,UPI,2,283.12,10,5,1,0
+19,Female,Electronics,425.34,5.32,8,UPI,8,135.91,10,2,50,1
+37,Male,Clothing,205.98,41.09,7,Credit Card,14,69.34,3,1,19,1
+45,Female,Electronics,11.78,6.95,9,UPI,15,250.86,1,3,34,0
+64,Female,Beauty,44.71,37.36,1,Debit Card,15,206.64,10,5,4,1
+24,Male,Books,159.54,2.4,7,UPI,5,350.95,1,4,43,1
+61,Male,Books,12.79,47.43,10,UPI,5,452.56,9,3,3,0
+25,Female,Home & Kitchen,13.49,35.56,4,UPI,2,403.6,0,5,41,1
+64,Female,Sports,458.72,0.34,7,Cash on Delivery,4,140.85,4,1,10,1
+52,Male,Home & Kitchen,354.55,38.19,1,Cash on Delivery,12,440.07,5,1,28,1
+31,Male,Sports,157.93,25.7,5,Cash on Delivery,9,417.53,3,3,34,0
+34,Female,Books,70.66,38.97,3,UPI,9,464.92,3,5,39,0
+53,Female,Books,258.26,26.12,5,Debit Card,6,232.04,4,4,47,1
+67,Female,Electronics,7.65,32.05,4,UPI,11,385.44,4,4,19,0
+57,Female,Shoes,469.51,39.32,2,Credit Card,15,297.87,8,2,42,1
+21,Male,Clothing,210.33,20.26,4,Debit Card,9,158.7,7,3,46,0
+19,Female,Home & Kitchen,204.16,0.14,3,Cash on Delivery,4,497.24,8,5,36,0
+23,Female,Beauty,198.34,42.5,1,Net Banking,15,23.96,2,3,43,1
+59,Male,Sports,39.32,19.04,10,Debit Card,11,85.32,2,4,3,0
+21,Female,Beauty,320.97,24.8,8,Cash on Delivery,1,446.81,0,5,23,1
+46,Male,Shoes,367.84,0.39,5,Debit Card,2,34.98,9,1,17,1
+35,Female,Sports,339.68,24.6,4,Debit Card,13,443.98,5,1,7,1
+43,Female,Home & Kitchen,73.53,49.32,10,UPI,1,359.03,3,5,26,0
+61,Male,Electronics,291.53,13.91,5,Credit Card,8,23.16,10,3,43,0
+51,Male,Beauty,286.89,19.77,4,Net Banking,9,217.51,7,3,18,1
+27,Female,Shoes,434.86,34.36,3,Cash on Delivery,10,378.46,1,1,46,1
+53,Female,Home & Kitchen,192.67,40.74,5,Debit Card,12,293.63,10,1,46,1
+31,Female,Books,188.89,20.87,4,Net Banking,6,468.26,1,4,6,1
+48,Male,Books,311.17,15.48,1,Debit Card,2,434.48,6,5,31,1
+65,Female,Home & Kitchen,318.37,46.89,3,Credit Card,6,169.66,4,3,29,1
+32,Male,Home & Kitchen,237.3,33.86,10,Net Banking,9,46.89,0,4,9,0
+25,Male,Home & Kitchen,224.31,5.95,10,Cash on Delivery,12,472.41,6,3,35,1
+31,Female,Sports,249.6,3.45,8,Debit Card,3,261.06,6,1,17,1
+40,Male,Home & Kitchen,431.22,24.18,7,Credit Card,9,41.83,9,5,12,1
+57,Female,Beauty,233.28,11.0,2,Net Banking,2,409.2,5,2,36,0
+38,Female,Shoes,470.27,12.7,1,Debit Card,11,434.91,3,5,48,0
+33,Female,Sports,254.48,43.88,3,Debit Card,5,321.52,7,2,24,1
+62,Female,Home & Kitchen,474.85,4.48,5,Cash on Delivery,11,226.52,10,4,10,1
+35,Female,Clothing,417.25,35.77,10,Credit Card,2,332.78,1,2,30,1
+64,Male,Clothing,184.4,13.56,1,UPI,7,354.81,1,2,29,1
+70,Male,Shoes,432.5,38.02,3,Debit Card,11,447.05,1,4,39,1
+41,Female,Books,59.48,36.12,3,Net Banking,10,478.15,2,5,10,0
+43,Female,Electronics,462.9,0.37,5,Cash on Delivery,15,259.59,5,4,39,1
+42,Male,Electronics,317.66,25.46,3,Cash on Delivery,9,400.25,0,1,28,1
+62,Male,Books,31.92,6.97,9,Debit Card,7,482.43,10,1,18,1
+58,Male,Sports,323.91,43.31,1,Debit Card,12,79.87,1,2,41,1
+46,Male,Sports,487.25,43.58,4,Debit Card,5,14.04,9,4,50,1
+32,Female,Sports,39.55,20.92,10,UPI,15,435.14,1,4,17,0
+62,Female,Electronics,279.57,22.22,10,Debit Card,4,101.66,0,4,11,0
+18,Male,Clothing,375.16,15.16,4,Credit Card,12,26.03,2,5,1,1
+42,Female,Electronics,406.08,35.83,1,Net Banking,4,84.25,9,3,17,1
+24,Male,Beauty,209.84,17.93,2,Debit Card,15,195.14,6,3,36,1
+26,Female,Home & Kitchen,106.06,13.39,1,UPI,10,113.54,0,3,36,0
+41,Male,Sports,25.96,21.61,6,Net Banking,8,156.1,6,5,46,1
+18,Female,Clothing,291.96,4.57,3,Cash on Delivery,10,487.77,4,4,9,1
+61,Male,Shoes,229.19,37.33,7,Debit Card,13,353.68,8,3,45,1
+25,Male,Shoes,474.63,0.63,5,Net Banking,10,357.53,1,4,28,1
+41,Female,Home & Kitchen,35.0,32.22,9,Cash on Delivery,14,51.87,0,2,48,1
+28,Male,Clothing,344.27,9.14,7,UPI,10,367.39,8,3,33,1
+68,Female,Electronics,17.36,11.62,4,Credit Card,10,370.98,7,2,3,1
+34,Female,Electronics,89.86,31.78,5,Debit Card,10,331.57,9,5,8,1
+25,Male,Beauty,229.52,49.65,5,Credit Card,1,118.08,5,1,50,0
+52,Female,Beauty,230.16,38.89,5,UPI,5,214.4,4,5,6,0
+52,Female,Electronics,344.42,11.29,10,Net Banking,14,423.91,7,5,6,0
+50,Female,Shoes,455.56,8.8,9,Net Banking,2,336.75,7,5,29,0
+22,Female,Sports,321.32,43.31,10,UPI,13,367.72,4,3,37,0
+59,Female,Shoes,477.0,22.21,3,UPI,11,295.75,6,2,12,1
+56,Male,Beauty,441.4,6.85,6,Debit Card,9,227.55,0,3,9,0
+58,Female,Home & Kitchen,294.33,43.11,8,Cash on Delivery,7,380.73,3,1,41,1
+45,Female,Electronics,417.73,40.8,9,Credit Card,10,38.62,1,5,49,0
+24,Female,Beauty,323.08,49.2,7,Credit Card,8,338.21,9,4,19,1
+26,Female,Beauty,43.89,45.49,3,Net Banking,6,498.62,2,1,17,0
+25,Female,Sports,371.58,42.59,1,Net Banking,9,391.2,0,2,48,1
+29,Male,Electronics,51.98,2.63,4,Debit Card,6,148.83,10,1,44,0
+51,Female,Sports,299.07,5.22,6,UPI,7,142.52,10,3,32,0
+50,Male,Electronics,352.81,28.45,3,Credit Card,7,335.27,1,4,35,0
+65,Male,Sports,37.93,26.57,1,Debit Card,9,448.45,0,3,14,0
+40,Male,Shoes,119.24,22.9,6,Net Banking,11,291.09,7,5,49,1
+41,Male,Home & Kitchen,458.26,19.84,1,Net Banking,8,266.06,3,5,16,0
+54,Female,Home & Kitchen,310.08,21.56,9,Credit Card,13,84.39,2,1,21,1
+52,Male,Electronics,126.91,28.46,1,Net Banking,1,359.15,0,5,12,1
+61,Male,Clothing,346.89,0.1,6,Net Banking,4,352.64,1,5,24,1
+57,Female,Books,300.4,13.04,1,Cash on Delivery,7,483.64,2,2,34,1
+39,Female,Beauty,253.28,25.91,7,UPI,11,153.6,2,2,8,1
+44,Female,Beauty,488.21,36.11,3,Net Banking,8,379.44,5,3,44,1
+52,Male,Electronics,343.31,8.71,6,Cash on Delivery,7,219.86,9,3,21,1
+18,Female,Sports,190.84,27.34,7,Debit Card,12,281.44,7,2,48,1
+52,Female,Clothing,401.04,35.72,1,Net Banking,3,409.14,5,1,8,1
+54,Male,Shoes,442.87,22.23,1,Debit Card,15,114.89,1,2,28,1
+64,Female,Sports,66.98,1.35,5,Net Banking,4,174.72,1,3,16,0
+31,Female,Sports,104.27,22.46,6,Credit Card,12,387.79,6,4,10,0
+20,Female,Electronics,112.03,14.82,9,Cash on Delivery,7,287.38,0,5,15,0
+18,Female,Electronics,347.15,46.48,1,Cash on Delivery,8,50.75,0,4,4,0
+22,Male,Beauty,303.5,6.23,4,Credit Card,7,217.94,6,4,26,1
+43,Female,Electronics,311.4,32.62,10,UPI,6,295.38,8,5,15,0
+31,Female,Electronics,470.68,2.64,8,Cash on Delivery,9,455.21,4,2,36,1
+56,Male,Electronics,389.08,22.31,10,Debit Card,9,98.3,10,1,32,1
+44,Female,Beauty,68.33,27.7,9,Cash on Delivery,11,403.95,0,4,43,0
+26,Male,Shoes,177.02,14.9,3,UPI,13,69.66,4,1,38,1
+32,Female,Shoes,220.52,22.75,2,Debit Card,7,124.91,10,3,4,1
+32,Male,Books,201.0,8.18,4,Debit Card,8,125.46,0,4,41,0
+43,Male,Books,336.31,15.21,2,Credit Card,6,439.35,9,3,9,0
+59,Male,Electronics,446.49,31.06,1,Net Banking,1,103.51,8,2,35,1
+30,Male,Books,156.5,15.09,3,Credit Card,1,394.55,3,4,28,0
+68,Female,Beauty,278.18,44.99,7,Net Banking,6,233.59,8,3,37,0
+49,Male,Shoes,395.76,31.42,1,Credit Card,2,499.55,1,3,47,0
+56,Female,Sports,211.03,21.93,2,Net Banking,14,420.35,6,2,9,1
+66,Male,Shoes,88.22,1.94,1,Cash on Delivery,8,371.15,1,1,2,1
+69,Male,Shoes,240.1,24.98,8,Debit Card,1,436.01,3,1,3,0
+49,Male,Beauty,32.34,38.24,5,Net Banking,13,318.85,5,4,44,1
+21,Female,Books,471.48,13.28,8,Cash on Delivery,2,422.61,1,2,48,0
+47,Male,Sports,42.04,40.34,3,UPI,8,134.26,1,4,5,1
+54,Female,Beauty,222.04,12.59,7,Credit Card,12,53.36,1,1,10,0
+40,Female,Electronics,267.29,41.19,8,UPI,6,309.89,2,2,28,1
+56,Female,Home & Kitchen,492.73,4.26,6,Cash on Delivery,12,220.17,4,5,15,1
+62,Female,Shoes,87.18,43.31,7,UPI,10,216.09,8,2,14,1
+32,Female,Home & Kitchen,61.64,24.96,2,UPI,2,265.74,5,2,46,1
+60,Female,Beauty,9.31,14.83,8,Cash on Delivery,2,183.88,8,5,23,1
+46,Female,Beauty,82.01,13.26,5,Debit Card,11,314.9,9,3,13,0
+53,Female,Beauty,107.6,21.6,7,Net Banking,14,20.13,4,3,16,0
+30,Female,Home & Kitchen,317.14,49.95,1,Credit Card,7,485.1,10,3,30,1
+49,Male,Beauty,113.75,11.02,5,Net Banking,5,462.73,5,1,40,1
+24,Male,Electronics,15.16,5.16,1,Credit Card,5,467.96,9,2,8,1
+68,Male,Beauty,414.18,29.25,8,Net Banking,8,185.68,7,5,17,1
+39,Male,Clothing,185.97,24.43,4,UPI,12,268.29,2,1,30,0
+45,Male,Books,180.08,26.21,4,Debit Card,12,477.29,1,5,17,0
+19,Female,Home & Kitchen,154.73,33.35,2,UPI,7,451.66,2,1,35,1
+59,Female,Clothing,487.81,13.36,5,Debit Card,12,396.17,8,1,1,1
+62,Female,Beauty,89.21,45.53,1,Cash on Delivery,14,206.63,5,1,49,1
+70,Female,Electronics,449.63,21.78,9,Credit Card,9,284.35,9,5,24,1
+23,Female,Shoes,389.52,6.45,5,Credit Card,4,397.49,3,4,48,0
+45,Female,Sports,42.86,37.11,6,Cash on Delivery,10,140.14,9,1,49,1
+45,Female,Books,493.43,32.16,2,Net Banking,4,315.09,2,3,25,0
+61,Male,Sports,139.33,15.79,10,Cash on Delivery,2,414.83,1,2,2,0
+61,Male,Beauty,53.8,31.08,10,Cash on Delivery,3,355.19,3,4,25,1
+37,Male,Books,415.51,10.99,1,Debit Card,1,242.34,8,4,14,1
+47,Male,Books,354.8,22.24,4,Cash on Delivery,1,294.38,3,5,39,0
+28,Female,Electronics,310.52,44.97,7,Credit Card,7,494.39,4,4,33,1
+45,Female,Books,82.21,6.68,6,UPI,14,302.98,7,5,17,1
+42,Female,Home & Kitchen,241.86,19.33,10,Debit Card,14,393.88,1,5,31,0
+56,Male,Clothing,391.38,41.06,1,Debit Card,5,364.67,10,3,10,1
+50,Female,Clothing,155.29,48.47,1,Net Banking,3,352.24,2,1,6,1
+18,Female,Clothing,159.29,22.7,8,UPI,7,359.6,5,4,39,1
+44,Female,Home & Kitchen,6.55,25.35,4,Debit Card,14,229.93,6,1,25,1
+69,Male,Sports,91.25,28.61,5,Cash on Delivery,2,239.71,3,1,38,1
+30,Female,Electronics,438.33,46.62,7,Debit Card,3,236.59,0,1,37,1
+58,Male,Books,223.66,42.91,8,Debit Card,1,21.46,6,5,30,0
+20,Male,Home & Kitchen,492.2,8.53,10,Debit Card,8,124.33,8,1,34,0
+56,Male,Clothing,200.88,21.84,7,Net Banking,2,81.51,0,4,18,0
+23,Male,Beauty,359.02,23.2,2,Debit Card,15,443.79,0,5,24,0
+25,Female,Shoes,144.55,39.45,4,Debit Card,7,141.11,0,4,49,1
+44,Male,Books,185.09,30.14,10,Net Banking,11,73.53,9,5,27,1
+26,Male,Home & Kitchen,99.41,32.71,1,UPI,9,64.28,6,2,27,1
+54,Female,Home & Kitchen,176.8,49.91,10,Credit Card,6,351.49,10,2,39,1
+50,Female,Electronics,275.88,3.75,9,Net Banking,2,8.01,8,2,21,1
+68,Male,Electronics,495.93,11.15,3,Net Banking,2,238.3,2,2,19,0
+59,Female,Home & Kitchen,333.78,20.39,3,Debit Card,9,63.84,7,5,39,1
+61,Male,Clothing,103.63,17.39,10,Debit Card,10,425.58,8,1,23,1
+41,Male,Shoes,27.26,1.08,9,Credit Card,8,479.43,2,3,39,0
+32,Male,Books,67.55,4.59,10,Debit Card,14,479.58,2,3,48,0
+49,Male,Electronics,283.46,34.05,3,Cash on Delivery,14,223.77,0,2,44,1
+49,Female,Books,383.75,43.97,8,Debit Card,14,324.03,1,1,47,1
+41,Male,Clothing,470.51,25.71,2,Debit Card,9,301.85,6,4,15,1
+58,Female,Books,12.83,26.96,3,Cash on Delivery,4,178.27,2,1,43,1
+69,Female,Beauty,263.77,12.75,2,Credit Card,4,224.81,6,4,2,0
+66,Female,Electronics,238.08,38.39,1,Cash on Delivery,15,36.84,4,3,35,1
+66,Female,Clothing,329.75,37.59,2,Net Banking,15,398.87,9,1,20,1
+69,Male,Clothing,281.99,29.42,8,Cash on Delivery,2,124.2,7,1,28,1
+29,Female,Shoes,345.08,10.63,9,UPI,14,232.96,4,3,15,1
+56,Male,Shoes,330.75,4.85,2,Net Banking,10,242.91,2,1,16,1
+19,Female,Beauty,62.92,3.21,7,Debit Card,1,282.55,8,4,33,1
+20,Female,Clothing,400.86,29.63,5,Net Banking,10,409.85,6,1,47,1
+66,Male,Sports,66.0,41.25,3,Credit Card,13,347.48,4,4,12,1
+54,Male,Clothing,350.77,42.92,9,Credit Card,4,333.22,6,2,39,1
+66,Male,Shoes,210.99,23.18,6,Cash on Delivery,10,265.74,10,1,39,1
+34,Female,Sports,259.36,39.21,1,Net Banking,10,52.5,9,4,43,1
+66,Female,Electronics,452.13,47.34,5,Debit Card,11,203.99,8,3,20,1
+19,Male,Electronics,445.49,13.76,7,Credit Card,8,478.87,4,2,29,1
+19,Male,Books,409.84,19.9,4,Debit Card,2,497.8,6,1,43,1
+45,Male,Home & Kitchen,257.52,46.57,8,UPI,13,366.6,10,4,49,1
+40,Male,Shoes,369.44,16.91,10,Credit Card,12,117.62,8,1,3,1
+54,Female,Home & Kitchen,258.88,45.69,5,Cash on Delivery,11,55.44,0,4,48,1
+49,Male,Sports,435.46,49.05,9,UPI,8,210.31,3,1,5,1
+50,Male,Shoes,204.37,33.09,9,Net Banking,1,429.0,0,2,2,1
+18,Male,Beauty,485.27,40.84,9,Debit Card,15,362.32,7,2,23,1
+36,Male,Clothing,466.5,37.48,1,Credit Card,1,442.53,2,1,26,1
+19,Female,Beauty,372.09,34.98,2,UPI,4,309.81,1,1,26,1
+70,Male,Sports,143.31,15.35,3,UPI,7,69.51,3,5,7,0
+61,Female,Shoes,70.17,2.85,4,Credit Card,9,61.82,10,1,10,1
+43,Male,Sports,428.08,17.15,10,Net Banking,5,28.76,2,1,5,0
+49,Male,Clothing,86.82,33.35,9,Net Banking,2,285.7,10,2,47,1
+23,Female,Electronics,427.86,5.13,10,Cash on Delivery,12,125.23,4,1,12,1
+49,Male,Electronics,247.93,0.6,6,Net Banking,7,368.52,7,3,32,0
+21,Female,Sports,206.25,6.98,1,Cash on Delivery,11,344.69,9,1,42,1
+28,Female,Home & Kitchen,452.08,35.79,9,UPI,2,162.46,7,5,31,1
+34,Male,Shoes,303.91,48.64,6,Credit Card,9,92.52,10,4,22,1
+55,Female,Shoes,290.42,49.15,4,Net Banking,9,55.69,6,2,17,1
+41,Female,Electronics,281.59,24.7,4,Cash on Delivery,3,369.97,7,3,20,1
+22,Female,Books,188.73,43.47,3,UPI,13,227.97,4,4,20,0
+69,Female,Beauty,393.89,36.84,7,Net Banking,8,165.15,9,3,43,1
+51,Female,Books,130.14,25.05,3,Debit Card,11,429.04,9,2,8,1
+23,Female,Clothing,469.75,28.64,2,UPI,4,298.84,10,5,47,1
+39,Female,Beauty,447.52,6.86,10,Net Banking,3,261.41,10,2,34,0
+28,Female,Beauty,172.05,46.88,8,UPI,1,372.97,5,3,49,1
+65,Male,Sports,366.08,17.6,4,Credit Card,5,408.71,7,3,23,0
+33,Male,Electronics,288.75,22.31,8,Credit Card,13,344.61,0,2,38,1
+50,Female,Books,172.14,33.58,1,Credit Card,14,222.8,5,1,28,1
+26,Male,Books,494.32,16.7,5,Debit Card,11,192.75,5,2,13,0
+23,Female,Electronics,17.49,12.71,9,Credit Card,4,386.97,10,5,29,1
+33,Female,Books,130.06,31.55,1,Debit Card,1,261.36,4,2,8,1
+46,Male,Electronics,262.44,1.25,4,Credit Card,10,353.67,3,4,11,1
+20,Female,Sports,263.37,36.04,6,UPI,8,445.75,0,1,47,1
+37,Female,Home & Kitchen,296.52,25.7,10,Net Banking,8,458.37,10,4,45,1
+53,Female,Beauty,377.08,30.29,8,Net Banking,13,142.47,9,2,18,1
+36,Female,Sports,313.62,31.59,3,Credit Card,8,98.01,10,1,50,1
+43,Male,Shoes,302.14,26.35,5,Net Banking,3,134.34,7,4,25,1
+20,Female,Clothing,31.49,29.13,7,Credit Card,6,376.93,5,4,49,1
+36,Female,Home & Kitchen,191.38,34.19,1,Credit Card,12,188.18,2,1,22,0
+37,Female,Shoes,119.87,37.66,7,Cash on Delivery,12,90.83,2,1,45,1
+49,Male,Beauty,136.36,36.37,8,Cash on Delivery,7,53.7,5,3,35,1
+24,Female,Books,279.4,43.48,8,Cash on Delivery,9,167.02,6,1,29,1
+69,Male,Electronics,103.76,9.47,9,Debit Card,5,72.39,7,2,21,1
+58,Male,Beauty,150.5,20.06,6,Cash on Delivery,9,82.4,4,5,7,1
+50,Female,Sports,122.36,47.39,6,Credit Card,6,343.52,9,3,12,0
+57,Female,Clothing,474.51,19.83,2,UPI,10,14.77,5,1,36,0
+56,Male,Sports,472.61,6.24,3,Cash on Delivery,10,63.19,0,5,24,0
+35,Female,Home & Kitchen,306.92,26.27,4,Cash on Delivery,10,422.96,5,3,32,1
+57,Male,Home & Kitchen,462.64,5.47,4,UPI,4,423.23,8,2,27,1
+18,Male,Clothing,393.98,10.14,8,Credit Card,13,167.98,9,5,32,0
+28,Female,Shoes,297.02,49.92,1,Debit Card,1,48.54,3,1,32,1
+45,Female,Shoes,8.19,27.07,10,Cash on Delivery,1,353.96,9,1,32,1
+42,Male,Home & Kitchen,387.4,14.2,4,UPI,14,183.27,0,2,26,1
+67,Male,Home & Kitchen,352.73,49.74,4,Credit Card,10,27.5,10,3,11,0
+40,Male,Books,309.55,48.33,1,Net Banking,5,83.12,8,5,46,1
+48,Male,Electronics,381.41,22.04,3,Debit Card,13,72.92,3,2,18,1
+47,Female,Books,258.9,13.02,5,UPI,14,296.61,1,3,39,0
+59,Female,Books,353.52,41.92,6,UPI,3,449.57,0,4,5,0
+52,Female,Shoes,467.91,35.78,9,UPI,5,397.57,2,4,16,1
+24,Female,Clothing,191.02,34.35,9,Cash on Delivery,5,275.53,6,3,11,1
+33,Female,Shoes,355.52,44.66,9,Net Banking,1,213.97,10,1,35,1
+43,Male,Electronics,240.47,34.47,1,Debit Card,14,311.24,9,1,48,1
+65,Female,Sports,338.83,14.19,9,Credit Card,8,224.69,1,4,11,1
+69,Female,Home & Kitchen,382.63,34.69,8,Credit Card,5,126.82,8,1,42,1
+66,Female,Home & Kitchen,27.5,15.29,2,Net Banking,5,341.2,10,1,23,0
+19,Female,Electronics,325.07,37.96,1,UPI,9,437.26,1,3,34,0
+18,Female,Books,117.24,30.99,1,UPI,8,189.57,4,3,48,1
+65,Male,Clothing,336.67,3.87,6,UPI,13,421.56,7,1,17,1
+29,Male,Home & Kitchen,236.82,25.64,9,UPI,1,218.39,9,3,10,1
+22,Male,Beauty,387.91,17.17,7,UPI,3,203.66,7,5,18,0
+54,Female,Books,66.08,16.43,5,Net Banking,12,19.02,2,4,44,0
+49,Male,Home & Kitchen,315.03,30.11,2,Cash on Delivery,7,349.16,1,5,8,1
+26,Male,Beauty,142.84,16.12,1,Debit Card,1,404.71,8,5,26,1
+58,Female,Electronics,427.23,38.84,2,UPI,1,333.46,2,1,3,1
+52,Female,Electronics,464.55,3.54,1,Cash on Delivery,5,79.92,7,1,24,1
+36,Female,Books,498.22,33.02,3,Credit Card,9,56.13,1,5,3,0
+65,Male,Home & Kitchen,399.02,40.46,6,Net Banking,6,288.57,2,5,38,1
+33,Male,Shoes,378.1,33.64,8,Cash on Delivery,10,203.75,0,2,2,1
+20,Female,Beauty,111.67,24.86,3,UPI,2,217.4,10,2,35,1
+37,Female,Clothing,171.32,47.52,10,UPI,11,484.06,5,4,17,1
+41,Male,Home & Kitchen,235.51,15.0,9,UPI,9,363.34,6,5,9,0
+50,Male,Clothing,387.82,0.96,10,Cash on Delivery,6,208.83,3,3,36,0
+41,Female,Home & Kitchen,457.91,21.6,5,UPI,5,14.45,0,2,22,1
+69,Female,Shoes,98.62,1.65,7,Cash on Delivery,5,21.88,2,1,31,0
+28,Male,Shoes,461.57,47.7,8,UPI,15,343.98,8,5,34,1
+66,Female,Books,349.33,10.5,3,Credit Card,12,419.68,4,3,24,1
+25,Male,Books,307.33,39.45,2,Credit Card,3,355.31,5,3,9,1
+53,Male,Shoes,103.92,38.73,2,Debit Card,14,205.91,3,3,46,0
+55,Male,Sports,32.48,10.89,5,UPI,6,20.41,0,1,43,0
+57,Male,Shoes,286.39,31.06,1,UPI,15,483.86,4,2,2,1
+37,Female,Electronics,327.5,2.4,2,Cash on Delivery,15,493.24,4,3,21,1
+52,Female,Electronics,109.34,24.18,9,Cash on Delivery,13,276.94,4,2,34,1
+65,Male,Sports,280.45,0.73,7,UPI,4,39.98,5,4,27,0
+42,Male,Beauty,428.96,46.06,6,Debit Card,13,272.78,10,1,37,1
+52,Male,Clothing,418.36,48.8,9,UPI,12,446.71,1,2,7,1
+42,Male,Home & Kitchen,464.04,11.11,7,Cash on Delivery,10,341.59,0,2,22,0
+46,Male,Home & Kitchen,186.11,10.41,5,UPI,14,361.39,1,3,4,0
+35,Female,Sports,162.43,37.69,9,Cash on Delivery,15,47.06,9,3,14,1
+63,Female,Electronics,375.97,12.67,6,UPI,2,57.72,5,1,34,1
+35,Female,Books,218.4,44.75,6,Net Banking,13,68.04,4,2,23,1
+19,Female,Home & Kitchen,48.34,28.7,4,Cash on Delivery,3,452.67,4,5,44,0
+52,Male,Electronics,144.99,17.54,1,Debit Card,9,265.3,5,3,42,0
+33,Male,Beauty,212.2,41.63,5,Net Banking,11,396.83,9,3,25,1
+58,Male,Clothing,149.8,24.67,9,UPI,11,62.07,6,4,1,1
+53,Male,Beauty,169.44,45.58,8,Cash on Delivery,9,464.18,8,1,48,1
+50,Male,Sports,150.42,46.4,8,Net Banking,6,411.47,6,2,15,1
+21,Female,Shoes,25.54,8.27,5,Debit Card,10,116.26,1,2,32,1
+50,Male,Shoes,320.36,0.12,9,Cash on Delivery,10,437.72,5,2,14,1
+31,Female,Shoes,300.66,49.2,3,Net Banking,14,135.4,8,3,41,1
+38,Female,Beauty,328.42,45.31,3,Net Banking,9,106.64,6,1,21,1
+65,Female,Home & Kitchen,100.19,2.77,1,Net Banking,4,135.8,1,2,47,1
+37,Female,Clothing,151.35,41.65,9,Credit Card,11,455.43,2,5,7,0
+25,Male,Shoes,311.71,22.89,6,UPI,5,458.22,7,4,36,0
+24,Female,Sports,301.82,12.95,2,Cash on Delivery,10,167.85,10,4,21,0
+20,Female,Sports,255.63,43.94,8,Cash on Delivery,6,354.19,8,2,50,1
+34,Female,Shoes,178.45,9.83,9,Cash on Delivery,13,339.49,3,3,40,1
+50,Male,Shoes,456.9,47.36,9,Net Banking,15,404.25,8,4,12,1
+65,Male,Clothing,173.19,10.28,2,UPI,9,151.77,1,4,15,1
+29,Male,Shoes,230.53,30.68,2,Debit Card,13,257.52,10,4,15,1
+68,Female,Clothing,340.67,11.15,7,Cash on Delivery,5,335.5,4,4,17,1
+39,Female,Sports,273.8,27.28,4,UPI,8,18.0,10,2,34,1
+39,Male,Shoes,176.71,34.2,1,UPI,11,191.49,1,1,44,1
+63,Female,Beauty,220.64,9.51,8,Credit Card,1,349.46,10,1,35,1
+47,Male,Books,398.27,26.04,2,Cash on Delivery,5,130.03,0,3,39,0
+55,Male,Beauty,142.67,23.45,3,Net Banking,10,479.06,4,5,38,1
+55,Female,Sports,75.42,3.55,5,UPI,1,19.93,1,1,14,0
+62,Female,Clothing,160.02,40.92,3,UPI,10,479.25,6,5,5,1
+68,Female,Beauty,425.52,16.78,7,Debit Card,14,112.3,7,1,30,1
+25,Female,Clothing,49.05,28.73,7,Credit Card,6,29.17,1,1,4,0
+44,Male,Beauty,495.89,25.74,2,UPI,7,149.77,6,3,15,0
+44,Male,Beauty,272.8,25.66,7,UPI,12,394.21,3,4,39,0
+51,Male,Clothing,492.5,5.36,6,Net Banking,14,377.46,0,3,35,0
+38,Male,Home & Kitchen,469.8,21.17,10,Net Banking,5,108.38,10,1,45,1
+47,Male,Beauty,229.14,22.62,9,Debit Card,1,102.41,2,4,10,0
+50,Female,Shoes,103.25,36.68,9,Debit Card,6,323.08,10,4,2,1
+45,Male,Books,86.62,42.0,2,Debit Card,10,231.75,0,4,44,1
+64,Male,Sports,123.79,27.25,7,Net Banking,5,397.18,4,5,24,1
+50,Male,Home & Kitchen,356.52,4.34,5,Net Banking,6,16.95,7,1,28,0
+22,Female,Clothing,140.11,11.84,6,Credit Card,11,307.15,0,2,22,0
+65,Female,Home & Kitchen,174.01,8.25,1,Cash on Delivery,10,366.68,8,3,44,1
+36,Female,Electronics,227.15,6.23,7,Cash on Delivery,15,496.73,2,5,32,1
+21,Female,Electronics,457.05,18.29,6,Credit Card,7,341.0,4,3,31,1
+52,Male,Beauty,98.75,11.47,4,Cash on Delivery,7,119.76,8,2,19,1
+66,Male,Beauty,7.49,10.92,1,Net Banking,2,58.55,4,4,21,1
+34,Female,Shoes,34.75,2.73,9,Cash on Delivery,15,322.25,8,2,3,1
+61,Female,Books,452.86,0.88,4,Net Banking,12,263.98,9,3,6,1
+45,Male,Sports,325.52,5.14,2,Credit Card,3,450.08,7,2,32,1
+47,Male,Home & Kitchen,140.16,8.61,8,Debit Card,12,364.67,6,1,2,0
+46,Female,Electronics,92.71,21.55,2,Credit Card,6,257.32,10,2,24,1
+63,Female,Beauty,150.66,25.53,5,Cash on Delivery,3,204.78,0,1,45,0
+70,Female,Sports,61.82,7.03,6,Net Banking,2,205.17,3,2,27,1
+23,Female,Home & Kitchen,471.06,21.24,8,Cash on Delivery,4,117.02,8,1,9,1
+52,Male,Beauty,393.18,17.09,1,Cash on Delivery,5,13.58,9,1,13,1
+58,Male,Beauty,233.88,9.17,1,Debit Card,11,289.58,7,2,14,1
+54,Male,Electronics,433.16,0.34,4,Cash on Delivery,10,110.15,3,5,11,1
+41,Female,Electronics,128.48,23.35,5,Debit Card,9,108.12,0,4,14,0
+46,Female,Beauty,359.97,34.28,9,Net Banking,3,67.06,9,4,16,0
+66,Male,Clothing,428.79,11.31,7,Net Banking,3,98.85,3,4,10,0
+63,Male,Beauty,181.6,6.59,7,Debit Card,6,20.74,2,1,20,0
+70,Male,Sports,379.94,44.35,8,Credit Card,5,338.74,5,4,16,1
+48,Male,Beauty,151.06,13.75,5,Net Banking,6,203.69,10,1,34,0
+52,Female,Shoes,152.93,11.18,5,Credit Card,7,282.95,4,5,16,1
+50,Male,Books,57.99,42.85,1,Net Banking,11,320.29,4,2,14,1
+69,Male,Shoes,222.83,40.86,9,Net Banking,3,486.38,1,2,28,0
+38,Male,Shoes,366.21,22.42,6,UPI,15,38.79,2,1,18,1
+49,Male,Clothing,470.41,24.46,9,Cash on Delivery,13,211.87,10,1,26,1
+40,Male,Clothing,303.88,10.89,3,Cash on Delivery,5,126.72,5,5,38,1
+50,Male,Beauty,432.25,3.92,5,Credit Card,8,240.97,1,4,7,1
+20,Male,Shoes,412.13,28.67,2,Cash on Delivery,4,460.63,3,5,45,0
+35,Female,Clothing,90.8,4.92,10,Credit Card,10,363.37,1,2,34,1
+42,Female,Electronics,245.48,22.46,5,Net Banking,2,332.67,8,2,47,1
+59,Female,Beauty,62.88,47.02,8,UPI,4,223.42,2,4,49,1
+48,Female,Sports,342.67,47.64,2,UPI,2,337.2,9,2,45,1
+20,Male,Books,475.2,11.97,8,Net Banking,3,21.03,9,1,7,1
+57,Female,Home & Kitchen,72.86,31.21,4,Debit Card,4,295.19,5,2,33,1
+63,Female,Beauty,368.27,23.7,10,Debit Card,4,279.12,0,3,35,0
+41,Male,Home & Kitchen,317.96,43.78,10,Cash on Delivery,10,176.59,10,4,50,0
+67,Male,Shoes,293.88,13.57,1,Credit Card,9,104.75,9,4,39,0
+49,Female,Books,198.11,0.19,5,UPI,10,404.74,2,4,21,1
+64,Female,Home & Kitchen,180.79,8.13,1,Cash on Delivery,6,31.66,7,3,49,0
+39,Male,Shoes,27.4,17.48,7,Net Banking,9,39.49,4,5,28,0
+40,Female,Electronics,112.86,15.79,8,UPI,4,223.06,7,1,32,1
+19,Male,Home & Kitchen,12.51,39.57,3,Credit Card,9,130.01,1,4,44,1
+44,Male,Books,292.8,34.03,3,Credit Card,11,374.0,6,2,16,1
+59,Male,Beauty,57.4,14.98,7,Debit Card,13,318.92,8,1,10,0
+19,Male,Shoes,437.14,22.89,4,Cash on Delivery,9,387.4,6,2,23,1
+43,Female,Beauty,263.96,4.78,3,Net Banking,6,165.72,2,1,48,0
+34,Male,Books,351.35,44.91,8,UPI,5,371.56,6,1,50,1
+57,Male,Clothing,208.37,46.77,3,Credit Card,3,431.84,7,2,15,1
+50,Female,Shoes,282.49,48.99,7,UPI,14,175.91,0,2,43,1
+26,Male,Home & Kitchen,471.62,43.43,2,Net Banking,15,173.25,2,1,50,1
+60,Female,Shoes,45.95,8.7,1,UPI,5,450.48,4,4,6,1
+65,Female,Beauty,130.7,2.31,6,Cash on Delivery,15,29.65,5,2,33,1
+56,Female,Electronics,391.09,28.98,8,Debit Card,3,178.34,2,3,39,0
+46,Male,Shoes,53.87,45.63,1,UPI,5,63.74,3,3,12,0
+59,Female,Home & Kitchen,42.45,8.87,10,Debit Card,5,19.35,4,1,36,0
+43,Female,Clothing,183.96,0.35,9,Net Banking,2,60.87,2,5,31,1
+52,Male,Sports,50.62,40.27,3,Debit Card,14,218.47,3,1,10,1
+67,Female,Electronics,294.61,3.84,3,UPI,14,345.04,4,1,34,1
+42,Female,Clothing,117.01,20.69,4,UPI,9,148.19,1,4,41,1
+41,Female,Shoes,448.37,33.94,1,Credit Card,15,425.59,9,4,10,1
+30,Female,Beauty,392.83,11.84,9,UPI,7,221.62,8,5,11,0
+24,Female,Books,351.35,4.2,3,Debit Card,14,484.27,9,5,14,1
+53,Male,Beauty,310.39,38.5,10,Credit Card,6,477.31,7,5,3,1
+62,Female,Home & Kitchen,432.42,31.51,4,UPI,5,387.77,5,5,33,0
+37,Female,Beauty,115.42,49.42,1,UPI,15,466.54,9,5,7,1
+18,Male,Electronics,437.19,17.22,4,Net Banking,4,355.01,10,1,4,1
+25,Male,Beauty,395.8,3.09,1,Credit Card,8,448.31,2,1,39,0
+63,Male,Home & Kitchen,375.34,36.72,5,Net Banking,2,122.05,10,3,48,1
+33,Female,Sports,282.82,26.09,5,Net Banking,8,175.98,1,3,10,0
+31,Male,Shoes,126.89,10.66,7,Net Banking,1,377.7,6,2,15,1
+29,Female,Books,214.66,39.09,8,Cash on Delivery,10,215.16,7,1,16,1
+68,Female,Shoes,397.82,10.19,4,Net Banking,1,419.48,9,5,38,1
+40,Male,Beauty,20.73,13.03,7,Debit Card,3,439.43,0,2,4,0
+32,Male,Clothing,392.12,4.63,4,UPI,5,153.37,5,4,4,1
+45,Female,Shoes,123.84,19.97,3,Cash on Delivery,14,412.61,6,1,36,1
+51,Male,Sports,76.43,20.95,6,Net Banking,6,81.36,8,3,27,0
+19,Female,Beauty,62.27,25.73,4,UPI,4,170.43,2,1,22,0
+49,Male,Books,18.49,35.45,3,Credit Card,7,261.39,1,1,22,0
+40,Male,Home & Kitchen,264.18,45.31,9,Credit Card,7,117.09,4,1,17,0
+39,Male,Sports,113.04,6.89,5,UPI,2,291.74,9,1,45,1
+68,Female,Beauty,494.77,2.72,7,Debit Card,2,291.45,0,4,34,0
+42,Male,Sports,289.35,0.93,6,UPI,2,107.42,5,3,32,1
+39,Female,Shoes,73.25,7.18,10,UPI,15,398.84,8,1,6,1
+39,Female,Books,345.94,32.9,5,Cash on Delivery,14,317.66,9,4,33,1
+66,Female,Home & Kitchen,449.38,36.37,7,Credit Card,15,162.29,8,2,8,1
+69,Female,Beauty,373.86,39.33,6,Credit Card,2,119.93,6,1,50,0
+59,Male,Electronics,42.84,12.19,10,Net Banking,13,439.98,10,4,36,1
+23,Female,Home & Kitchen,448.46,15.29,2,UPI,9,418.69,6,5,5,1
+32,Female,Electronics,398.0,24.16,3,UPI,14,118.73,7,2,5,1
+60,Male,Sports,83.36,3.16,2,Debit Card,5,22.62,9,3,47,1
+54,Female,Clothing,30.63,30.56,3,Credit Card,11,403.24,1,1,10,1
+50,Male,Home & Kitchen,280.87,49.19,1,Debit Card,8,309.68,5,1,40,1
+25,Female,Sports,82.24,18.04,8,Cash on Delivery,5,54.94,4,4,7,1
+70,Male,Electronics,418.12,37.64,6,Net Banking,13,295.74,4,3,12,1
+61,Female,Shoes,182.38,25.0,2,Debit Card,11,228.83,2,5,30,0
+61,Male,Shoes,456.88,6.39,8,Credit Card,5,388.4,2,2,25,0
+22,Female,Clothing,285.02,29.11,6,Cash on Delivery,1,108.5,5,3,28,1
+56,Female,Home & Kitchen,95.42,14.99,7,UPI,6,229.31,9,1,43,1
+21,Male,Home & Kitchen,74.1,1.72,1,Cash on Delivery,4,82.34,9,4,13,0
+23,Male,Home & Kitchen,290.35,31.75,7,Debit Card,15,478.98,6,5,47,1
+62,Male,Sports,382.13,42.95,3,Credit Card,3,390.48,0,4,49,0
+49,Male,Books,391.85,17.24,8,Debit Card,6,369.68,2,2,22,0
+69,Female,Books,141.5,19.51,6,UPI,2,346.65,0,3,18,0
+47,Female,Clothing,106.1,44.55,4,UPI,8,214.55,9,4,27,1
+64,Male,Home & Kitchen,13.29,40.68,8,Credit Card,1,462.02,2,4,8,0
+52,Female,Sports,341.2,35.75,9,Net Banking,12,41.09,4,1,6,0
+57,Male,Shoes,42.9,12.44,10,Cash on Delivery,9,402.61,8,4,11,1
+69,Male,Electronics,213.28,45.51,2,Cash on Delivery,8,111.54,2,5,29,0
+33,Female,Sports,302.83,7.72,6,UPI,1,165.39,9,3,41,0
+30,Female,Books,468.87,31.34,5,Debit Card,10,262.12,9,2,5,1
+67,Female,Books,159.34,1.44,5,Debit Card,12,392.41,8,4,7,1
+59,Female,Shoes,128.64,32.19,10,Net Banking,15,420.07,0,5,22,1
+47,Female,Shoes,328.81,13.86,3,Debit Card,9,293.95,5,2,47,1
+36,Female,Electronics,311.52,22.48,8,Cash on Delivery,2,204.5,8,5,4,1
+34,Female,Shoes,169.39,17.26,8,Debit Card,3,473.52,4,4,32,0
+36,Male,Clothing,464.41,8.64,5,Net Banking,2,127.03,10,4,19,1
+45,Male,Electronics,423.21,31.1,8,Cash on Delivery,13,402.53,9,3,45,1
+43,Male,Shoes,115.87,44.1,10,Debit Card,14,307.96,1,1,33,1
+54,Male,Beauty,123.38,47.95,8,Cash on Delivery,8,191.56,4,5,1,1
+43,Male,Sports,258.59,9.62,3,UPI,2,5.68,0,1,46,1
+70,Female,Shoes,387.92,35.87,2,UPI,10,226.07,8,1,41,0
+40,Male,Clothing,26.8,33.22,9,UPI,2,141.98,9,2,44,1
+26,Male,Home & Kitchen,348.2,17.17,2,Debit Card,15,56.65,9,2,50,1
+29,Male,Shoes,325.88,0.95,9,Net Banking,1,42.2,8,5,41,1
+70,Male,Books,119.58,34.49,4,Cash on Delivery,7,177.04,5,1,8,1
+18,Male,Books,342.27,47.27,2,Credit Card,12,309.3,10,3,32,1
+18,Male,Books,470.39,31.61,10,UPI,2,419.57,8,1,30,1
+64,Male,Home & Kitchen,28.16,21.76,1,UPI,10,95.86,2,2,46,0
+51,Female,Books,163.23,26.26,4,Credit Card,5,215.2,3,1,28,0
+49,Female,Beauty,221.9,9.98,9,Credit Card,5,199.02,5,4,41,1
+65,Male,Shoes,450.13,37.53,9,Debit Card,3,259.13,3,4,32,1
+42,Female,Books,481.32,37.32,4,Cash on Delivery,3,405.75,0,3,25,1
+57,Female,Electronics,224.84,7.28,9,UPI,13,279.05,6,5,34,1
+62,Female,Home & Kitchen,376.26,43.9,6,Net Banking,12,424.09,4,1,33,1
+70,Female,Beauty,268.17,13.46,1,Debit Card,3,261.68,7,4,13,0
+18,Male,Electronics,271.2,49.11,10,Debit Card,6,303.9,8,5,25,1
+33,Female,Electronics,142.66,19.15,6,Net Banking,14,221.5,4,4,42,0
+56,Female,Electronics,112.39,8.89,9,Net Banking,4,412.43,7,5,40,1
+22,Female,Electronics,147.56,17.59,2,Net Banking,13,462.29,0,5,39,1
+39,Male,Shoes,280.38,22.01,6,Credit Card,3,321.38,0,4,44,0
+46,Male,Books,19.43,3.47,2,UPI,2,411.29,6,2,49,0
+20,Male,Sports,454.09,28.91,4,Credit Card,13,34.21,5,5,44,1
+29,Male,Shoes,82.36,29.88,8,UPI,3,453.53,4,1,48,1
+43,Male,Shoes,113.94,36.95,7,Credit Card,4,98.52,4,4,10,1
+33,Male,Beauty,261.55,1.46,9,Cash on Delivery,6,131.98,8,2,31,1
+68,Male,Beauty,356.51,27.06,7,UPI,4,31.4,0,4,44,0
+54,Female,Books,52.39,2.65,1,Debit Card,8,482.87,7,3,11,1
+39,Female,Sports,162.26,35.06,2,UPI,3,426.75,1,1,25,0
+46,Female,Beauty,484.49,2.79,6,UPI,12,457.03,6,3,46,1
+31,Male,Books,134.86,45.59,7,UPI,3,424.37,5,5,45,0
+45,Male,Books,159.96,35.1,3,Cash on Delivery,3,242.37,9,5,34,1
+22,Male,Clothing,419.07,25.37,9,Credit Card,8,462.42,1,3,20,1
+64,Male,Sports,29.86,22.08,7,Debit Card,4,484.89,2,3,7,0
+66,Male,Beauty,234.98,6.53,6,Credit Card,1,253.77,3,5,33,0
+47,Female,Sports,192.91,14.55,6,Credit Card,2,91.93,6,2,35,1
+63,Female,Shoes,161.71,43.45,1,Net Banking,13,331.02,7,1,29,1
+69,Male,Shoes,146.42,45.22,5,Cash on Delivery,14,487.84,10,4,12,1
+22,Male,Sports,50.23,0.04,10,Net Banking,10,436.71,1,3,5,0
+29,Male,Clothing,160.84,29.71,3,Cash on Delivery,13,431.6,7,1,12,1
+33,Male,Clothing,26.31,35.97,7,Credit Card,13,467.24,10,4,29,1
+43,Female,Sports,391.58,30.94,10,Credit Card,14,447.51,8,4,35,1
+43,Male,Beauty,202.12,4.08,3,Cash on Delivery,2,389.26,6,3,20,0
+65,Male,Home & Kitchen,224.73,10.89,5,Credit Card,14,360.55,0,2,37,1
+38,Male,Clothing,447.33,12.52,7,Credit Card,3,136.06,5,2,1,1
+56,Male,Electronics,330.74,41.59,3,Debit Card,6,312.56,7,1,16,1
+53,Female,Shoes,8.99,23.16,10,Net Banking,8,263.14,4,1,30,0
+50,Male,Sports,471.87,24.34,2,Net Banking,12,431.66,1,5,9,0
+47,Male,Electronics,122.39,46.74,6,Net Banking,1,248.4,4,2,42,1
+54,Female,Sports,58.27,31.85,8,UPI,9,68.23,7,1,10,1
+40,Female,Books,385.22,44.93,4,Debit Card,1,7.46,1,5,13,0
+27,Female,Shoes,252.74,22.83,9,Net Banking,10,340.55,0,4,48,1
+22,Male,Shoes,219.72,7.47,8,Net Banking,2,277.2,3,1,20,0
+53,Male,Clothing,128.5,46.5,7,Debit Card,3,168.83,3,5,29,1
+51,Female,Clothing,276.0,22.94,7,Credit Card,7,88.64,8,2,4,1
+69,Female,Electronics,140.82,9.08,3,Net Banking,9,236.02,2,4,46,1
+48,Female,Books,451.28,15.12,6,Credit Card,3,54.64,3,1,49,1
+27,Female,Sports,111.53,2.54,5,Net Banking,8,171.37,2,2,28,0
+36,Female,Books,442.76,23.42,1,Cash on Delivery,15,192.71,1,4,37,0
+49,Female,Shoes,281.91,42.66,3,UPI,9,235.48,3,3,13,1
+18,Male,Electronics,415.1,46.68,1,Net Banking,10,235.98,7,2,3,0
+22,Male,Home & Kitchen,357.86,46.63,4,Cash on Delivery,7,132.22,0,3,37,0
+62,Male,Electronics,349.86,6.26,10,Debit Card,4,425.85,7,1,48,1
+21,Female,Beauty,165.55,19.1,3,Cash on Delivery,4,180.99,7,5,19,0
+33,Female,Electronics,120.78,1.41,4,Debit Card,4,118.65,2,1,28,1
+41,Female,Books,109.39,42.76,9,Net Banking,6,92.03,9,2,19,1
+33,Female,Beauty,429.31,17.94,3,Debit Card,4,164.68,9,3,17,1
+19,Female,Beauty,411.11,31.56,6,Cash on Delivery,5,38.44,5,3,18,1
+66,Female,Beauty,223.08,35.74,6,UPI,9,21.29,3,4,18,0
+45,Male,Home & Kitchen,70.54,21.49,7,Credit Card,12,304.55,0,1,23,1
+49,Male,Electronics,194.21,15.32,9,Credit Card,7,311.48,0,1,40,1
+44,Female,Books,311.58,48.11,7,UPI,8,267.15,4,2,50,1
+37,Male,Electronics,229.93,48.22,1,Credit Card,5,382.33,7,3,9,0
+41,Female,Home & Kitchen,391.19,14.47,8,Net Banking,5,24.38,0,2,29,0
+29,Male,Shoes,498.82,23.98,5,Net Banking,13,468.31,1,2,42,1
+67,Female,Clothing,99.61,48.64,9,Cash on Delivery,11,52.06,6,3,29,1
+52,Female,Books,232.53,0.24,10,Cash on Delivery,7,338.64,7,2,2,1
+50,Male,Books,218.34,20.63,5,Debit Card,11,71.03,2,3,17,0
+50,Male,Electronics,155.72,5.02,5,Cash on Delivery,13,440.55,10,2,45,1
+68,Female,Clothing,103.06,25.46,2,Net Banking,14,257.8,7,5,31,1
+60,Female,Sports,37.52,1.23,3,Cash on Delivery,12,45.74,0,2,28,0
+54,Male,Sports,444.12,20.34,10,Credit Card,8,310.28,8,2,43,1
+29,Male,Home & Kitchen,212.83,11.03,9,Debit Card,9,9.51,1,5,48,0
+20,Female,Sports,250.96,26.67,7,Debit Card,15,389.13,1,1,39,1
+18,Male,Books,458.89,49.8,1,Net Banking,14,327.04,3,3,30,1
+50,Female,Sports,389.26,40.03,3,Cash on Delivery,2,110.25,9,4,35,1
+57,Female,Shoes,69.6,42.28,2,Credit Card,3,190.5,2,5,48,1
+27,Female,Shoes,284.88,31.76,1,Cash on Delivery,12,8.86,3,1,20,1
+60,Female,Shoes,223.91,2.08,9,UPI,12,348.37,5,2,16,1
+61,Male,Sports,399.62,10.34,8,Cash on Delivery,2,164.72,6,1,34,0
+46,Male,Home & Kitchen,363.5,46.25,5,Net Banking,10,287.94,4,5,14,1
+30,Male,Beauty,346.75,18.31,2,Cash on Delivery,7,478.58,1,2,26,0
+29,Male,Beauty,173.57,5.18,1,Debit Card,12,153.24,2,1,20,1
+48,Male,Clothing,403.46,35.12,7,Credit Card,2,495.17,9,4,42,1
+63,Male,Beauty,30.93,14.97,2,Net Banking,12,318.2,10,3,24,1
+19,Male,Beauty,84.01,13.44,1,UPI,14,124.83,2,3,43,0
+68,Female,Shoes,171.13,49.9,2,Credit Card,15,221.21,4,5,18,1
+67,Male,Shoes,43.02,42.91,7,Credit Card,2,371.52,10,2,43,1
+52,Male,Sports,121.32,20.4,7,Debit Card,14,226.01,4,2,9,0
+40,Female,Clothing,415.92,49.01,10,Debit Card,14,38.91,3,3,19,0
+34,Male,Electronics,474.38,32.51,6,Debit Card,2,88.46,7,1,20,0
+43,Male,Books,155.78,37.1,5,Net Banking,15,396.69,5,2,42,1
+25,Female,Clothing,135.94,1.58,3,Cash on Delivery,12,325.94,5,4,30,1
+46,Male,Clothing,143.55,6.08,3,Credit Card,13,287.06,0,4,26,1
+43,Male,Home & Kitchen,142.47,31.65,9,Cash on Delivery,4,87.97,5,2,31,1
+27,Male,Sports,22.79,44.95,4,Cash on Delivery,1,419.69,2,2,35,1
+43,Female,Home & Kitchen,463.82,31.19,9,Debit Card,2,480.57,5,3,3,1
+51,Male,Clothing,110.78,6.7,4,Cash on Delivery,3,25.24,9,5,40,1
+68,Male,Clothing,212.9,5.79,2,Credit Card,7,43.63,10,3,29,0
+58,Female,Clothing,9.8,42.21,4,Credit Card,10,442.94,5,5,6,1
+24,Male,Beauty,429.69,6.97,6,UPI,1,408.7,1,4,1,0
+21,Female,Books,366.92,26.01,6,Net Banking,6,310.88,0,5,24,1
+70,Female,Books,473.64,1.86,5,Cash on Delivery,3,472.76,10,3,38,1
+67,Male,Home & Kitchen,391.9,4.03,1,Net Banking,3,324.98,2,2,34,1
+62,Female,Clothing,160.28,33.62,3,Net Banking,4,111.91,4,5,7,1
+28,Female,Books,127.7,34.46,5,Net Banking,13,365.68,3,3,11,0
+46,Male,Shoes,350.37,17.07,6,Net Banking,4,324.63,6,4,11,1
+53,Female,Books,185.24,10.78,1,Credit Card,7,492.94,3,5,36,0
+42,Female,Sports,285.28,40.69,9,Cash on Delivery,3,110.88,7,4,20,1
+38,Male,Sports,8.1,10.86,3,UPI,8,300.95,6,4,16,0
+53,Male,Books,35.63,27.1,10,Net Banking,8,391.18,9,1,5,1
+27,Male,Shoes,270.01,48.41,3,UPI,11,172.8,8,5,24,1
+54,Female,Sports,285.21,7.39,2,Credit Card,13,192.94,0,3,30,1
+26,Male,Beauty,376.97,47.04,8,Credit Card,7,444.51,4,5,30,1
+41,Female,Books,70.32,9.14,3,Debit Card,2,205.08,3,5,39,0
+52,Female,Beauty,259.03,28.37,6,Net Banking,5,314.24,5,4,48,1
+66,Female,Books,101.25,18.85,2,Debit Card,6,445.17,0,4,47,0
+52,Female,Electronics,51.13,48.25,7,UPI,12,108.86,5,4,37,1
+65,Female,Electronics,208.2,13.68,4,Cash on Delivery,10,491.03,0,4,33,0
+53,Female,Electronics,85.85,19.98,9,Debit Card,4,352.47,0,3,20,1
+35,Female,Sports,114.78,49.14,10,Credit Card,13,250.58,7,2,22,1
+66,Male,Beauty,162.19,26.82,9,Net Banking,10,218.31,1,1,41,0
+56,Male,Beauty,133.4,25.13,7,UPI,5,477.41,9,4,21,0
+49,Female,Beauty,48.36,12.89,8,Credit Card,14,106.83,5,4,37,0
+41,Female,Shoes,49.51,35.07,3,Cash on Delivery,9,159.28,5,1,27,1
+40,Male,Beauty,100.66,0.72,5,Net Banking,11,157.36,5,4,38,0
+49,Female,Shoes,30.03,2.48,2,Cash on Delivery,7,148.06,7,2,35,1
+54,Male,Electronics,315.1,29.97,10,Cash on Delivery,2,236.93,3,5,38,0
+29,Male,Electronics,147.23,17.08,7,Net Banking,11,494.64,2,1,40,0
+66,Male,Sports,143.47,47.67,8,Net Banking,1,444.95,5,3,6,1
+30,Female,Books,169.34,45.16,9,Cash on Delivery,2,167.34,3,1,32,1
+40,Female,Electronics,333.08,35.69,7,UPI,3,214.32,1,2,16,1
+42,Male,Books,435.96,40.91,10,Net Banking,11,336.39,5,3,28,1
+52,Male,Books,380.75,33.37,10,Credit Card,2,13.49,9,5,16,0
+58,Male,Sports,365.13,6.28,8,Debit Card,11,410.98,4,4,27,0
+47,Male,Clothing,244.77,38.28,9,UPI,3,440.5,10,1,3,1
+34,Male,Clothing,348.43,10.51,6,Net Banking,10,429.31,8,3,49,1
+66,Female,Home & Kitchen,278.62,16.17,10,Net Banking,15,190.65,10,1,21,1
+37,Male,Sports,112.04,40.96,2,UPI,11,233.69,5,5,38,1
+65,Female,Home & Kitchen,108.25,26.83,2,Debit Card,11,11.13,2,1,38,1
+42,Male,Home & Kitchen,151.71,43.0,4,Cash on Delivery,15,202.7,10,3,30,1
+39,Female,Clothing,455.85,10.65,9,Credit Card,12,232.91,4,2,22,1
+30,Female,Sports,275.97,30.39,7,Net Banking,14,453.95,9,3,19,1
+36,Female,Clothing,368.28,4.19,2,Debit Card,12,447.52,7,1,31,1
+66,Female,Home & Kitchen,176.55,32.15,8,Credit Card,9,483.22,8,5,20,1
+53,Female,Sports,206.82,38.13,7,UPI,4,443.13,7,4,47,1
+29,Female,Home & Kitchen,67.15,29.25,9,Net Banking,12,9.06,2,4,19,0
+58,Male,Beauty,89.79,13.31,8,Cash on Delivery,9,322.52,8,5,2,0
+36,Female,Books,414.54,1.57,3,UPI,11,38.78,2,1,40,1
+29,Male,Sports,294.5,5.97,1,Net Banking,3,139.93,7,5,39,1
+26,Female,Sports,172.08,31.12,2,Debit Card,12,291.26,9,1,27,1
+24,Female,Books,402.41,46.72,2,Credit Card,1,351.8,8,3,8,0
+45,Male,Home & Kitchen,127.03,10.33,4,Credit Card,11,329.04,6,2,45,1
+31,Female,Beauty,488.14,36.75,6,Net Banking,5,29.28,3,1,27,1
+48,Male,Shoes,175.68,43.32,4,UPI,10,56.28,9,4,15,0
+69,Male,Books,171.97,26.04,9,Cash on Delivery,10,68.65,8,4,12,1
+36,Male,Clothing,159.4,33.46,4,Debit Card,14,50.25,2,2,47,0
+64,Male,Home & Kitchen,65.45,40.75,6,Net Banking,2,93.23,2,1,14,0
+33,Female,Books,60.01,13.03,6,Debit Card,4,345.8,1,2,7,0
+70,Female,Books,325.81,14.84,10,Credit Card,2,416.26,9,3,17,0
+22,Male,Sports,438.18,0.03,10,Cash on Delivery,2,207.36,2,2,26,0
+52,Female,Clothing,396.31,48.15,1,Debit Card,13,347.93,0,3,37,1
+29,Female,Clothing,74.85,45.88,8,Net Banking,3,104.01,3,4,20,1
+42,Male,Clothing,275.06,38.23,3,Cash on Delivery,5,486.77,7,3,10,0
+69,Female,Books,57.27,3.95,6,UPI,4,178.25,4,1,19,0
+38,Male,Shoes,27.42,22.38,3,Net Banking,2,423.7,1,1,18,1
+53,Male,Electronics,329.91,5.09,2,Debit Card,15,472.96,2,1,30,0
+70,Female,Home & Kitchen,269.9,0.8,5,Cash on Delivery,11,433.03,0,1,30,1
+40,Female,Electronics,45.6,30.81,1,Net Banking,14,38.2,1,5,25,1
+33,Female,Books,22.29,48.04,9,Cash on Delivery,14,326.9,0,3,24,1
+56,Male,Electronics,494.93,45.14,7,Cash on Delivery,10,64.44,1,1,10,1
+62,Male,Books,19.86,34.84,3,Cash on Delivery,2,7.8,2,2,2,0
+70,Female,Electronics,225.04,4.83,4,Debit Card,14,30.63,0,2,38,1
+59,Female,Clothing,254.79,13.71,6,Net Banking,6,458.49,10,5,32,1
+56,Female,Beauty,63.05,16.0,3,Credit Card,7,454.69,8,3,35,1
+31,Female,Clothing,88.69,38.16,7,Credit Card,12,116.78,9,3,37,1
+48,Male,Clothing,179.14,40.11,6,Debit Card,10,275.8,4,3,7,1
+22,Female,Sports,382.03,19.26,9,Debit Card,6,477.74,7,5,7,1
+52,Male,Sports,256.01,20.89,5,Cash on Delivery,7,250.87,4,3,27,1
+40,Male,Electronics,320.76,2.23,4,Net Banking,1,199.82,7,3,10,0
+46,Female,Books,492.66,14.46,3,Net Banking,6,244.21,6,1,33,1
+60,Female,Clothing,385.16,22.56,10,UPI,11,396.16,3,3,43,0
+28,Female,Electronics,220.01,5.85,1,UPI,3,241.25,6,1,7,1
+35,Male,Sports,225.99,22.66,3,Credit Card,1,392.72,5,1,6,1
+64,Female,Beauty,311.29,42.66,3,UPI,8,218.69,2,3,6,0
+29,Female,Home & Kitchen,334.36,29.07,7,UPI,4,129.74,8,2,13,1
+26,Male,Electronics,252.85,3.95,7,Credit Card,10,166.6,9,4,48,0
+27,Female,Beauty,324.21,9.58,1,Credit Card,8,43.52,8,2,13,1
+61,Male,Home & Kitchen,16.65,23.73,3,UPI,10,251.2,4,3,2,1
+34,Female,Shoes,217.66,18.07,8,Net Banking,14,78.31,7,3,19,1
+55,Male,Electronics,143.07,17.94,9,UPI,11,406.72,6,2,19,1
+24,Female,Electronics,68.94,26.46,7,Cash on Delivery,4,213.19,8,3,50,0
+63,Female,Shoes,54.28,29.22,7,Cash on Delivery,4,383.68,6,1,38,1
+30,Male,Shoes,303.58,39.84,8,Cash on Delivery,12,477.46,3,5,2,1
+57,Male,Electronics,264.18,17.05,6,Debit Card,14,425.49,3,3,26,1
+59,Female,Shoes,130.52,40.27,3,Cash on Delivery,10,475.97,10,3,6,1
+26,Male,Clothing,238.12,16.93,1,Net Banking,4,286.13,7,2,20,0
+67,Male,Home & Kitchen,248.65,2.77,7,Debit Card,6,86.84,5,1,23,1
+44,Male,Home & Kitchen,101.53,27.71,1,Debit Card,14,468.02,8,2,15,1
+19,Male,Home & Kitchen,327.79,29.4,1,Cash on Delivery,9,434.91,9,2,6,1
+22,Female,Clothing,391.56,46.73,9,UPI,5,432.88,6,3,28,1
+46,Female,Books,396.77,36.3,10,Credit Card,12,348.17,6,1,35,1
+54,Male,Shoes,303.22,45.89,7,UPI,13,314.33,3,3,11,0
+55,Male,Beauty,258.26,45.42,4,UPI,10,12.29,2,3,8,1
+36,Male,Shoes,35.2,30.23,6,Debit Card,14,375.29,7,3,50,1
+25,Male,Electronics,147.48,26.39,1,Debit Card,15,50.31,6,3,49,0
+65,Female,Sports,51.17,27.87,7,Debit Card,8,133.58,3,5,24,0
+62,Female,Home & Kitchen,482.09,48.92,6,Net Banking,8,277.99,3,4,21,1
+18,Male,Shoes,71.86,38.66,4,Net Banking,4,228.61,0,1,49,0
+39,Male,Beauty,80.13,5.31,7,Credit Card,15,12.81,10,5,36,1
+69,Male,Electronics,445.34,38.92,3,Debit Card,11,412.87,6,4,7,1
+34,Female,Clothing,472.24,8.53,1,Cash on Delivery,10,440.01,0,4,5,1
+24,Male,Books,384.09,22.37,4,Debit Card,9,342.53,9,4,29,1
+42,Female,Clothing,7.68,10.52,3,Net Banking,9,272.83,9,5,16,1
+62,Male,Beauty,5.67,34.48,1,Debit Card,5,480.57,3,1,6,0
+21,Female,Electronics,192.16,43.87,2,Net Banking,6,64.38,10,2,14,0
+53,Male,Home & Kitchen,75.98,14.52,5,Debit Card,5,370.27,2,4,2,0
+23,Female,Shoes,14.1,4.1,8,Cash on Delivery,3,68.54,10,2,25,0
+48,Male,Electronics,234.71,14.92,1,Credit Card,11,194.01,2,2,31,1
+36,Male,Books,471.82,33.62,4,Cash on Delivery,8,294.81,0,3,50,1
+61,Male,Clothing,165.29,16.44,4,Net Banking,9,369.86,3,2,50,1
+56,Female,Books,332.26,13.91,5,UPI,15,6.84,0,3,13,0
+44,Male,Books,327.86,9.22,7,Cash on Delivery,4,134.0,7,1,18,1
+27,Female,Beauty,129.28,24.88,8,Debit Card,9,271.41,0,1,17,0
+43,Female,Beauty,326.96,13.8,6,Credit Card,9,268.77,5,3,45,1
+36,Male,Shoes,110.11,36.55,1,Debit Card,7,320.63,6,1,28,1
+56,Male,Beauty,65.39,3.83,7,Debit Card,8,155.41,9,4,12,0
+20,Male,Beauty,352.18,33.2,3,Cash on Delivery,15,272.56,1,1,35,1
+62,Female,Electronics,61.15,11.88,6,Credit Card,3,98.94,3,3,22,1
+30,Male,Home & Kitchen,498.47,24.46,8,UPI,15,97.5,10,4,39,1
+67,Female,Shoes,95.81,14.3,7,Debit Card,5,290.4,2,2,1,1
+45,Female,Electronics,299.1,36.14,10,Credit Card,3,344.31,8,2,37,1
+37,Male,Home & Kitchen,208.63,47.27,6,UPI,7,64.6,6,2,21,1
+45,Male,Books,67.56,45.85,9,Debit Card,6,65.78,1,3,1,1
+25,Male,Electronics,18.78,29.17,9,Credit Card,11,284.82,10,2,4,1
+58,Male,Sports,313.25,23.13,1,Cash on Delivery,3,138.7,5,1,32,1
+56,Male,Electronics,404.34,40.92,1,Debit Card,9,199.24,8,2,1,1
+18,Male,Beauty,421.8,34.17,1,Debit Card,12,203.37,2,5,13,1
+20,Female,Home & Kitchen,243.94,9.18,8,Credit Card,1,93.38,10,5,46,1
+30,Female,Shoes,389.84,41.05,10,Debit Card,10,5.65,5,2,47,1
+45,Female,Shoes,338.06,21.44,7,UPI,3,427.31,2,2,17,0
+66,Male,Home & Kitchen,363.51,9.45,3,Debit Card,15,358.93,2,5,12,0
+42,Female,Beauty,248.84,14.09,2,Net Banking,15,346.82,3,2,7,1
+50,Female,Clothing,318.54,13.38,4,UPI,15,275.52,8,4,3,1
+55,Female,Electronics,403.74,25.96,3,Credit Card,11,351.98,10,5,50,0
+70,Female,Beauty,201.95,11.72,7,UPI,15,468.17,7,3,26,1
+23,Female,Sports,403.96,6.18,10,Net Banking,10,334.51,0,5,31,0
+61,Male,Books,298.05,6.18,8,Net Banking,11,136.22,10,1,36,1
+62,Male,Home & Kitchen,87.12,29.16,6,Debit Card,7,287.43,0,4,26,0
+49,Female,Electronics,17.22,36.74,3,Debit Card,3,223.95,6,3,3,0
+62,Female,Shoes,184.56,16.08,6,Cash on Delivery,14,280.43,2,2,44,1
+64,Female,Books,275.61,1.73,2,UPI,3,261.22,10,1,28,1
+38,Male,Clothing,420.71,6.36,7,Cash on Delivery,2,430.09,6,1,44,1
+33,Male,Sports,68.11,45.73,10,Net Banking,9,327.64,8,4,17,1
+38,Female,Shoes,401.1,24.68,7,Debit Card,11,98.44,2,3,38,1
+28,Male,Home & Kitchen,432.19,22.68,4,Debit Card,4,36.19,2,1,47,0
+54,Male,Electronics,79.59,1.9,8,Debit Card,10,215.06,1,3,30,0
+53,Female,Home & Kitchen,426.54,36.43,4,Credit Card,13,12.73,9,3,2,1
+52,Male,Books,495.77,26.4,7,Net Banking,6,162.56,0,1,8,0
+36,Male,Electronics,364.79,10.1,4,Debit Card,2,187.17,8,3,14,1
+37,Female,Beauty,393.46,5.5,5,Net Banking,9,190.92,5,4,37,0
+35,Male,Clothing,497.24,19.17,7,Debit Card,15,489.78,5,1,35,1
+64,Male,Beauty,304.71,41.86,10,UPI,7,155.43,7,4,42,1
+58,Female,Beauty,157.4,43.26,3,Net Banking,10,136.29,10,4,39,1
+66,Male,Home & Kitchen,419.58,30.14,10,Cash on Delivery,5,69.04,4,3,11,0
+31,Male,Books,309.17,36.38,5,Credit Card,7,257.95,8,3,15,1
+32,Female,Clothing,292.69,5.76,3,Cash on Delivery,14,81.07,10,1,2,1
+48,Female,Electronics,130.55,29.41,5,Net Banking,4,310.07,4,2,37,0
+18,Female,Electronics,379.39,33.35,3,Debit Card,13,81.8,1,1,43,1
+70,Male,Sports,45.43,10.04,10,Net Banking,10,290.45,5,4,32,1
+20,Female,Shoes,462.52,44.01,7,Credit Card,13,414.0,8,3,40,1
+33,Male,Sports,166.28,9.75,1,Net Banking,15,26.05,2,4,13,0
+40,Female,Sports,68.25,15.67,9,Debit Card,7,212.77,9,5,43,1
+28,Male,Electronics,223.97,31.03,9,Cash on Delivery,2,233.22,3,5,17,1
+29,Female,Home & Kitchen,26.02,31.92,5,UPI,7,396.58,9,4,15,0
+27,Female,Beauty,343.89,34.97,9,Cash on Delivery,15,236.62,10,2,33,1
+49,Female,Books,451.84,5.6,10,Debit Card,4,285.93,7,2,16,1
+33,Female,Beauty,419.45,42.47,6,Debit Card,4,396.65,5,1,13,1
+25,Male,Beauty,68.05,26.64,5,Credit Card,1,282.08,6,1,22,0
+55,Female,Clothing,67.5,23.57,3,Net Banking,12,182.36,6,1,23,1
+29,Female,Electronics,407.65,49.05,8,Net Banking,3,47.49,3,3,36,0
+41,Male,Books,462.51,37.02,4,Cash on Delivery,5,366.31,5,2,43,1
+45,Female,Home & Kitchen,233.03,5.9,10,UPI,5,436.21,8,4,50,1
+70,Male,Clothing,251.99,37.83,3,UPI,2,485.18,2,5,50,0
+25,Female,Shoes,162.54,4.76,6,Credit Card,4,463.67,7,2,10,1
+45,Female,Home & Kitchen,447.66,1.37,8,Debit Card,1,399.72,6,2,17,1
+53,Female,Sports,324.23,20.18,9,Credit Card,15,323.52,3,2,30,0
+43,Male,Home & Kitchen,147.68,49.68,6,Net Banking,9,391.82,9,1,13,1
+25,Female,Home & Kitchen,152.9,8.74,5,Debit Card,1,218.88,2,3,30,1
+67,Female,Beauty,446.14,33.63,2,Credit Card,6,299.41,6,4,46,1
+45,Female,Home & Kitchen,11.75,8.67,2,Cash on Delivery,7,177.61,9,1,30,1
+45,Male,Sports,164.75,36.24,9,Net Banking,3,166.72,8,3,7,0
+54,Male,Sports,279.41,25.27,2,UPI,12,379.56,9,2,10,0
+58,Female,Electronics,78.37,34.0,2,Credit Card,15,229.7,2,3,35,1
+53,Male,Home & Kitchen,50.59,10.14,3,Net Banking,1,110.02,9,1,2,0
+44,Female,Beauty,408.56,37.28,3,Net Banking,7,104.96,8,2,30,1
+34,Female,Home & Kitchen,447.73,49.78,4,UPI,3,430.29,7,1,19,1
+26,Female,Shoes,412.69,33.28,7,UPI,13,340.49,2,4,39,1
+50,Female,Shoes,449.9,24.67,9,UPI,10,275.29,7,2,37,1
+70,Female,Beauty,278.79,46.16,2,Credit Card,12,203.46,3,3,3,0
+37,Female,Electronics,407.07,0.79,4,UPI,12,218.25,5,1,25,0
+30,Female,Electronics,195.1,36.5,9,Cash on Delivery,6,33.43,9,5,34,0
+45,Male,Sports,334.8,44.44,2,Net Banking,13,230.18,1,3,22,0
+65,Male,Sports,494.47,3.08,10,UPI,12,398.75,7,3,38,1
+46,Male,Clothing,116.74,22.5,1,Net Banking,14,197.05,8,2,14,1
+30,Male,Beauty,198.0,10.24,10,Debit Card,6,194.87,6,3,39,1
+63,Male,Home & Kitchen,242.62,28.33,8,Debit Card,14,12.78,7,1,2,0
+52,Male,Books,73.32,32.48,9,UPI,12,231.63,6,5,32,1
+23,Male,Beauty,45.11,15.13,7,Net Banking,4,17.54,10,4,43,0
+35,Female,Clothing,415.71,23.0,8,Debit Card,12,287.32,9,5,3,1
+68,Female,Sports,488.51,13.97,4,UPI,11,255.86,3,1,41,0
+22,Female,Beauty,205.34,18.47,4,Net Banking,6,420.8,0,2,8,0
+64,Female,Beauty,48.39,7.98,2,UPI,11,292.98,2,1,26,0
+42,Male,Sports,37.58,44.28,8,Net Banking,10,165.1,6,3,32,1
+19,Male,Clothing,446.2,0.5,2,Debit Card,4,260.53,10,2,11,1
+27,Female,Sports,234.59,44.12,9,UPI,15,351.35,10,4,50,0
+47,Female,Electronics,163.41,28.58,4,Debit Card,13,51.51,6,4,1,1
+67,Male,Home & Kitchen,240.85,16.58,1,UPI,8,312.43,10,1,15,1
+62,Female,Sports,162.56,36.15,4,Credit Card,9,458.73,2,3,4,0
+22,Female,Clothing,247.07,25.39,3,Debit Card,2,153.07,0,4,4,0
+50,Female,Shoes,430.48,24.96,6,Debit Card,7,315.18,9,5,28,1
+18,Female,Electronics,298.19,5.51,7,Cash on Delivery,9,411.56,8,2,10,1
+35,Male,Shoes,348.85,19.48,8,Debit Card,9,258.34,5,5,11,0
+49,Female,Books,185.51,12.05,2,Net Banking,12,360.4,6,4,50,0
+64,Female,Sports,370.56,0.78,6,UPI,5,158.95,0,4,23,0
+66,Male,Electronics,334.98,18.0,6,Credit Card,1,156.5,0,1,47,1
+28,Male,Home & Kitchen,64.18,4.49,10,Net Banking,6,335.45,3,1,3,0
+38,Female,Sports,288.46,12.84,5,Net Banking,15,354.18,6,2,39,1
+43,Male,Home & Kitchen,132.09,4.63,10,Net Banking,8,468.82,10,1,39,0
+42,Female,Beauty,403.03,5.05,10,Net Banking,1,116.3,10,3,17,0
+39,Female,Shoes,215.84,9.95,7,Credit Card,2,236.77,7,2,22,0
+44,Male,Electronics,497.37,49.99,3,Cash on Delivery,13,129.0,9,3,27,1
+66,Female,Home & Kitchen,50.79,0.11,4,Debit Card,13,44.65,8,1,16,1
+30,Female,Clothing,391.27,31.93,10,Net Banking,1,204.6,0,2,16,0
+50,Female,Home & Kitchen,338.48,7.06,9,Debit Card,5,190.17,3,4,40,0
+51,Female,Clothing,384.91,46.03,4,Debit Card,2,138.86,3,5,3,1
+58,Male,Sports,157.23,4.68,3,Net Banking,15,152.01,2,4,47,1
+52,Male,Electronics,248.57,47.75,2,Cash on Delivery,10,183.4,6,3,33,1
+18,Female,Home & Kitchen,399.27,30.55,5,Debit Card,10,494.47,0,4,42,0
+38,Male,Books,120.11,0.06,4,UPI,14,392.56,8,4,2,1
+65,Female,Home & Kitchen,116.89,44.7,8,Debit Card,4,40.34,7,5,39,0
+23,Female,Books,277.77,26.09,7,Net Banking,1,436.84,1,5,46,0
+45,Female,Electronics,264.16,13.13,6,Credit Card,7,318.49,1,4,48,0
+34,Female,Home & Kitchen,144.72,38.36,2,Debit Card,8,445.84,7,5,27,0
+22,Female,Clothing,152.55,46.33,3,Cash on Delivery,5,174.15,10,4,15,1
+48,Male,Home & Kitchen,142.53,24.18,10,UPI,2,234.94,0,2,7,1
+22,Female,Shoes,386.9,15.78,9,UPI,8,448.63,6,4,45,1
+55,Male,Sports,327.69,39.45,9,Credit Card,1,139.92,8,1,42,1
+20,Male,Beauty,417.05,34.09,5,Credit Card,15,458.17,2,5,9,1
+70,Female,Clothing,487.86,44.44,3,Debit Card,7,415.11,6,5,41,1
+40,Female,Shoes,239.71,34.63,2,Net Banking,1,490.38,5,3,6,1
+54,Female,Books,38.01,12.18,8,Cash on Delivery,12,165.51,6,3,12,1
+70,Female,Sports,28.81,46.58,6,UPI,6,121.7,6,1,30,0
+54,Female,Electronics,151.35,5.24,10,Credit Card,13,168.78,9,5,20,1
+27,Male,Clothing,466.61,13.4,7,Cash on Delivery,6,477.55,0,5,20,1
+27,Female,Beauty,263.99,26.01,1,Net Banking,15,169.87,2,3,46,0
+36,Female,Sports,139.53,28.29,1,UPI,5,284.78,9,3,27,0
+34,Male,Books,202.59,0.77,10,UPI,15,204.82,0,4,20,0
+38,Male,Beauty,301.3,39.03,2,Net Banking,2,201.13,4,5,7,1
+31,Female,Electronics,328.21,18.08,10,UPI,2,100.72,2,5,40,0
+26,Male,Electronics,81.19,20.32,3,Net Banking,9,270.85,0,4,40,0
+63,Female,Books,488.63,40.47,1,UPI,5,425.46,1,5,30,0
+18,Male,Clothing,274.66,18.96,5,Debit Card,5,29.5,9,1,8,1
+68,Male,Books,72.17,2.36,3,Net Banking,7,445.17,4,3,2,0
+62,Female,Home & Kitchen,447.35,8.82,1,Cash on Delivery,6,334.41,10,3,14,1
+30,Male,Electronics,41.95,47.8,8,Debit Card,2,310.29,2,3,10,0
+21,Male,Sports,454.33,3.52,6,Cash on Delivery,11,314.82,5,2,50,1
+18,Male,Home & Kitchen,498.3,17.75,9,UPI,1,151.65,8,1,18,0
+66,Male,Shoes,351.71,25.16,3,Cash on Delivery,5,210.5,5,1,18,1
+57,Male,Beauty,386.37,24.66,9,Debit Card,4,400.65,1,4,16,1
+49,Male,Home & Kitchen,171.96,0.2,9,Net Banking,12,156.66,1,2,5,1
+51,Female,Beauty,471.08,25.06,1,Credit Card,3,237.66,7,5,31,0
+45,Female,Books,267.21,19.19,3,Cash on Delivery,2,14.72,10,1,37,0
+48,Male,Home & Kitchen,367.53,48.6,6,Credit Card,10,368.11,7,2,20,1
+25,Female,Books,462.43,7.96,8,Cash on Delivery,2,211.76,5,2,23,1
+56,Female,Shoes,487.71,17.71,4,Cash on Delivery,14,265.05,9,1,32,1
+43,Female,Electronics,417.44,20.97,5,Net Banking,15,61.77,6,4,42,1
+51,Male,Shoes,154.99,19.53,9,UPI,4,495.9,0,2,17,0
+20,Female,Electronics,483.44,33.29,6,Debit Card,2,154.72,8,3,13,1
+67,Male,Books,315.92,10.78,7,Debit Card,4,319.32,4,2,49,0
+29,Female,Electronics,465.67,11.05,7,Debit Card,3,292.71,8,5,50,1
+18,Male,Beauty,339.67,36.46,4,UPI,9,393.62,1,1,13,1
+61,Male,Sports,157.08,25.01,4,Credit Card,7,150.45,7,5,17,1
+22,Female,Shoes,188.16,20.76,4,Debit Card,14,379.18,6,4,15,0
+47,Female,Home & Kitchen,277.48,8.46,5,Credit Card,13,194.34,10,3,26,1
+47,Male,Shoes,396.06,9.38,5,UPI,11,208.52,3,1,44,1
+34,Female,Beauty,162.4,0.53,8,UPI,15,337.99,2,2,28,1
+65,Female,Electronics,291.97,4.57,9,Net Banking,12,393.22,3,3,42,0
+64,Female,Beauty,176.08,27.84,2,Debit Card,3,335.1,3,2,45,0
+40,Male,Clothing,408.81,44.59,7,Net Banking,13,450.44,9,4,30,1
+32,Male,Clothing,236.03,14.36,1,Debit Card,15,146.15,9,1,43,1
+54,Female,Home & Kitchen,42.98,16.39,1,UPI,14,450.81,7,4,35,1
+38,Female,Beauty,87.2,5.78,4,UPI,8,69.78,3,4,22,0
+31,Female,Books,35.25,19.43,10,Cash on Delivery,9,331.47,4,4,10,1
+19,Male,Home & Kitchen,252.15,1.86,7,Cash on Delivery,13,276.08,1,4,11,0
+28,Male,Books,57.64,45.88,2,UPI,7,249.84,3,2,38,0
+68,Female,Home & Kitchen,61.5,33.66,2,UPI,6,158.9,6,5,33,1
+56,Female,Clothing,470.82,49.54,1,Credit Card,4,254.35,2,2,6,0
+55,Female,Home & Kitchen,436.96,44.14,10,Credit Card,5,85.08,0,3,37,0
+51,Female,Clothing,228.78,23.65,2,Net Banking,8,187.81,7,4,7,1
+55,Female,Electronics,492.97,25.98,7,Cash on Delivery,3,53.85,7,3,44,1
+67,Female,Books,5.09,9.53,9,Cash on Delivery,2,288.06,5,2,12,0
+51,Male,Beauty,308.92,23.1,6,UPI,3,52.41,6,4,7,1
+35,Female,Home & Kitchen,310.13,45.15,10,UPI,12,84.37,9,2,2,1
+47,Male,Clothing,231.43,2.54,2,Net Banking,7,47.31,10,4,1,1
+32,Female,Shoes,201.49,43.18,10,Cash on Delivery,8,193.75,1,2,23,1
+44,Female,Books,230.41,17.05,10,Credit Card,1,421.77,4,1,25,1
+68,Male,Home & Kitchen,210.41,44.98,9,Debit Card,13,453.91,6,5,18,0
+51,Male,Sports,366.59,47.04,7,Net Banking,7,40.59,8,5,44,0
+69,Male,Electronics,72.0,33.54,1,Debit Card,9,319.1,0,4,7,0
+55,Male,Electronics,102.83,33.22,9,Credit Card,12,343.77,2,1,3,1
+50,Female,Shoes,94.36,22.64,2,Credit Card,13,269.22,5,3,29,1
+41,Male,Clothing,134.92,41.78,4,Debit Card,14,335.16,6,1,10,1
+32,Female,Home & Kitchen,265.0,48.08,9,Net Banking,14,120.68,5,4,43,1
+47,Male,Books,60.05,38.75,4,Debit Card,15,247.37,0,1,5,0
+59,Female,Clothing,434.74,31.1,3,Net Banking,3,198.48,3,3,34,0
+68,Female,Electronics,152.19,30.34,1,Net Banking,15,49.41,5,4,8,1
+34,Female,Clothing,85.46,42.47,7,UPI,3,314.65,7,5,14,1
+22,Female,Electronics,339.43,27.06,6,Cash on Delivery,8,250.13,9,1,40,1
+46,Female,Clothing,23.85,40.19,10,Cash on Delivery,4,141.21,3,5,6,1
+21,Female,Shoes,311.88,25.44,4,Credit Card,14,239.47,6,5,1,1
+27,Male,Beauty,350.61,3.12,6,UPI,8,388.77,10,2,33,1
+34,Female,Shoes,111.38,19.2,6,Cash on Delivery,5,401.82,2,3,40,1
+27,Male,Shoes,25.77,22.22,4,Net Banking,14,326.52,7,1,11,1
+34,Male,Beauty,185.0,7.08,6,Net Banking,3,236.54,0,5,50,0
+37,Female,Beauty,53.8,5.12,10,Debit Card,15,290.0,3,5,24,0
+41,Male,Home & Kitchen,62.66,26.77,8,Debit Card,4,195.58,7,3,10,1
+22,Female,Books,130.86,4.26,3,Net Banking,14,67.65,9,5,44,1
+51,Male,Books,151.26,15.15,4,Net Banking,4,195.88,3,5,23,0
+23,Female,Home & Kitchen,267.34,37.23,10,Debit Card,8,267.51,1,5,16,0
+70,Male,Shoes,340.8,48.22,1,Cash on Delivery,6,301.42,1,5,37,0
+19,Female,Shoes,298.42,35.89,4,Credit Card,7,468.22,3,2,16,1
+30,Female,Electronics,78.44,49.63,10,Debit Card,9,389.78,3,2,44,0
+60,Female,Electronics,90.18,34.92,10,Cash on Delivery,15,80.24,1,4,31,1
+60,Female,Books,439.99,14.69,9,Cash on Delivery,6,91.22,6,1,6,1
+65,Male,Home & Kitchen,281.38,33.6,8,Cash on Delivery,3,54.74,5,3,30,1
+28,Female,Sports,435.62,35.11,4,UPI,15,370.4,10,4,37,1
+68,Male,Sports,188.92,18.59,7,UPI,13,354.53,2,2,1,1
+64,Male,Home & Kitchen,309.13,0.89,10,Cash on Delivery,3,493.25,7,2,42,0
+40,Male,Electronics,264.21,35.16,3,Net Banking,11,263.4,7,2,25,1
+33,Female,Books,162.97,1.09,9,UPI,3,414.08,0,4,46,1
+48,Male,Books,237.61,31.56,10,Debit Card,12,290.34,2,2,21,1
+28,Male,Electronics,253.73,8.18,4,UPI,10,437.67,4,4,35,0
+33,Male,Sports,104.38,28.28,2,Net Banking,2,361.91,1,2,38,0
+25,Female,Clothing,160.93,25.2,10,Credit Card,1,323.23,4,5,5,1
+21,Female,Clothing,396.75,0.68,5,UPI,11,284.74,10,5,49,0
+57,Male,Electronics,458.32,18.14,2,Cash on Delivery,10,362.87,9,1,50,1
+21,Female,Clothing,183.1,30.05,10,Cash on Delivery,1,212.73,2,2,12,0
+42,Female,Beauty,156.95,42.43,6,Cash on Delivery,4,52.81,8,1,5,1
+20,Male,Home & Kitchen,101.62,44.43,10,Credit Card,3,24.79,10,4,9,1
+49,Male,Home & Kitchen,340.85,24.19,1,Net Banking,5,242.12,0,1,44,1
+20,Female,Electronics,164.93,36.42,6,Debit Card,12,301.65,3,2,9,1
+44,Male,Shoes,493.94,15.82,4,Net Banking,9,44.03,9,4,35,0
+46,Female,Sports,166.21,17.11,3,Credit Card,12,147.02,5,4,1,1
+49,Female,Electronics,200.1,9.72,2,Cash on Delivery,13,164.41,8,5,47,0
+67,Female,Clothing,303.65,28.1,7,Net Banking,8,283.58,2,4,10,1
+68,Female,Sports,401.83,15.73,9,Debit Card,12,142.85,2,4,46,0
+36,Female,Shoes,237.41,4.22,3,Cash on Delivery,9,52.35,4,1,39,1
+38,Female,Clothing,214.21,34.25,6,Debit Card,13,86.6,6,4,36,1
+22,Male,Books,497.84,35.39,9,UPI,5,91.1,4,3,37,1
+35,Male,Beauty,10.19,18.0,2,Debit Card,8,422.13,10,5,48,1
+45,Female,Clothing,448.06,3.84,7,Cash on Delivery,4,145.74,7,5,35,1
+59,Female,Beauty,78.82,21.31,5,UPI,5,358.77,4,4,17,0
+39,Female,Sports,394.03,22.12,5,Cash on Delivery,15,286.08,6,1,13,1
+38,Male,Beauty,310.88,33.43,7,Cash on Delivery,12,488.63,5,5,6,1
+23,Female,Sports,174.21,15.77,9,UPI,3,140.05,9,5,37,0
+18,Male,Sports,437.57,34.13,4,Debit Card,5,83.39,1,3,48,0
+22,Female,Sports,11.39,43.57,9,Credit Card,12,30.76,2,4,32,1
+58,Female,Sports,117.21,11.87,10,Credit Card,3,124.28,10,5,11,1
+29,Male,Sports,285.61,48.95,9,Credit Card,5,343.62,10,5,17,1
+43,Male,Clothing,179.01,19.32,4,Credit Card,11,47.2,3,5,5,1
+63,Female,Sports,307.14,13.36,3,Net Banking,14,126.13,4,5,6,0
+51,Female,Clothing,16.93,21.08,2,Credit Card,5,428.38,8,1,10,1
+66,Female,Sports,62.65,4.72,9,UPI,6,293.56,5,2,33,1
+31,Male,Beauty,67.91,6.29,2,Credit Card,9,39.41,0,3,30,0
+43,Male,Books,98.7,20.72,6,Cash on Delivery,1,28.6,2,1,21,1
+62,Male,Sports,232.37,38.12,5,Credit Card,12,35.26,6,3,42,0
+44,Male,Shoes,377.3,45.02,5,Debit Card,10,471.23,7,5,17,1
+26,Male,Sports,453.24,33.24,4,UPI,14,425.69,6,3,27,1
+43,Male,Sports,418.51,5.26,6,UPI,6,423.25,4,4,3,1
+64,Female,Beauty,102.46,33.6,5,Net Banking,1,462.49,9,4,29,1
+39,Female,Home & Kitchen,223.37,31.77,4,Cash on Delivery,6,255.1,7,2,2,1
+64,Male,Beauty,103.71,40.29,9,UPI,2,127.44,8,2,29,1
+47,Female,Shoes,135.91,41.26,6,Debit Card,8,203.67,6,3,49,1
+60,Female,Home & Kitchen,254.26,43.41,10,Credit Card,11,360.84,10,1,36,1
+65,Male,Electronics,38.71,20.71,10,UPI,3,438.64,8,1,34,1
+34,Female,Electronics,113.0,34.89,10,Debit Card,10,220.37,0,5,37,0
+43,Male,Shoes,468.01,13.41,3,Credit Card,14,270.01,8,1,42,1
+53,Male,Beauty,235.73,49.97,10,Net Banking,6,466.23,2,2,1,1
+18,Female,Clothing,225.47,8.77,6,UPI,6,58.21,5,1,26,0
+25,Male,Shoes,12.21,0.51,1,UPI,15,431.84,7,5,1,1
+66,Male,Books,127.46,7.44,5,Debit Card,4,83.86,2,4,4,0
+52,Male,Home & Kitchen,433.81,38.79,10,Cash on Delivery,5,244.51,3,1,39,1
+69,Male,Home & Kitchen,86.49,22.34,6,Net Banking,2,113.12,6,1,14,1
+32,Male,Sports,210.49,22.38,8,Cash on Delivery,10,303.46,6,2,46,1
+64,Male,Electronics,12.09,47.75,9,UPI,15,281.49,3,3,18,0
+39,Male,Home & Kitchen,241.78,45.98,3,Cash on Delivery,10,193.1,8,4,34,1
+31,Male,Shoes,15.41,15.56,2,Credit Card,8,432.34,2,3,1,1
+43,Female,Home & Kitchen,410.71,10.45,4,Net Banking,10,331.61,7,5,22,1
+45,Female,Shoes,413.3,42.42,8,Cash on Delivery,7,362.0,7,5,16,1
+40,Female,Clothing,394.93,45.3,8,Credit Card,10,79.58,3,3,22,1
+31,Male,Sports,145.27,27.08,3,Debit Card,6,442.17,6,2,50,0
+41,Male,Electronics,419.43,31.47,4,Cash on Delivery,7,87.68,3,2,16,0
+19,Female,Home & Kitchen,273.78,12.85,3,Net Banking,12,115.28,0,2,28,0
+62,Female,Shoes,190.04,40.04,10,Credit Card,1,68.39,0,4,28,0
+43,Female,Beauty,314.54,31.61,2,Cash on Delivery,14,222.98,0,5,22,0
+31,Male,Electronics,11.11,25.18,4,Debit Card,14,444.42,1,5,6,1
+68,Female,Clothing,75.77,3.01,6,Cash on Delivery,5,129.96,5,5,25,1
+24,Female,Shoes,372.44,45.8,5,Credit Card,7,190.01,9,4,42,1
+20,Male,Books,125.86,30.77,3,Cash on Delivery,1,423.8,10,5,2,1
+64,Female,Books,301.01,9.63,2,Net Banking,2,310.82,4,3,7,0
+40,Male,Sports,195.63,30.32,9,UPI,9,377.05,10,1,17,1
+63,Male,Sports,428.13,33.87,1,Credit Card,12,110.93,1,4,35,0
+60,Male,Clothing,476.45,26.29,9,Credit Card,3,359.66,7,1,20,1
+64,Female,Clothing,442.36,35.91,1,Credit Card,6,117.67,8,3,44,1
+62,Female,Sports,138.96,29.07,7,Credit Card,15,493.72,6,2,2,1
+35,Male,Home & Kitchen,101.11,47.39,6,Cash on Delivery,7,282.14,8,2,7,1
+55,Female,Home & Kitchen,239.85,2.68,7,Net Banking,9,349.34,3,2,32,0
+52,Female,Shoes,8.63,5.31,3,Debit Card,5,63.61,6,4,49,0
+68,Female,Beauty,17.78,8.68,3,Net Banking,4,129.07,4,2,19,1
+32,Female,Shoes,278.88,34.51,1,Credit Card,11,74.17,4,4,12,1
+42,Male,Beauty,262.62,32.28,4,Cash on Delivery,12,198.13,2,4,9,1
+54,Female,Clothing,497.32,44.6,2,Cash on Delivery,15,145.65,8,1,27,1
+45,Male,Electronics,104.91,36.64,10,Credit Card,2,367.8,9,2,14,1
+27,Male,Shoes,132.76,25.42,8,Cash on Delivery,3,58.81,4,5,2,1
+56,Female,Shoes,61.2,49.59,3,Credit Card,15,377.27,5,2,21,1
+34,Male,Beauty,459.18,13.31,7,Net Banking,5,27.62,2,2,4,0
+56,Female,Clothing,390.02,41.66,7,UPI,11,105.0,9,2,21,1
+39,Female,Clothing,412.06,21.34,9,Cash on Delivery,15,397.02,6,5,48,1
+43,Male,Books,451.87,32.44,6,Credit Card,13,372.67,8,5,22,1
+61,Male,Beauty,264.83,36.36,1,Credit Card,2,240.78,8,4,49,1
+42,Male,Clothing,228.34,31.69,8,Cash on Delivery,13,29.74,9,5,2,1
+34,Male,Sports,168.54,7.03,1,Debit Card,4,306.9,9,4,17,1
+30,Female,Home & Kitchen,296.66,22.15,3,Credit Card,1,206.33,4,1,19,0
+37,Female,Books,229.87,28.07,5,Cash on Delivery,4,161.68,6,4,40,1
+42,Female,Sports,228.52,42.45,8,Credit Card,7,322.0,2,2,24,0
+21,Male,Electronics,468.78,22.18,9,Debit Card,15,221.12,5,3,20,1
+27,Male,Shoes,492.1,45.94,7,UPI,14,50.75,7,3,38,1
+20,Male,Books,399.26,22.02,9,Debit Card,12,458.4,7,2,12,1
+58,Female,Electronics,379.6,27.44,3,Net Banking,3,390.35,1,4,25,0
+62,Male,Shoes,341.88,39.81,5,Cash on Delivery,10,32.91,5,2,23,1
+35,Female,Home & Kitchen,87.21,29.15,10,Debit Card,8,264.91,6,5,50,1
+64,Male,Clothing,34.26,48.01,8,UPI,6,46.27,6,4,34,1
+53,Female,Sports,346.91,33.02,1,Credit Card,6,419.46,2,2,32,1
+64,Female,Beauty,365.75,26.14,8,Cash on Delivery,14,308.44,8,5,24,1
+39,Male,Sports,28.25,1.18,7,Debit Card,15,90.36,1,5,42,0
+51,Male,Home & Kitchen,464.39,20.69,1,UPI,1,15.27,10,4,25,0
+64,Female,Electronics,50.11,14.96,10,Debit Card,5,20.63,2,1,3,1
+25,Female,Beauty,146.52,37.41,10,Net Banking,3,256.15,10,1,25,0
+57,Male,Clothing,337.83,10.41,6,Cash on Delivery,15,368.51,1,5,28,1
+66,Male,Home & Kitchen,89.09,10.26,1,Credit Card,10,64.82,10,1,12,0
+61,Female,Beauty,32.43,9.48,2,UPI,15,114.54,8,5,26,0
+36,Male,Home & Kitchen,168.92,6.28,5,Debit Card,1,166.99,3,1,48,0
+59,Female,Home & Kitchen,384.16,15.55,2,Cash on Delivery,8,112.95,1,5,44,0
+58,Female,Clothing,209.77,44.3,10,Debit Card,7,198.71,2,5,8,1
+54,Male,Books,328.22,38.75,1,Cash on Delivery,7,282.01,3,5,5,1
+23,Male,Shoes,291.91,36.76,6,Net Banking,12,344.04,9,5,11,1
+69,Male,Beauty,16.0,39.87,8,Debit Card,10,482.07,5,3,42,0
+43,Male,Clothing,494.33,13.47,8,Net Banking,14,465.77,4,1,35,1
+51,Male,Home & Kitchen,25.51,44.37,8,UPI,10,287.21,2,5,27,0
+62,Female,Clothing,484.06,6.87,6,Net Banking,10,368.4,9,2,41,1
+23,Female,Books,277.18,16.82,3,Cash on Delivery,4,475.68,7,4,44,1
+54,Male,Shoes,481.76,29.34,1,UPI,13,46.32,7,2,38,1
+50,Male,Sports,61.8,5.15,2,Debit Card,15,7.79,6,2,19,1
+70,Male,Beauty,247.75,36.51,5,Debit Card,11,19.75,2,3,48,0
+39,Female,Shoes,88.9,19.36,10,Cash on Delivery,6,283.86,0,1,32,1
+38,Male,Electronics,30.23,39.22,5,Credit Card,13,382.6,4,3,46,1
+23,Male,Beauty,310.68,24.64,10,Credit Card,9,186.7,0,1,28,0
+23,Female,Shoes,107.85,9.04,1,Debit Card,15,274.89,5,5,36,1
+65,Female,Home & Kitchen,295.91,36.74,1,Cash on Delivery,14,260.6,10,3,18,1
+21,Male,Beauty,60.62,12.61,9,Credit Card,3,51.91,6,4,10,1
+47,Male,Beauty,169.33,24.54,2,Net Banking,15,164.19,4,1,32,0
+28,Male,Clothing,391.91,3.78,7,Debit Card,9,14.62,3,3,18,0
+47,Female,Home & Kitchen,221.34,30.89,10,Net Banking,4,59.8,1,4,12,0
+48,Male,Electronics,315.73,33.29,4,Cash on Delivery,5,406.87,4,2,8,1
+41,Male,Sports,325.49,18.93,7,Net Banking,7,415.56,8,5,33,1
+26,Male,Books,422.66,47.72,8,Credit Card,6,401.96,3,5,46,1
+20,Female,Shoes,165.84,43.71,5,Credit Card,10,364.78,1,2,38,1
+68,Female,Clothing,345.21,35.4,1,UPI,8,397.69,5,3,14,1
+48,Male,Shoes,481.0,35.68,4,Debit Card,8,337.14,7,2,2,1
+57,Male,Electronics,366.47,12.62,10,Cash on Delivery,8,336.57,1,4,9,1
+54,Female,Electronics,247.49,32.84,3,Debit Card,3,335.34,8,1,44,1
+53,Female,Beauty,317.21,9.91,10,Net Banking,15,259.45,6,3,5,0
+41,Female,Books,371.14,7.2,5,Cash on Delivery,14,184.86,1,1,34,0
+48,Female,Electronics,308.08,49.97,10,Cash on Delivery,10,366.45,10,2,19,1
+23,Female,Shoes,13.25,31.12,10,Credit Card,6,152.83,4,5,7,1
+19,Female,Home & Kitchen,101.41,21.55,6,Net Banking,7,273.74,4,1,39,0
+37,Female,Home & Kitchen,406.18,14.41,2,Credit Card,9,219.51,6,1,42,1
+45,Female,Beauty,139.96,30.2,7,Credit Card,10,141.93,4,5,17,1
+28,Female,Sports,367.12,2.48,3,UPI,10,487.47,10,1,26,1
+21,Male,Shoes,189.2,4.73,1,Credit Card,14,133.08,5,1,46,1
+32,Male,Shoes,263.33,1.64,10,Debit Card,12,158.1,8,5,27,1
+23,Male,Electronics,38.65,24.96,3,Cash on Delivery,15,84.99,2,5,43,1
+66,Female,Books,94.71,30.03,9,Credit Card,4,412.38,2,2,28,1
+47,Male,Shoes,478.81,3.12,10,Debit Card,5,295.36,7,2,20,1
+55,Female,Clothing,445.62,36.06,6,Net Banking,8,308.45,9,1,6,1
+68,Female,Sports,327.88,11.52,6,Cash on Delivery,1,411.18,5,3,8,1
+19,Male,Electronics,232.52,34.26,4,Net Banking,12,174.75,9,2,32,1
+32,Female,Clothing,339.5,49.09,8,Debit Card,6,100.85,2,2,19,1
+28,Male,Beauty,311.21,34.56,5,Net Banking,15,103.21,1,3,32,0
+25,Male,Home & Kitchen,286.43,44.16,7,Net Banking,4,367.65,1,3,19,0
+43,Male,Beauty,34.29,47.41,9,Net Banking,5,308.99,1,5,24,0
+68,Female,Home & Kitchen,318.24,24.34,5,Credit Card,11,107.14,4,2,24,1
+62,Male,Beauty,385.62,35.12,5,Credit Card,5,76.81,4,4,17,0
+61,Female,Shoes,497.07,42.6,4,Credit Card,2,64.74,0,4,18,1
+22,Male,Clothing,10.48,17.83,6,Cash on Delivery,8,315.76,1,1,12,1
+23,Male,Home & Kitchen,366.44,13.07,2,Debit Card,15,5.06,1,2,41,0
+43,Male,Electronics,288.04,47.33,3,Credit Card,2,14.07,3,4,23,0
+21,Female,Clothing,219.86,36.32,1,Net Banking,4,197.83,6,2,48,1
+36,Female,Electronics,68.15,10.98,2,Net Banking,12,347.22,2,2,18,1
+37,Female,Clothing,207.5,22.45,2,Net Banking,13,349.04,4,4,16,1
+50,Male,Clothing,180.42,39.82,8,Net Banking,5,217.91,10,2,16,1
+37,Male,Beauty,154.9,27.35,8,UPI,14,347.08,8,3,36,1
+66,Female,Home & Kitchen,366.79,32.5,2,Cash on Delivery,1,262.94,4,1,23,1
+29,Female,Home & Kitchen,351.86,37.69,6,Debit Card,6,488.58,8,5,22,0
+64,Female,Books,296.56,31.1,5,Debit Card,2,85.42,0,4,39,0
+18,Female,Clothing,469.64,27.0,3,Credit Card,14,302.33,8,5,33,1
+43,Female,Shoes,178.18,37.48,5,UPI,5,248.16,4,1,24,1
+31,Female,Shoes,125.68,36.38,5,Debit Card,15,101.26,7,3,20,0
+55,Male,Electronics,329.67,31.49,5,Cash on Delivery,6,376.25,4,3,33,1
+54,Female,Electronics,103.41,17.99,3,Net Banking,11,141.38,5,3,31,0
+28,Male,Beauty,160.93,20.29,3,Credit Card,8,193.95,7,3,40,0
+53,Male,Clothing,116.18,48.52,4,Cash on Delivery,9,190.54,1,4,8,1
+30,Female,Electronics,39.23,5.62,7,Debit Card,13,125.88,2,4,10,1
+60,Female,Electronics,414.61,13.43,2,UPI,15,218.2,10,2,1,1
+20,Male,Sports,131.0,24.62,10,Credit Card,12,239.31,8,2,21,1
+50,Female,Clothing,239.15,41.84,4,Debit Card,6,373.39,4,1,25,1
+23,Female,Beauty,26.44,8.18,4,Credit Card,5,383.71,4,2,32,1
+67,Male,Electronics,351.17,13.85,1,Debit Card,12,83.49,8,1,46,1
+27,Male,Beauty,168.63,3.29,10,Net Banking,4,298.42,9,1,46,1
+22,Male,Home & Kitchen,373.64,35.3,8,UPI,2,448.62,2,1,10,0
+40,Female,Beauty,209.14,11.91,1,Net Banking,2,58.85,3,3,48,0
+27,Male,Shoes,101.9,19.43,8,Debit Card,7,239.09,6,5,9,1
+61,Female,Shoes,259.02,22.19,7,Cash on Delivery,5,376.42,1,5,20,0
+19,Male,Beauty,69.6,44.57,9,Net Banking,7,307.69,7,4,48,0
+30,Male,Shoes,223.07,20.57,8,Cash on Delivery,13,54.79,4,1,20,0
+57,Male,Home & Kitchen,162.07,7.26,5,Debit Card,11,201.32,0,3,40,0
+19,Female,Clothing,456.42,26.22,8,UPI,1,256.08,2,2,7,1
+37,Female,Shoes,35.16,48.15,10,Cash on Delivery,1,497.94,8,2,11,1
+18,Male,Shoes,348.54,30.38,3,Debit Card,5,93.41,4,4,21,1
+54,Male,Beauty,95.46,49.17,10,Cash on Delivery,2,491.3,7,4,38,1
+26,Male,Home & Kitchen,162.93,42.06,7,Net Banking,8,191.19,0,1,47,1
+34,Female,Books,210.68,1.8,4,Debit Card,14,104.16,6,1,19,0
+26,Male,Books,454.47,32.92,5,Net Banking,15,209.98,6,2,46,1
+28,Female,Books,125.08,14.34,9,Credit Card,3,308.93,7,2,15,0
+32,Male,Books,50.2,27.98,7,Debit Card,1,110.68,2,2,6,0
+41,Male,Clothing,162.75,13.97,4,Cash on Delivery,13,149.26,0,2,10,1
+55,Male,Beauty,56.81,17.44,6,Credit Card,2,428.0,10,5,46,0
+52,Male,Beauty,68.66,46.16,10,Net Banking,10,499.51,8,1,16,1
+47,Male,Sports,289.06,10.33,7,Net Banking,10,162.5,0,1,45,1
+48,Male,Home & Kitchen,35.15,43.71,10,Cash on Delivery,7,78.68,10,2,11,1
+66,Female,Books,20.31,1.52,9,Credit Card,6,397.62,5,3,35,0
+22,Male,Clothing,358.63,4.54,4,UPI,12,302.23,8,2,8,1
+61,Female,Home & Kitchen,184.02,42.73,10,Cash on Delivery,8,54.7,1,4,28,1
+67,Male,Books,67.06,31.53,3,Net Banking,7,473.65,3,3,3,0
+31,Male,Clothing,130.54,37.36,8,Debit Card,14,43.63,1,4,2,1
+70,Female,Home & Kitchen,322.83,10.47,1,Credit Card,10,314.55,3,3,14,0
+28,Male,Beauty,141.39,26.85,9,UPI,13,214.85,1,4,29,0
+26,Female,Beauty,249.79,36.86,1,Debit Card,8,280.53,0,2,47,1
+51,Female,Electronics,65.24,31.37,2,Credit Card,3,110.54,10,2,3,0
+29,Male,Shoes,296.11,23.58,8,Cash on Delivery,6,345.61,2,3,1,0
+52,Female,Books,161.46,47.99,9,Cash on Delivery,13,480.06,7,4,15,1
+52,Female,Sports,315.35,33.81,7,Credit Card,7,231.92,4,5,20,1
+18,Male,Home & Kitchen,405.16,45.39,3,UPI,15,263.86,3,3,22,0
+57,Female,Sports,307.76,36.49,7,Credit Card,10,123.71,4,3,34,0
+39,Male,Electronics,151.4,36.77,6,Debit Card,11,446.47,5,1,50,1
+46,Male,Shoes,131.59,4.0,2,Debit Card,1,485.73,5,3,33,0
+25,Male,Home & Kitchen,167.07,17.97,3,Cash on Delivery,1,394.22,4,5,9,1
+28,Male,Clothing,86.49,42.92,10,Credit Card,7,273.67,10,2,3,1
+58,Female,Books,94.68,11.63,10,Cash on Delivery,13,478.61,5,4,2,1
+54,Male,Shoes,396.39,5.78,5,UPI,11,81.16,8,1,4,1
+31,Male,Beauty,195.44,16.31,10,Debit Card,13,241.85,4,4,16,1
+47,Female,Electronics,220.82,11.02,4,Net Banking,3,271.11,5,2,33,1
+52,Male,Shoes,299.05,46.26,2,Net Banking,3,248.5,3,3,9,1
+38,Male,Books,296.88,43.4,4,Credit Card,15,402.2,2,5,40,1
+54,Female,Shoes,38.35,24.98,8,Credit Card,5,336.85,5,1,38,1
+22,Female,Books,416.61,3.07,5,Net Banking,15,67.7,10,5,18,1
+36,Female,Beauty,92.78,35.73,5,Credit Card,11,176.49,10,5,16,0
+31,Female,Home & Kitchen,362.92,31.17,10,Debit Card,6,172.84,4,5,8,0
+43,Female,Clothing,387.47,48.53,3,UPI,2,284.99,3,5,23,1
+21,Female,Beauty,358.88,27.95,8,UPI,3,149.27,4,2,36,0
+42,Female,Clothing,291.59,16.82,6,Cash on Delivery,6,63.05,6,5,3,0
+62,Male,Home & Kitchen,12.23,25.95,2,Debit Card,3,328.57,0,5,15,0
+59,Female,Shoes,183.39,48.96,2,Credit Card,14,426.26,0,2,38,1
+42,Female,Clothing,304.4,34.82,9,Credit Card,5,466.15,10,4,33,1
+35,Female,Electronics,196.79,33.6,7,Cash on Delivery,9,486.43,0,2,18,1
+57,Male,Electronics,432.42,12.03,10,Cash on Delivery,12,391.65,1,3,23,1
+25,Male,Books,157.86,37.18,9,Credit Card,3,74.15,8,2,43,1
+56,Female,Beauty,150.3,37.51,6,Credit Card,12,427.29,4,4,3,1
+57,Female,Home & Kitchen,136.67,15.86,5,Debit Card,11,202.98,8,3,30,0
+31,Female,Books,169.73,24.19,1,Cash on Delivery,13,366.31,4,3,45,0
+49,Male,Beauty,280.92,14.73,6,Debit Card,13,267.98,6,1,17,1
+68,Male,Beauty,354.97,12.94,6,Credit Card,6,415.16,5,5,50,0
+55,Female,Books,332.97,1.29,3,Net Banking,11,215.63,1,3,32,0
+50,Male,Sports,404.82,14.26,3,Net Banking,5,35.59,2,3,46,0
+40,Female,Beauty,443.53,27.7,3,Credit Card,5,280.63,4,4,7,0
+32,Male,Sports,408.96,0.08,3,Cash on Delivery,11,89.79,3,3,39,0
+50,Male,Electronics,14.38,14.16,7,Net Banking,14,482.93,10,4,14,0
+42,Female,Electronics,369.28,44.07,10,Cash on Delivery,14,265.85,5,5,15,1
+34,Female,Beauty,108.16,29.68,2,Net Banking,6,279.01,7,1,44,1
+50,Female,Electronics,70.8,30.39,10,Cash on Delivery,6,454.1,7,1,12,1
+64,Female,Home & Kitchen,321.05,20.17,10,Net Banking,1,314.17,2,5,8,1
+19,Male,Sports,163.27,33.82,2,Cash on Delivery,11,154.85,3,5,16,0
+31,Male,Sports,33.27,9.5,3,Debit Card,15,151.57,0,2,41,0
+70,Male,Beauty,73.13,40.94,10,Cash on Delivery,9,253.28,1,3,34,0
+57,Female,Electronics,5.46,5.83,7,Debit Card,5,433.97,8,3,46,0
+57,Male,Clothing,452.1,32.8,3,Debit Card,1,398.39,9,3,24,1
+68,Female,Books,17.19,17.06,7,Credit Card,8,481.56,9,4,29,1
+56,Male,Books,108.68,37.38,9,Debit Card,7,40.58,1,2,16,0
+68,Female,Sports,211.05,27.49,10,UPI,7,137.82,5,3,5,0
+23,Female,Beauty,181.5,22.62,4,Debit Card,15,44.7,6,4,5,1
+23,Male,Beauty,456.3,8.47,7,Cash on Delivery,14,376.78,5,4,30,0
+20,Female,Home & Kitchen,24.94,31.84,9,Debit Card,5,74.71,7,1,50,1
+24,Female,Shoes,258.55,48.74,8,Cash on Delivery,1,54.44,8,4,50,1
+68,Male,Shoes,341.84,41.28,8,Cash on Delivery,9,283.03,7,5,5,1
+25,Female,Sports,466.19,3.0,9,UPI,11,208.68,4,4,43,1
+59,Female,Books,312.08,18.81,5,Debit Card,9,358.98,7,5,13,0
+69,Female,Home & Kitchen,402.86,46.28,5,Debit Card,8,246.07,9,5,35,0
+32,Male,Home & Kitchen,46.44,25.15,3,Net Banking,5,215.54,9,1,49,0
+64,Male,Home & Kitchen,196.04,33.11,5,Net Banking,14,215.62,8,1,25,1
+46,Female,Sports,190.1,45.63,8,Credit Card,3,436.58,7,4,50,1
+50,Male,Shoes,443.71,43.69,5,Cash on Delivery,8,200.64,1,1,14,1
+69,Female,Books,79.93,25.09,4,UPI,1,170.03,1,1,44,0
+47,Female,Home & Kitchen,80.18,21.88,8,Net Banking,3,172.57,2,3,46,0
+56,Female,Books,167.64,16.98,7,Debit Card,12,102.32,6,4,26,0
+44,Female,Electronics,31.96,35.95,6,Credit Card,11,431.04,8,4,18,1
+53,Female,Beauty,95.32,14.35,5,UPI,7,77.58,7,4,20,0
+46,Male,Beauty,482.78,12.49,5,Debit Card,14,454.76,8,1,34,1
+55,Female,Books,216.95,17.81,10,Debit Card,15,145.32,5,1,7,1
+50,Male,Clothing,317.85,8.86,2,Cash on Delivery,4,450.22,0,5,47,0
+54,Male,Clothing,364.43,34.76,4,Cash on Delivery,7,396.46,3,2,10,1
+44,Female,Sports,186.65,30.81,8,Net Banking,12,293.08,5,2,15,1
+50,Female,Sports,77.88,24.14,8,Net Banking,11,336.39,5,2,17,1
+21,Male,Beauty,107.26,19.52,1,Debit Card,13,166.29,7,3,11,0
+39,Male,Electronics,160.07,45.45,2,Debit Card,14,289.24,0,1,34,0
+19,Male,Shoes,319.85,1.46,5,Net Banking,5,149.74,10,5,27,0
+27,Female,Shoes,202.15,38.46,9,Net Banking,6,204.13,1,5,21,0
+22,Male,Sports,8.37,45.1,10,Debit Card,14,383.51,1,2,31,1
+27,Female,Electronics,264.09,22.32,7,UPI,7,125.75,5,3,50,1
+50,Female,Sports,461.15,27.53,10,Debit Card,15,420.23,10,3,4,0
+55,Female,Shoes,406.98,47.22,5,UPI,13,191.06,6,2,41,0
+30,Male,Books,413.48,10.61,1,UPI,10,268.42,1,2,49,1
+48,Female,Sports,398.55,26.01,6,Debit Card,12,471.27,4,1,17,1
+64,Female,Home & Kitchen,165.25,23.74,8,Credit Card,7,342.22,5,3,49,1
+53,Female,Books,383.77,12.92,7,Net Banking,7,324.57,3,5,48,0
+62,Female,Sports,75.86,40.93,2,Cash on Delivery,7,357.25,0,2,20,0
+41,Female,Beauty,330.57,44.98,5,Debit Card,11,459.47,2,1,25,1
+69,Male,Sports,322.58,39.1,4,UPI,13,128.01,9,5,40,1
+32,Female,Beauty,17.66,9.77,9,Debit Card,13,308.55,8,3,23,1
+46,Female,Electronics,395.05,4.34,10,Net Banking,7,203.19,5,2,15,1
+25,Male,Shoes,452.11,30.27,1,UPI,3,10.87,1,2,33,1
+22,Female,Books,137.37,2.85,6,Cash on Delivery,15,67.02,8,1,19,1
+46,Male,Books,407.13,33.64,3,Cash on Delivery,12,165.87,3,1,15,1
+64,Female,Clothing,45.79,26.52,9,Cash on Delivery,3,284.67,10,3,41,1
+21,Male,Clothing,301.98,33.14,5,Credit Card,7,441.33,7,2,5,1
+29,Male,Shoes,245.4,29.51,6,UPI,14,396.6,9,1,16,1
+62,Female,Clothing,275.23,21.14,9,UPI,2,278.9,6,2,45,0
+19,Female,Books,463.47,10.04,9,Credit Card,14,41.57,10,3,48,1
+44,Female,Sports,436.3,15.29,8,UPI,2,146.52,2,2,32,0
+48,Male,Electronics,393.62,26.23,9,Credit Card,3,186.52,7,5,22,1
+68,Male,Electronics,140.48,32.59,4,Debit Card,14,312.75,3,2,43,0
+68,Male,Shoes,456.35,38.97,6,Net Banking,4,37.14,1,4,32,0
+53,Female,Clothing,53.27,38.36,5,Cash on Delivery,6,267.45,10,4,13,1
+53,Male,Sports,427.4,48.63,5,Credit Card,13,451.22,4,3,38,1
+43,Male,Electronics,167.44,14.29,4,Credit Card,8,354.19,0,3,26,1
+60,Female,Electronics,31.62,3.56,2,Credit Card,10,399.55,7,3,17,1
+44,Male,Home & Kitchen,336.33,17.28,6,Debit Card,10,342.43,7,5,5,0
+22,Male,Home & Kitchen,119.48,37.16,9,Credit Card,7,107.26,2,5,49,0
+37,Female,Books,125.57,21.91,1,Net Banking,4,59.69,0,2,33,0
+28,Male,Electronics,156.49,40.89,7,Net Banking,2,415.6,3,1,27,1
+27,Female,Shoes,36.52,27.47,6,Cash on Delivery,2,349.27,8,4,5,1
+57,Female,Beauty,92.68,46.49,3,Debit Card,15,289.66,8,4,37,0
+55,Female,Beauty,7.54,47.39,1,Net Banking,4,98.7,0,4,7,0
+23,Female,Sports,225.48,3.47,4,UPI,6,303.66,10,2,48,1
+25,Female,Electronics,46.71,22.82,9,UPI,3,20.5,6,2,18,1
+40,Male,Electronics,342.91,30.48,2,UPI,6,63.83,5,3,31,1
+64,Male,Books,121.63,12.79,3,Credit Card,5,159.39,6,1,6,0
+43,Female,Electronics,472.07,20.35,2,Credit Card,5,224.65,6,3,2,0
+63,Female,Shoes,436.27,33.88,2,UPI,2,64.68,7,2,13,1
+60,Male,Home & Kitchen,148.27,11.34,10,Cash on Delivery,8,64.37,7,5,42,0
+29,Female,Electronics,392.69,30.1,8,Cash on Delivery,5,364.32,9,3,11,1
+43,Female,Electronics,402.61,34.87,3,Credit Card,11,287.01,10,2,26,1
+30,Female,Books,493.35,4.52,7,UPI,2,269.2,1,2,21,0
+57,Male,Clothing,300.93,24.88,8,Cash on Delivery,7,228.96,3,5,2,1
+35,Male,Books,45.57,13.15,3,Credit Card,13,488.39,3,5,40,1
+42,Female,Books,325.18,36.22,2,UPI,15,29.65,10,5,20,1
+50,Female,Shoes,314.36,9.48,8,Debit Card,9,94.41,9,1,17,0
+64,Male,Sports,320.98,44.61,3,UPI,9,325.52,7,2,16,1
+57,Male,Electronics,157.04,21.55,7,UPI,1,72.5,2,5,42,0
+60,Female,Books,430.54,9.9,1,Net Banking,7,296.74,2,1,5,1
+29,Female,Books,479.94,21.9,6,Net Banking,9,286.04,1,4,14,0
+61,Male,Clothing,112.77,20.44,9,Debit Card,6,485.65,0,4,24,0
+53,Male,Books,48.64,21.45,3,Debit Card,1,442.28,7,4,4,1
+65,Male,Beauty,101.29,29.28,7,UPI,2,473.05,8,2,48,1
+21,Female,Sports,411.17,26.06,6,Cash on Delivery,4,61.23,8,1,24,0
+22,Male,Electronics,339.94,7.49,8,Debit Card,14,434.73,10,1,47,1
+54,Female,Electronics,319.84,3.28,3,UPI,4,68.9,7,4,9,1
+25,Male,Clothing,203.89,36.47,3,Credit Card,2,318.3,4,3,3,0
+59,Male,Shoes,291.02,27.99,4,Net Banking,8,361.44,0,4,9,1
+66,Male,Electronics,157.4,17.95,3,Cash on Delivery,2,84.62,8,2,18,1
+45,Male,Beauty,241.21,40.42,9,UPI,3,318.17,5,4,36,1
+48,Female,Electronics,397.57,19.4,4,Credit Card,14,30.97,6,4,19,1
+26,Female,Beauty,490.71,39.8,6,Net Banking,4,150.17,7,1,24,1
+68,Male,Sports,466.58,15.29,8,Credit Card,9,460.97,4,4,4,0
+46,Female,Sports,467.26,3.64,8,UPI,10,90.01,5,5,9,0
+31,Male,Home & Kitchen,204.1,46.63,5,Debit Card,1,37.31,6,5,33,0
+57,Male,Home & Kitchen,237.05,19.73,5,Net Banking,8,224.62,6,3,1,1
+58,Male,Beauty,354.29,39.63,6,Credit Card,12,426.06,1,2,35,1
+39,Male,Shoes,461.49,13.96,10,Debit Card,15,42.95,10,2,10,1
+28,Female,Electronics,75.29,32.32,7,Cash on Delivery,14,180.99,0,1,12,1
+40,Male,Books,155.6,43.67,10,UPI,5,450.39,7,2,18,0
+18,Male,Electronics,73.93,2.08,7,UPI,7,63.49,4,3,14,0
+63,Female,Home & Kitchen,307.94,41.53,4,Net Banking,8,158.78,9,5,10,0
+54,Male,Books,156.62,28.57,6,Credit Card,15,390.32,1,1,10,0
+38,Male,Beauty,166.42,30.37,7,Cash on Delivery,5,273.89,2,5,18,1
+43,Male,Books,40.1,26.16,5,Net Banking,8,417.0,5,3,24,1
+63,Female,Electronics,178.15,43.72,5,Net Banking,10,60.24,9,1,1,0
+53,Male,Electronics,431.94,2.17,2,Credit Card,11,460.67,5,4,30,1
+40,Female,Shoes,120.37,13.05,7,Cash on Delivery,8,467.78,7,2,15,1
+18,Male,Clothing,349.12,43.79,6,Credit Card,9,81.88,4,3,8,1
+68,Male,Books,316.67,37.62,1,UPI,2,21.77,4,1,35,0
+57,Female,Home & Kitchen,432.42,0.88,4,Debit Card,3,494.97,6,5,18,0
+32,Male,Home & Kitchen,70.48,25.85,3,UPI,1,243.71,9,1,41,1
+38,Male,Clothing,488.91,26.48,3,UPI,4,288.18,4,4,16,1
+64,Female,Electronics,293.4,20.04,7,Net Banking,15,309.87,8,3,21,1
+26,Female,Shoes,497.76,14.87,10,UPI,15,395.89,5,1,15,1
+70,Female,Shoes,456.2,34.09,4,Cash on Delivery,5,406.93,6,3,5,1
+26,Female,Home & Kitchen,114.65,10.39,8,UPI,11,100.99,7,3,45,0
+27,Female,Shoes,32.8,39.95,9,Cash on Delivery,1,122.14,4,5,7,1
+69,Male,Sports,131.54,40.15,3,Credit Card,8,439.03,10,2,48,1
+70,Female,Clothing,266.14,20.76,5,Net Banking,2,410.66,3,4,7,1
+43,Male,Electronics,89.94,14.18,4,Cash on Delivery,1,310.72,7,1,27,1
+58,Male,Sports,87.89,14.19,10,UPI,2,497.38,9,2,25,1
+52,Male,Clothing,233.98,24.11,6,Net Banking,15,368.92,8,5,22,1
+69,Female,Beauty,21.47,35.98,10,Net Banking,13,111.84,0,2,48,1
+42,Female,Books,65.33,17.94,4,Cash on Delivery,5,424.09,2,3,13,1
+43,Male,Home & Kitchen,210.85,30.5,8,Cash on Delivery,9,210.29,3,3,17,0
+28,Female,Shoes,36.25,19.12,3,Debit Card,9,22.9,6,4,41,0
+55,Female,Beauty,201.39,15.23,5,Debit Card,2,164.1,5,1,44,0
+19,Female,Shoes,239.63,1.24,1,Net Banking,2,382.96,9,1,13,1
+24,Female,Sports,228.38,0.2,6,Debit Card,3,480.3,9,5,26,1
+35,Male,Electronics,435.24,11.36,5,UPI,7,141.69,10,4,9,0
+44,Male,Electronics,267.38,20.32,8,Credit Card,11,127.03,0,1,5,1
+51,Female,Electronics,236.65,42.56,9,Net Banking,3,283.99,3,3,39,0
+44,Male,Shoes,208.3,39.92,8,Credit Card,1,406.78,5,4,33,0
+34,Female,Beauty,409.72,13.36,8,Debit Card,14,374.53,2,2,4,1
+60,Female,Electronics,448.05,12.23,3,Cash on Delivery,14,282.18,1,4,28,0
+61,Male,Beauty,427.36,11.37,4,Net Banking,14,317.54,1,4,26,0
+68,Male,Shoes,338.41,16.96,4,Debit Card,6,124.84,9,1,4,1
+41,Male,Sports,72.99,24.91,5,UPI,3,219.12,3,5,16,0
+42,Female,Beauty,142.05,21.93,9,Net Banking,1,131.41,0,5,37,0
+24,Male,Sports,27.8,10.91,9,Net Banking,14,442.79,9,1,22,1
+69,Female,Shoes,465.76,6.52,10,Cash on Delivery,13,60.71,1,1,36,0
+23,Male,Shoes,332.1,0.63,1,Net Banking,4,341.47,9,1,38,1
+70,Male,Home & Kitchen,374.45,7.7,8,Cash on Delivery,13,133.84,1,5,35,0
+41,Female,Shoes,159.23,35.27,1,Debit Card,1,240.41,3,1,25,1
+50,Female,Shoes,423.6,12.18,2,UPI,1,153.21,3,2,8,1
+66,Female,Clothing,133.5,23.43,7,UPI,12,165.01,0,2,17,0
+46,Female,Electronics,5.81,29.57,8,Net Banking,2,133.89,6,3,18,1
+60,Female,Home & Kitchen,191.33,44.34,1,Net Banking,10,377.63,6,2,50,1
+39,Female,Books,287.53,44.44,3,Debit Card,8,186.03,9,4,12,1
+43,Female,Home & Kitchen,241.96,37.29,7,Cash on Delivery,2,364.55,10,3,33,0
+45,Female,Home & Kitchen,431.73,1.76,9,UPI,11,230.75,9,2,23,1
+67,Male,Books,57.18,28.75,8,Cash on Delivery,2,275.89,9,4,12,0
+38,Female,Clothing,279.14,39.33,8,Debit Card,15,273.93,0,2,11,1
+66,Female,Sports,258.92,0.86,9,UPI,11,488.05,10,4,13,1
+24,Male,Shoes,144.29,27.48,10,UPI,11,186.7,7,1,35,1
+34,Female,Electronics,412.0,42.89,3,Credit Card,10,107.8,9,4,27,1
+37,Male,Beauty,377.66,23.71,8,Debit Card,10,456.34,6,1,25,1
+58,Male,Books,367.77,0.21,1,Debit Card,8,91.55,6,4,40,0
+66,Female,Sports,438.72,0.55,8,Credit Card,12,418.04,10,4,3,1
+37,Male,Books,362.78,20.83,7,Cash on Delivery,6,79.36,5,2,49,0
+39,Female,Shoes,119.76,7.75,8,Credit Card,12,331.07,3,4,25,0
+45,Male,Clothing,354.25,33.22,1,Debit Card,11,79.52,10,2,45,1
+57,Male,Books,157.31,35.44,6,Cash on Delivery,4,461.93,7,4,10,1
+66,Male,Shoes,124.88,8.89,7,UPI,3,284.68,1,5,17,0
+24,Female,Shoes,41.14,44.43,5,Credit Card,1,167.99,6,3,3,1
+18,Female,Clothing,373.29,22.1,5,Cash on Delivery,11,74.46,2,2,45,0
+49,Male,Home & Kitchen,356.95,7.14,7,Cash on Delivery,3,188.74,2,2,22,0
+30,Male,Home & Kitchen,121.08,38.21,3,Cash on Delivery,12,353.98,6,1,38,1
+47,Female,Electronics,375.94,39.5,6,Credit Card,14,195.55,2,5,14,1
+40,Female,Electronics,459.33,31.96,7,UPI,9,126.82,4,1,27,1
+68,Male,Home & Kitchen,58.47,42.67,1,Cash on Delivery,5,290.82,7,5,42,1
+36,Male,Sports,120.16,36.87,2,Credit Card,13,211.82,3,5,20,0
+49,Female,Beauty,376.38,44.11,4,Debit Card,6,87.07,6,4,48,1
+47,Female,Shoes,140.88,21.69,8,Credit Card,5,81.22,6,1,18,0
+46,Female,Beauty,314.21,37.38,10,Credit Card,1,355.19,1,3,13,1
+66,Female,Shoes,45.18,49.99,6,Credit Card,10,487.46,7,5,42,1
+62,Female,Home & Kitchen,228.84,36.25,1,Cash on Delivery,1,120.38,9,5,6,1
+46,Male,Electronics,370.85,5.71,10,Credit Card,4,387.71,9,2,10,0
+47,Female,Sports,344.82,25.92,5,Debit Card,15,48.37,8,4,37,0
+33,Male,Electronics,408.46,29.37,7,Cash on Delivery,3,193.88,5,3,29,0
+57,Female,Beauty,439.34,8.71,6,Debit Card,11,255.81,4,5,6,0
+36,Male,Electronics,387.73,48.14,9,Net Banking,8,138.03,0,2,39,1
+35,Female,Home & Kitchen,337.44,8.78,8,Credit Card,12,267.14,0,1,11,0
+18,Female,Sports,20.7,8.88,4,Cash on Delivery,12,441.89,8,5,48,1
+31,Male,Beauty,269.81,45.76,5,Cash on Delivery,7,472.5,3,2,25,1
+68,Male,Sports,23.66,23.26,7,Credit Card,15,54.78,0,1,44,1
+64,Female,Shoes,404.99,3.16,8,UPI,11,139.56,10,4,44,1
+67,Female,Electronics,163.76,29.91,5,UPI,15,489.67,9,1,30,1
+19,Female,Sports,283.4,30.09,9,Debit Card,7,138.86,2,5,20,0
+45,Female,Clothing,143.33,3.23,10,Credit Card,15,347.89,5,3,37,1
+66,Female,Electronics,392.34,48.63,4,Credit Card,8,130.46,10,1,16,1
+67,Male,Shoes,443.82,27.2,4,Net Banking,14,181.4,10,3,31,1
+47,Male,Sports,202.33,27.99,8,UPI,10,99.68,7,3,29,1
+55,Female,Beauty,432.15,26.01,1,UPI,7,428.87,9,1,6,1
+68,Male,Shoes,137.2,30.54,8,Credit Card,10,441.91,1,4,29,1
+21,Male,Clothing,269.66,13.21,5,Debit Card,2,151.97,7,1,32,1
+18,Male,Sports,430.09,14.36,1,Credit Card,4,412.68,0,2,9,0
+25,Female,Books,166.31,25.57,4,Debit Card,15,182.33,10,3,37,1
+46,Male,Books,477.25,40.33,2,UPI,11,54.01,1,5,23,0
+56,Female,Home & Kitchen,65.33,2.49,4,Net Banking,6,380.25,7,3,16,0
+20,Male,Electronics,14.05,30.17,8,Cash on Delivery,3,300.24,6,5,18,0
+49,Female,Beauty,452.55,40.34,5,UPI,15,140.82,4,2,19,1
+27,Male,Home & Kitchen,38.98,7.85,1,Debit Card,3,130.23,9,2,44,0
+27,Female,Sports,495.99,0.75,7,Credit Card,15,487.93,1,2,2,0
+36,Female,Books,475.94,15.64,1,UPI,6,431.94,8,1,10,1
+63,Male,Books,72.83,29.41,9,Net Banking,1,405.85,4,3,12,1
+51,Female,Books,271.1,6.91,3,Debit Card,14,68.37,7,5,46,1
+50,Female,Sports,96.54,21.31,3,Credit Card,1,378.82,3,2,18,0
+40,Female,Books,216.94,27.62,6,Cash on Delivery,5,111.2,8,2,19,1
+45,Female,Shoes,35.41,29.94,10,Debit Card,1,488.81,9,5,38,1
+49,Female,Sports,115.84,13.72,6,Credit Card,10,30.78,6,3,37,1
+67,Female,Beauty,184.82,20.0,6,Cash on Delivery,8,179.31,1,3,27,0
+24,Female,Home & Kitchen,222.13,38.92,1,Credit Card,2,217.18,2,5,48,0
+46,Female,Beauty,488.86,47.06,5,Cash on Delivery,6,412.98,1,4,14,0
+25,Male,Clothing,404.89,43.09,6,Cash on Delivery,10,384.28,4,3,45,1
+18,Male,Books,370.02,28.21,8,Cash on Delivery,10,190.62,1,5,34,0
+20,Female,Clothing,270.84,20.51,1,Credit Card,5,284.95,4,5,2,1
+41,Female,Electronics,420.8,16.65,5,Cash on Delivery,10,418.62,8,2,44,1
+40,Male,Electronics,172.96,6.25,3,Debit Card,12,14.01,1,5,33,1
+25,Male,Clothing,355.91,5.33,2,Net Banking,12,402.08,8,1,19,1
+64,Male,Sports,496.92,34.42,8,Net Banking,4,473.71,6,2,27,1
+54,Female,Beauty,160.74,12.99,7,Cash on Delivery,1,20.87,6,2,48,1
+20,Male,Clothing,338.64,12.73,10,Net Banking,14,27.56,4,3,30,0
+68,Female,Electronics,422.94,49.91,7,Net Banking,14,175.53,7,4,7,1
+50,Female,Clothing,458.32,9.4,5,Cash on Delivery,3,48.45,6,3,27,1
+45,Male,Sports,360.38,7.4,9,Cash on Delivery,13,242.24,5,1,21,1
+64,Female,Clothing,145.39,4.93,5,Debit Card,12,365.71,1,2,7,1
+25,Female,Beauty,166.51,28.99,2,UPI,4,285.62,5,2,48,1
+51,Female,Home & Kitchen,15.28,31.39,3,Credit Card,2,102.23,1,5,25,0
+52,Female,Sports,381.64,18.26,4,Cash on Delivery,12,329.13,0,4,38,1
+49,Male,Electronics,26.16,26.77,5,Cash on Delivery,2,344.0,8,4,18,1
+41,Male,Beauty,433.0,39.42,3,Net Banking,2,466.56,4,5,33,1
+31,Female,Clothing,63.74,40.91,7,Debit Card,11,77.66,9,1,33,1
+49,Female,Clothing,90.08,47.9,5,Net Banking,1,347.71,9,4,32,1
+63,Male,Home & Kitchen,240.88,41.21,5,Cash on Delivery,10,456.16,3,2,25,1
+60,Female,Electronics,370.25,28.24,6,Cash on Delivery,2,253.27,10,1,14,1
+33,Male,Electronics,73.81,8.98,7,Net Banking,6,184.09,7,3,38,0
+21,Female,Shoes,222.84,4.99,10,Cash on Delivery,3,89.52,4,3,38,1
+69,Female,Electronics,244.01,2.73,10,UPI,10,434.06,6,1,4,1
+54,Male,Home & Kitchen,110.08,33.33,8,Credit Card,5,200.15,2,2,44,0
+38,Male,Books,62.2,40.38,9,Credit Card,1,462.82,7,3,18,1
+31,Male,Shoes,419.03,25.43,4,Credit Card,8,424.64,7,2,10,1
+48,Male,Shoes,253.72,2.74,5,UPI,13,191.44,2,5,35,0
+65,Female,Clothing,12.12,26.77,5,Cash on Delivery,4,289.09,8,4,35,1
+35,Male,Clothing,402.48,46.79,8,Net Banking,9,18.45,7,1,40,1
+24,Female,Electronics,490.49,29.88,9,Debit Card,4,135.29,0,4,23,0
+27,Male,Shoes,304.93,40.47,7,Cash on Delivery,14,356.59,7,5,25,1
+24,Male,Clothing,254.34,40.01,5,UPI,15,340.57,10,3,1,1
+50,Female,Home & Kitchen,439.82,46.61,3,UPI,15,179.92,3,2,18,1
+40,Male,Clothing,476.5,38.51,1,Credit Card,15,405.26,5,2,15,1
+38,Male,Sports,378.5,37.39,9,Cash on Delivery,2,121.74,9,5,25,1
+36,Male,Sports,225.5,11.71,5,Credit Card,3,233.33,8,1,32,1
+65,Male,Clothing,298.15,3.0,9,Debit Card,5,238.9,4,4,20,1
+36,Female,Shoes,351.96,25.88,10,Credit Card,12,173.7,6,3,17,1
+53,Female,Books,101.17,6.22,4,Debit Card,10,477.56,0,1,11,0
+46,Male,Books,226.36,48.11,5,UPI,15,349.86,8,5,13,1
+35,Male,Shoes,415.76,14.5,4,Credit Card,13,271.9,5,5,25,1
+19,Male,Beauty,329.09,42.65,2,Credit Card,13,257.7,10,2,20,1
+18,Female,Books,208.55,19.38,1,Net Banking,14,83.85,3,3,25,0
+64,Female,Sports,333.36,16.16,8,UPI,6,189.23,5,1,42,1
+22,Female,Home & Kitchen,63.52,46.76,4,Net Banking,7,338.02,4,2,45,1
+37,Female,Shoes,203.74,18.17,5,Debit Card,4,462.66,2,3,49,0
+28,Male,Electronics,397.6,19.51,6,Debit Card,7,409.15,6,4,31,1
+59,Male,Sports,114.15,5.3,8,UPI,15,153.69,2,4,1,0
+19,Male,Home & Kitchen,97.05,33.52,8,Debit Card,10,219.81,1,2,16,1
+20,Female,Home & Kitchen,475.66,14.44,7,UPI,3,46.04,3,1,48,0
+40,Male,Shoes,108.9,29.28,4,Debit Card,7,55.58,6,3,28,0
+29,Female,Home & Kitchen,134.15,29.57,6,Cash on Delivery,4,237.76,4,4,21,1
+37,Female,Shoes,484.96,35.96,4,Credit Card,13,267.46,8,4,30,1
+22,Male,Books,368.68,37.26,7,Cash on Delivery,13,135.69,9,1,3,0
+54,Male,Clothing,351.3,25.72,1,UPI,8,323.18,6,2,34,1
+55,Male,Sports,427.2,16.55,5,UPI,9,353.17,8,5,6,1
+47,Female,Beauty,62.33,41.87,10,Cash on Delivery,7,153.06,8,3,43,1
+26,Female,Clothing,354.45,15.49,10,Credit Card,8,380.42,1,4,29,0
+51,Male,Sports,254.33,25.38,4,Credit Card,8,106.77,0,5,3,1
+70,Male,Shoes,415.43,20.06,7,Net Banking,2,274.4,10,1,33,0
+61,Female,Sports,256.53,42.75,9,Debit Card,9,403.12,3,2,11,1
+52,Male,Books,312.02,21.6,5,Net Banking,6,270.82,3,3,45,0
+69,Female,Shoes,241.48,19.3,4,Credit Card,11,454.44,1,1,5,1
+39,Female,Clothing,241.69,34.49,9,Cash on Delivery,4,33.96,2,2,50,0
+61,Male,Electronics,385.15,30.12,5,Debit Card,15,296.22,2,1,32,0
+41,Male,Electronics,316.14,5.36,9,Cash on Delivery,5,283.07,4,4,47,1
+34,Male,Sports,318.47,25.41,8,Net Banking,10,331.87,0,4,18,1
+27,Male,Electronics,227.89,36.77,4,UPI,5,417.54,8,5,47,1
+47,Female,Shoes,267.9,49.6,7,Cash on Delivery,7,364.3,7,1,20,1
+63,Female,Home & Kitchen,374.13,31.46,5,Net Banking,14,396.19,7,4,39,1
+40,Female,Shoes,413.84,18.51,10,Net Banking,9,147.96,2,2,49,1
+49,Male,Home & Kitchen,349.8,11.31,4,Net Banking,7,196.81,1,5,40,0
+34,Female,Clothing,462.42,43.64,5,UPI,9,315.25,0,3,28,1
+67,Male,Beauty,411.06,40.73,5,UPI,4,278.96,5,1,13,0
+68,Male,Home & Kitchen,283.12,11.7,9,UPI,10,480.75,9,4,26,0
+34,Male,Electronics,337.35,10.03,9,Debit Card,14,97.48,0,2,16,1
+31,Male,Shoes,463.52,35.76,6,UPI,10,178.88,10,1,25,1
+26,Male,Clothing,311.49,15.75,4,UPI,4,288.51,4,2,10,1
+57,Male,Electronics,413.28,15.32,2,UPI,6,434.64,8,5,29,0
+19,Female,Clothing,345.96,7.61,3,Cash on Delivery,8,465.03,10,4,46,0
+62,Male,Beauty,278.21,13.2,2,UPI,14,171.34,8,4,38,0
+42,Female,Books,124.71,21.38,5,Debit Card,9,38.22,3,5,20,0
+56,Female,Shoes,215.87,36.64,6,Net Banking,1,213.7,6,2,26,1
+26,Male,Sports,484.03,16.82,5,Cash on Delivery,1,200.2,10,1,32,0
+39,Male,Shoes,330.59,16.43,2,Credit Card,13,493.31,6,2,39,1
+60,Male,Beauty,284.38,14.25,5,UPI,8,218.38,3,1,38,0
+63,Female,Shoes,466.81,23.91,9,Net Banking,11,156.33,4,5,49,1
+21,Male,Sports,295.32,9.03,4,Net Banking,7,185.86,10,3,24,1
+43,Female,Home & Kitchen,265.41,24.28,10,Cash on Delivery,9,201.48,8,1,31,1
+46,Male,Clothing,380.86,35.21,2,Credit Card,11,411.66,6,4,40,1
+62,Male,Sports,357.77,1.49,3,Debit Card,3,45.1,6,4,12,0
+51,Female,Electronics,100.61,0.49,3,Net Banking,10,161.67,9,4,36,0
+40,Female,Beauty,238.3,3.76,9,Net Banking,12,483.33,6,2,10,1
+54,Male,Home & Kitchen,238.9,26.78,4,Net Banking,5,80.79,8,2,6,0
+28,Female,Electronics,192.22,42.72,1,Net Banking,3,372.59,4,2,7,1
+23,Female,Electronics,261.06,0.24,1,Cash on Delivery,15,181.41,5,4,31,0
+35,Female,Beauty,209.49,46.83,7,Credit Card,5,292.98,2,1,27,1
+38,Female,Home & Kitchen,103.68,5.31,7,Net Banking,10,54.28,0,4,8,1
+59,Female,Books,209.12,42.1,2,Debit Card,1,156.67,10,1,3,1
+53,Male,Electronics,40.78,24.14,9,Debit Card,14,252.93,1,2,40,0
+58,Male,Electronics,290.01,32.97,9,UPI,11,119.69,7,3,47,0
+55,Female,Home & Kitchen,427.56,25.53,5,Net Banking,4,273.23,0,2,21,0
+51,Male,Shoes,364.02,23.85,3,Net Banking,6,113.78,9,5,1,1
+34,Male,Electronics,183.4,41.74,3,Net Banking,2,326.8,6,1,45,1
+54,Female,Clothing,48.1,37.79,3,Net Banking,13,452.66,4,3,50,1
+42,Male,Home & Kitchen,105.06,24.17,6,Net Banking,7,47.32,5,2,15,1
+55,Female,Electronics,275.02,5.58,4,Debit Card,8,112.22,7,3,7,1
+29,Female,Beauty,107.49,5.77,8,Credit Card,1,422.99,3,4,15,1
+40,Male,Sports,274.27,40.08,5,Credit Card,13,317.62,5,1,25,1
+70,Female,Clothing,119.64,26.47,1,UPI,4,43.96,10,5,3,1
+59,Female,Sports,425.22,24.08,9,Debit Card,11,245.74,2,4,30,0
+39,Female,Sports,201.65,34.03,1,Net Banking,4,108.83,6,3,14,0
+38,Female,Electronics,126.55,42.94,6,Credit Card,13,103.55,1,2,4,1
+44,Female,Clothing,407.1,31.44,1,Cash on Delivery,5,470.62,7,1,36,1
+48,Male,Clothing,174.71,38.14,3,Cash on Delivery,14,381.96,6,5,3,1
+23,Male,Shoes,60.19,38.26,10,Cash on Delivery,12,349.63,7,2,5,1
+44,Female,Sports,287.35,17.81,5,Net Banking,12,123.27,1,5,25,1
+57,Female,Clothing,292.87,13.7,10,Net Banking,4,63.69,2,1,31,1
+51,Male,Shoes,358.77,40.06,7,UPI,9,436.06,3,3,11,1
+29,Female,Home & Kitchen,123.91,18.86,10,UPI,7,7.91,8,5,8,1
+62,Male,Shoes,224.67,45.17,8,UPI,13,197.11,4,1,26,1
+70,Female,Beauty,144.77,3.48,9,Cash on Delivery,2,142.42,5,5,2,0
+24,Female,Books,45.07,2.91,6,Net Banking,1,287.34,0,2,28,0
+27,Female,Electronics,438.92,46.35,9,Cash on Delivery,9,129.0,3,5,48,0
+62,Female,Home & Kitchen,365.79,32.42,8,UPI,1,159.05,3,2,10,0
+34,Female,Books,154.22,18.98,9,Net Banking,6,425.77,9,2,50,0
+43,Female,Books,301.69,37.75,10,Debit Card,15,303.58,7,1,39,1
+38,Female,Home & Kitchen,104.63,33.62,4,Credit Card,15,77.11,7,4,37,1
+45,Male,Beauty,445.67,26.56,9,Credit Card,2,364.6,9,5,39,0
+63,Male,Shoes,61.88,4.94,7,UPI,4,107.69,5,3,21,1
+19,Male,Electronics,6.9,40.61,5,Cash on Delivery,6,219.34,7,2,28,1
+60,Female,Shoes,253.49,43.3,5,Debit Card,5,325.07,8,4,38,1
+18,Female,Clothing,293.65,8.61,1,Net Banking,11,139.61,4,2,33,1
+68,Female,Shoes,291.59,42.53,2,Cash on Delivery,6,195.13,0,4,11,1
+70,Female,Home & Kitchen,31.98,43.89,10,UPI,3,368.4,0,4,45,1
+53,Female,Electronics,160.45,27.47,3,Cash on Delivery,5,469.27,1,3,44,0
+68,Female,Shoes,252.1,32.81,8,UPI,2,266.98,1,4,1,1
+43,Female,Electronics,112.21,19.11,6,Credit Card,7,9.94,4,3,47,0
+46,Male,Electronics,436.95,14.09,10,Credit Card,3,172.54,6,1,33,0
+38,Female,Clothing,48.12,36.1,5,Cash on Delivery,1,202.32,6,2,3,1
+28,Male,Clothing,246.26,43.09,1,Debit Card,14,172.89,3,3,26,1
+57,Male,Home & Kitchen,347.25,32.7,9,Net Banking,8,220.95,3,2,15,0
+28,Female,Beauty,134.57,25.58,3,UPI,8,318.17,10,5,41,1
+53,Female,Books,314.0,7.95,3,Net Banking,3,64.96,9,1,14,1
+66,Male,Electronics,415.55,2.67,2,Credit Card,13,139.95,2,5,23,0
+56,Male,Beauty,99.22,22.28,4,Debit Card,7,256.29,10,5,8,0
+57,Female,Books,459.02,2.47,2,Debit Card,9,161.21,1,4,36,0
+52,Female,Books,279.01,28.47,9,Net Banking,8,495.59,2,4,20,1
+51,Male,Home & Kitchen,153.12,19.14,10,Credit Card,3,218.56,7,5,6,0
+64,Female,Books,218.27,37.86,7,Net Banking,15,435.55,0,4,33,0
+41,Female,Books,159.53,15.28,8,Cash on Delivery,13,448.77,3,2,28,1
+39,Female,Electronics,363.93,29.65,3,Debit Card,2,418.82,6,4,50,0
+22,Male,Electronics,399.17,26.88,6,Debit Card,13,28.21,4,5,38,0
+50,Male,Sports,417.3,0.24,10,Cash on Delivery,10,474.13,1,4,30,1
+53,Male,Beauty,492.96,3.62,6,Credit Card,7,68.73,0,4,46,1
+64,Female,Shoes,396.69,14.52,1,Debit Card,7,22.03,5,3,43,1
+37,Female,Clothing,302.69,44.11,6,UPI,9,210.11,4,3,17,1
+36,Male,Shoes,172.91,7.35,3,UPI,5,101.34,2,5,9,1
+52,Male,Beauty,274.57,35.54,3,Credit Card,4,96.18,10,2,28,1
+69,Male,Clothing,25.33,48.67,3,Cash on Delivery,8,147.47,10,1,7,1
+60,Female,Shoes,373.69,39.53,10,Net Banking,14,127.96,10,1,46,1
+34,Male,Sports,225.75,12.15,10,Credit Card,4,343.97,8,5,28,0
+62,Male,Clothing,14.91,45.42,8,Net Banking,4,97.45,2,2,17,1
+60,Female,Electronics,35.94,4.66,5,Credit Card,12,273.84,1,2,40,1
+51,Female,Shoes,196.8,23.41,4,UPI,14,493.28,4,2,48,1
+26,Female,Clothing,293.79,44.38,9,Cash on Delivery,12,219.03,8,3,44,1
+43,Male,Sports,234.78,32.06,9,UPI,2,322.73,7,5,44,1
+19,Female,Books,311.51,20.68,1,Cash on Delivery,13,484.84,5,1,5,1
+70,Female,Clothing,242.75,14.64,2,Net Banking,15,73.13,2,2,5,1
+26,Male,Clothing,332.54,18.75,8,Credit Card,1,212.21,5,5,14,1
+26,Female,Sports,113.47,25.45,5,Debit Card,4,425.85,4,1,6,0
+57,Male,Books,60.86,15.95,7,Debit Card,7,466.49,0,3,7,1
+34,Male,Shoes,300.23,48.45,1,Cash on Delivery,12,302.61,4,4,17,1
+18,Female,Home & Kitchen,244.92,46.65,10,Cash on Delivery,9,75.99,6,1,9,1
+42,Female,Shoes,18.3,43.53,5,UPI,9,451.23,8,1,31,1
+60,Female,Books,193.34,21.09,3,Debit Card,12,91.35,0,1,22,1
+57,Female,Beauty,57.53,34.57,10,UPI,10,179.67,2,4,45,1
+59,Female,Sports,268.02,45.14,2,Net Banking,15,190.88,7,2,9,1
+42,Female,Shoes,200.91,42.52,2,Debit Card,1,226.41,5,4,16,1
+56,Male,Clothing,308.51,20.72,9,Net Banking,5,396.13,4,1,36,1
+52,Male,Sports,403.77,5.62,4,Credit Card,7,402.06,9,3,34,0
+20,Female,Electronics,153.34,3.78,4,UPI,13,361.23,1,1,45,0
+67,Male,Books,481.24,28.85,7,Cash on Delivery,7,15.95,2,3,13,0
+54,Female,Shoes,270.14,32.13,10,Debit Card,10,284.6,1,5,19,1
+61,Male,Sports,311.05,42.49,10,UPI,6,375.01,0,3,12,0
+61,Male,Shoes,341.93,14.63,2,Cash on Delivery,11,225.09,6,1,36,1
+68,Male,Sports,335.03,8.37,3,Credit Card,10,472.74,2,4,10,1
+47,Female,Clothing,257.93,18.95,3,Debit Card,4,412.79,6,1,16,1
+55,Male,Electronics,217.24,17.68,6,Net Banking,3,320.89,6,1,28,1
+51,Female,Electronics,31.62,6.62,3,Credit Card,12,35.9,7,5,19,1
+29,Male,Beauty,15.93,33.61,5,Cash on Delivery,13,327.91,0,2,40,1
+36,Male,Sports,182.19,25.43,4,Debit Card,9,456.23,4,1,6,1
+54,Male,Shoes,170.16,36.06,3,Debit Card,15,192.83,9,5,4,1
+61,Male,Electronics,196.91,17.63,8,Credit Card,12,419.88,8,4,30,1
+66,Male,Books,73.49,16.29,10,Debit Card,13,160.01,10,5,39,0
+34,Female,Electronics,370.39,23.63,3,Cash on Delivery,10,287.2,6,5,31,1
+27,Female,Home & Kitchen,429.2,43.87,6,Credit Card,4,325.97,0,3,46,1
+66,Male,Home & Kitchen,469.66,2.01,7,Net Banking,8,340.61,7,2,27,1
+64,Male,Electronics,248.72,40.24,7,Credit Card,13,441.86,2,2,45,1
+29,Male,Sports,351.93,18.45,2,Credit Card,1,121.14,3,4,21,1
+33,Male,Beauty,428.5,42.73,3,Net Banking,7,134.87,3,5,37,0
+41,Female,Electronics,212.05,40.11,10,Cash on Delivery,12,353.5,9,4,9,1
+36,Male,Clothing,158.16,17.44,10,UPI,6,92.71,7,4,35,1
+25,Female,Shoes,468.68,34.69,4,UPI,13,234.81,0,2,42,1
+48,Male,Beauty,260.26,7.98,7,Net Banking,12,14.92,7,2,47,1
+38,Female,Clothing,251.14,44.81,2,Cash on Delivery,1,74.78,8,2,21,1
+34,Male,Beauty,93.32,20.22,3,Debit Card,15,341.03,8,1,17,1
+40,Male,Clothing,58.54,22.78,7,Net Banking,4,374.99,4,5,24,1
+54,Female,Shoes,421.84,35.29,7,UPI,12,62.08,3,4,31,0
+33,Male,Shoes,309.0,41.04,10,Cash on Delivery,15,117.72,3,5,6,1
+23,Male,Home & Kitchen,166.28,11.82,3,Credit Card,14,53.96,8,4,35,1
+25,Male,Sports,99.91,33.07,1,Cash on Delivery,5,219.54,7,4,50,1
+42,Female,Clothing,279.97,19.6,3,Cash on Delivery,11,67.43,9,4,37,0
+35,Male,Home & Kitchen,294.04,18.44,5,UPI,8,221.46,9,4,13,1
+42,Male,Clothing,107.46,34.5,7,UPI,15,367.39,6,3,25,1
+29,Female,Home & Kitchen,426.45,19.36,4,Debit Card,4,343.28,2,3,32,0
+32,Female,Shoes,46.71,17.31,1,Debit Card,3,143.83,3,1,1,0
+43,Female,Beauty,181.27,41.79,6,Net Banking,2,338.51,8,2,49,1
+58,Male,Books,341.79,5.06,2,Credit Card,4,464.22,7,4,35,0
+62,Male,Home & Kitchen,140.69,33.79,3,Debit Card,11,177.02,0,5,19,1
+43,Male,Clothing,414.7,12.44,4,UPI,10,167.91,2,3,12,0
+64,Female,Clothing,371.23,0.77,6,Cash on Delivery,14,287.86,9,2,40,1
+49,Male,Books,395.57,8.34,6,Net Banking,13,126.52,1,1,40,1
+27,Male,Sports,63.96,30.33,7,Debit Card,4,327.53,1,2,47,1
+33,Female,Shoes,74.57,35.46,5,Cash on Delivery,13,416.97,7,4,43,1
+24,Female,Clothing,146.8,1.05,7,Cash on Delivery,10,232.36,5,2,20,1
+34,Female,Electronics,261.45,1.82,2,Debit Card,5,341.36,5,4,33,0
+40,Female,Beauty,375.27,45.13,1,Credit Card,13,327.68,3,3,29,0
+43,Female,Home & Kitchen,419.08,3.67,10,Credit Card,7,24.14,0,3,16,0
+38,Male,Sports,353.65,44.71,8,Net Banking,9,95.79,10,4,14,1
+39,Female,Books,464.66,11.41,1,Credit Card,2,447.3,6,5,7,0
+24,Male,Beauty,370.68,37.0,2,Net Banking,5,469.75,7,3,6,1
+31,Male,Shoes,156.6,15.49,10,UPI,11,391.32,1,5,21,0
+32,Female,Sports,136.22,42.94,6,Debit Card,10,461.02,1,4,36,1
+70,Female,Home & Kitchen,349.62,35.02,1,Cash on Delivery,9,156.54,0,4,22,1
+24,Female,Home & Kitchen,100.47,20.09,10,Net Banking,12,127.62,3,3,40,0
+26,Male,Books,50.89,3.82,3,Credit Card,14,195.23,5,5,19,0
+68,Female,Electronics,268.45,36.64,7,Net Banking,13,32.39,4,4,25,0
+65,Female,Books,411.71,30.84,8,Net Banking,3,405.89,3,3,3,1
+25,Female,Shoes,55.18,0.15,4,Credit Card,1,492.17,3,4,36,1
+67,Female,Sports,396.99,0.47,3,Credit Card,2,412.89,9,2,45,1
+40,Female,Sports,406.73,40.44,1,Debit Card,14,279.71,6,2,34,1
+46,Male,Clothing,243.73,12.97,9,Cash on Delivery,6,151.16,6,3,11,1
+35,Male,Electronics,33.37,31.81,10,Debit Card,5,102.86,1,4,48,0
+48,Male,Electronics,91.42,22.71,6,Debit Card,1,185.21,6,3,42,0
+47,Female,Sports,355.18,43.17,6,Credit Card,1,335.15,1,1,47,1
+69,Female,Sports,357.33,45.85,9,Credit Card,11,226.3,3,3,27,1
+56,Female,Beauty,449.69,49.84,1,Cash on Delivery,4,467.36,0,3,42,0
+52,Male,Beauty,293.43,7.68,6,Net Banking,12,427.84,4,2,2,1
+35,Female,Beauty,66.43,43.15,5,Debit Card,15,55.69,0,2,6,1
+59,Female,Electronics,65.1,13.3,6,Cash on Delivery,4,70.1,3,4,46,1
+56,Female,Clothing,361.96,29.54,8,Debit Card,15,339.74,8,3,2,1
+34,Male,Home & Kitchen,95.97,25.29,5,Net Banking,6,119.23,7,3,42,0
+31,Female,Beauty,167.55,0.9,2,Debit Card,6,396.56,5,4,17,0
+48,Male,Clothing,246.17,46.64,2,UPI,10,297.72,7,5,40,1
+41,Female,Books,17.26,3.92,10,Cash on Delivery,14,118.77,4,4,48,0
+52,Male,Shoes,128.17,34.41,5,Credit Card,6,241.95,6,2,14,1
+61,Male,Beauty,206.91,39.25,3,Debit Card,1,206.01,7,2,10,1
+62,Male,Books,143.42,39.76,10,Cash on Delivery,10,437.21,6,3,45,1
+51,Female,Home & Kitchen,72.5,6.77,3,Cash on Delivery,9,20.92,3,2,33,1
+20,Female,Shoes,365.37,22.38,8,Debit Card,11,448.44,4,4,42,1
+54,Male,Shoes,407.51,41.47,7,Credit Card,7,327.78,9,3,12,1
+60,Male,Home & Kitchen,132.45,15.13,1,Credit Card,7,370.08,5,4,32,0
+57,Female,Beauty,388.34,23.39,5,Debit Card,11,6.29,10,4,49,0
+43,Female,Electronics,195.85,13.64,9,Cash on Delivery,7,315.98,5,3,24,0
+40,Male,Home & Kitchen,255.81,23.18,4,Credit Card,2,296.3,8,5,14,0
+61,Female,Home & Kitchen,428.72,44.39,1,Debit Card,2,270.92,9,2,5,1
+56,Female,Home & Kitchen,376.23,22.76,8,Debit Card,6,394.0,1,1,5,1
+32,Female,Shoes,403.53,27.8,5,Debit Card,7,280.16,5,1,47,1
+66,Female,Clothing,72.74,20.2,2,Cash on Delivery,3,429.26,2,1,32,1
+21,Male,Books,39.51,23.01,1,Credit Card,13,120.15,1,2,45,1
+46,Female,Electronics,447.24,0.76,3,Cash on Delivery,4,403.96,5,5,49,0
+39,Female,Beauty,196.98,14.19,9,UPI,14,93.76,3,4,33,0
+42,Male,Beauty,147.5,21.83,1,Credit Card,12,407.49,4,3,46,1
+30,Male,Books,363.72,31.69,4,Cash on Delivery,3,470.53,4,5,4,1
+35,Female,Clothing,419.03,22.5,8,Credit Card,7,171.17,2,1,30,0
+50,Female,Home & Kitchen,431.93,16.89,8,UPI,7,267.29,3,2,41,0
+33,Female,Electronics,161.42,19.4,10,Net Banking,4,330.87,2,2,17,0
+62,Female,Beauty,426.85,12.11,8,Debit Card,13,44.34,6,3,3,1
+59,Male,Books,25.26,46.22,10,Cash on Delivery,7,249.57,0,4,13,0
+61,Male,Sports,29.58,26.09,8,UPI,5,183.49,5,5,44,0
+19,Male,Books,313.64,0.67,4,UPI,1,436.87,3,5,48,0
+52,Female,Beauty,36.24,0.97,8,Credit Card,10,438.96,0,5,36,0
+59,Female,Home & Kitchen,165.68,48.65,9,Credit Card,4,351.89,0,4,18,0
+51,Female,Sports,338.01,11.07,7,Debit Card,7,329.58,4,4,23,1
+47,Female,Clothing,171.95,40.28,2,Credit Card,13,368.18,4,4,35,1
+30,Male,Electronics,93.9,2.91,9,Cash on Delivery,15,186.16,9,3,49,1
+30,Male,Clothing,144.27,46.06,8,Cash on Delivery,2,205.24,6,2,33,1
+35,Female,Clothing,231.5,43.72,5,Cash on Delivery,2,279.08,3,1,36,1
+49,Male,Books,240.32,28.55,3,Net Banking,1,469.32,8,4,17,0
+49,Female,Electronics,392.59,0.45,7,Cash on Delivery,2,363.38,3,2,39,1
+52,Female,Electronics,376.33,12.89,2,Credit Card,10,277.74,6,4,34,1
+56,Male,Beauty,231.12,20.34,3,Credit Card,14,386.35,4,1,12,1
+63,Female,Beauty,423.61,23.0,9,Cash on Delivery,8,188.59,4,4,5,1
+69,Female,Electronics,61.55,14.88,4,UPI,11,366.58,5,2,48,1
+46,Male,Sports,131.4,1.65,4,UPI,8,208.28,7,3,40,0
+66,Female,Shoes,414.85,29.51,3,UPI,8,143.43,4,1,27,1
+46,Female,Beauty,192.11,26.21,5,Debit Card,15,306.81,2,2,40,1
+70,Male,Shoes,490.68,14.15,3,Net Banking,1,345.0,5,5,13,1
+61,Female,Books,235.8,1.9,9,Cash on Delivery,1,232.35,1,5,26,0
+33,Male,Sports,397.01,49.73,3,Debit Card,12,284.92,7,5,14,1
+61,Female,Electronics,204.14,24.1,2,UPI,10,348.56,7,3,32,1
+64,Male,Sports,215.35,37.8,5,Cash on Delivery,4,385.02,2,4,11,1
+27,Male,Beauty,194.53,22.62,6,Debit Card,6,448.31,7,4,38,1
+47,Male,Clothing,360.94,2.16,1,Credit Card,8,180.5,8,4,16,1
+42,Female,Books,276.02,15.48,6,UPI,13,475.98,4,3,22,0
+56,Male,Electronics,472.17,16.01,10,Debit Card,2,320.45,4,5,47,0
+37,Male,Home & Kitchen,129.19,41.92,3,Credit Card,13,394.91,5,4,16,1
+22,Male,Books,54.78,32.71,4,UPI,3,351.39,6,3,13,1
+18,Male,Shoes,199.66,13.77,6,Net Banking,6,106.76,2,3,12,0
+47,Male,Sports,310.27,48.39,8,UPI,10,40.36,4,2,18,1
+66,Female,Electronics,431.1,16.08,9,Net Banking,4,364.51,0,4,29,1
+20,Female,Books,176.37,49.91,6,Net Banking,12,257.97,10,5,18,1
+62,Female,Sports,328.62,49.81,7,Net Banking,2,352.6,9,1,46,1
+31,Female,Electronics,178.35,9.56,5,Cash on Delivery,7,241.04,4,3,2,0
+47,Female,Beauty,310.52,15.64,9,Cash on Delivery,4,159.56,3,2,2,1
+67,Female,Books,442.98,24.3,4,Net Banking,8,146.08,0,1,3,1
+21,Female,Beauty,119.52,33.21,10,Credit Card,8,366.61,6,3,29,0
+35,Male,Books,205.1,26.4,6,Net Banking,7,142.01,0,2,8,0
+54,Female,Beauty,496.67,48.47,5,Debit Card,10,358.77,7,4,11,1
+42,Male,Sports,434.94,36.2,1,Net Banking,9,195.06,9,2,12,1
+65,Male,Home & Kitchen,284.5,10.6,5,Cash on Delivery,4,386.59,1,3,32,1
+18,Female,Books,260.73,5.25,5,Cash on Delivery,7,75.69,9,4,4,1
+70,Male,Books,145.88,34.42,9,Debit Card,10,106.47,4,5,9,1
+63,Male,Beauty,261.02,7.92,1,Debit Card,10,344.53,5,2,24,1
+32,Male,Electronics,424.85,39.38,5,UPI,15,282.31,8,1,49,1
+26,Male,Books,344.16,15.55,7,Credit Card,12,105.92,6,4,16,1
+32,Female,Beauty,148.57,16.34,6,Credit Card,1,451.9,5,4,17,1
+66,Female,Clothing,104.72,0.54,6,Credit Card,4,141.59,4,5,47,0
+41,Female,Beauty,136.28,35.05,7,Cash on Delivery,2,213.43,5,2,22,1
+21,Female,Sports,89.03,5.66,6,Credit Card,9,105.13,10,1,7,1
+29,Female,Home & Kitchen,52.34,38.64,5,UPI,5,197.07,3,5,10,0
+54,Female,Clothing,212.47,24.59,10,UPI,3,248.37,0,2,29,0
+54,Female,Sports,61.08,39.21,5,Credit Card,4,151.15,8,1,36,1
+60,Female,Sports,90.1,29.2,9,Debit Card,6,385.7,10,1,24,1
+23,Female,Sports,275.93,4.12,8,UPI,10,200.0,4,3,46,0
+56,Female,Electronics,86.48,38.28,10,Debit Card,1,366.11,7,1,14,1
+63,Male,Sports,36.62,3.49,4,Cash on Delivery,7,107.5,6,2,14,0
+41,Female,Electronics,162.11,23.94,4,UPI,8,191.63,7,5,25,0
+28,Male,Sports,114.06,8.62,10,Debit Card,7,8.99,0,5,46,0
+30,Male,Shoes,260.08,37.62,5,Credit Card,7,380.53,8,3,22,0
+51,Male,Clothing,55.67,45.58,3,Cash on Delivery,9,314.81,0,2,50,1
+42,Male,Shoes,377.13,27.71,8,Net Banking,13,409.82,2,1,47,1
+24,Female,Sports,453.59,26.36,7,Net Banking,4,230.53,7,3,23,0
+69,Male,Clothing,373.0,38.2,5,Credit Card,14,400.87,10,4,32,1
+21,Female,Clothing,268.75,0.25,10,Cash on Delivery,7,325.55,0,2,26,1
+25,Female,Books,431.03,45.89,3,Cash on Delivery,9,6.79,0,3,27,0
+37,Male,Home & Kitchen,348.98,9.87,5,Cash on Delivery,15,130.58,5,5,45,1
+46,Female,Shoes,10.22,49.21,3,Cash on Delivery,5,249.48,4,3,12,1
+70,Male,Home & Kitchen,200.07,36.81,10,Net Banking,2,311.25,10,4,19,1
+68,Male,Clothing,426.22,38.71,5,Debit Card,15,37.47,5,2,19,1
+62,Female,Electronics,176.2,32.81,1,Cash on Delivery,5,354.01,2,3,34,0
+63,Female,Clothing,22.43,23.58,6,Debit Card,4,274.05,9,1,32,1
+27,Male,Home & Kitchen,374.36,28.58,10,Cash on Delivery,8,265.26,9,2,29,1
+60,Female,Shoes,402.01,2.32,4,UPI,15,149.56,5,3,21,1
+51,Female,Sports,84.49,31.2,4,UPI,5,299.44,1,3,35,1
+43,Female,Books,270.98,31.3,8,UPI,9,18.61,7,2,42,1
+58,Male,Books,100.02,44.56,2,Cash on Delivery,9,37.03,5,5,5,1
+66,Male,Books,361.02,25.28,4,Debit Card,3,368.27,3,1,12,0
+20,Female,Sports,139.42,3.86,2,Net Banking,13,164.34,3,2,7,0
+23,Female,Books,161.53,15.31,1,Credit Card,10,176.75,10,1,41,1
+22,Female,Shoes,423.26,32.78,10,Net Banking,15,108.15,6,1,2,1
+22,Female,Sports,240.78,11.96,3,Cash on Delivery,6,225.58,2,2,25,1
+64,Female,Books,336.53,14.03,8,UPI,6,30.74,10,3,10,1
+40,Male,Sports,204.17,41.02,6,UPI,4,153.68,2,5,38,0
+66,Female,Home & Kitchen,152.51,29.22,7,Debit Card,11,265.93,5,1,44,0
+26,Male,Shoes,314.61,25.43,2,Cash on Delivery,13,235.49,8,1,6,1
+52,Female,Beauty,81.65,15.92,6,Net Banking,10,499.84,0,3,27,1
+37,Male,Electronics,189.63,36.55,8,Cash on Delivery,3,197.44,4,2,35,1
+66,Female,Books,108.47,14.39,8,Cash on Delivery,1,196.56,0,5,10,0
+59,Male,Electronics,349.42,36.85,4,UPI,12,254.27,0,1,9,1
+52,Female,Sports,472.38,3.51,6,Net Banking,7,99.2,2,1,20,0
+67,Male,Electronics,497.78,43.23,5,Credit Card,15,438.77,2,2,37,0
+35,Male,Shoes,227.89,24.98,9,UPI,15,288.27,3,3,35,1
+34,Male,Shoes,130.0,21.93,8,Net Banking,5,100.09,2,4,37,0
+41,Male,Clothing,224.2,30.55,2,Debit Card,14,397.75,5,3,40,1
+20,Male,Books,424.4,31.21,7,UPI,10,21.99,3,1,8,1
+49,Male,Clothing,106.97,6.6,7,Debit Card,15,491.37,7,1,46,1
+52,Female,Electronics,476.29,37.81,1,UPI,7,433.25,0,5,31,1
+55,Male,Beauty,174.22,13.8,1,Cash on Delivery,1,291.92,7,3,49,0
+30,Female,Clothing,492.97,45.25,4,Net Banking,8,60.09,10,4,43,1
+64,Female,Clothing,420.11,40.89,5,Debit Card,3,111.56,0,5,16,1
+42,Female,Shoes,405.24,17.31,4,UPI,7,143.32,10,4,28,1
+26,Female,Beauty,162.36,40.39,7,Debit Card,12,124.31,0,5,6,1
+21,Female,Sports,9.34,17.82,3,UPI,3,251.27,6,3,32,1
+31,Male,Electronics,194.16,5.05,7,UPI,14,472.56,0,1,28,1
+54,Male,Clothing,154.4,48.09,8,Credit Card,3,224.87,8,4,11,0
+51,Male,Beauty,23.51,32.63,6,Credit Card,10,332.47,7,3,42,1
+28,Female,Books,255.16,22.8,6,Credit Card,9,345.85,0,4,23,0
+58,Male,Beauty,204.5,19.89,8,Debit Card,13,436.43,1,3,30,1
+20,Male,Electronics,319.11,16.24,8,Cash on Delivery,2,21.74,1,5,9,0
+45,Male,Beauty,312.49,49.07,7,UPI,14,205.14,1,3,28,0
+46,Male,Beauty,64.77,6.74,6,Net Banking,4,393.44,5,5,24,1
+26,Male,Beauty,488.6,15.74,6,Credit Card,6,408.36,3,1,28,0
+20,Female,Books,97.53,24.27,10,Debit Card,14,464.03,7,5,24,1
+42,Male,Clothing,225.41,23.9,6,Debit Card,3,352.88,0,2,15,0
+51,Female,Electronics,246.62,23.57,8,Debit Card,12,126.35,9,1,39,1
+29,Female,Books,407.47,8.79,1,Net Banking,10,255.3,3,3,50,1
+59,Female,Beauty,54.12,7.25,5,Net Banking,14,21.01,9,3,33,1
+26,Female,Beauty,217.18,12.74,3,Credit Card,10,325.23,10,2,47,1
+32,Female,Clothing,316.11,45.73,8,Net Banking,7,279.38,4,3,34,0
+57,Male,Electronics,111.5,5.65,6,Credit Card,7,335.08,8,1,22,1
+42,Male,Shoes,315.6,37.87,2,Net Banking,15,465.42,4,1,29,1
+22,Male,Books,462.21,37.88,7,Net Banking,5,345.2,10,5,34,1
+28,Female,Clothing,498.77,40.49,7,Net Banking,3,163.62,2,4,42,0
+51,Male,Electronics,21.06,44.33,5,Credit Card,2,103.37,10,3,47,1
+41,Male,Books,121.62,13.15,8,UPI,15,428.04,3,2,10,0
+32,Female,Beauty,158.6,11.23,5,Credit Card,15,101.19,9,1,45,0
+55,Female,Electronics,202.57,23.28,1,UPI,4,85.0,6,1,30,1
+25,Female,Electronics,124.92,13.25,9,Debit Card,14,107.27,0,1,11,1
+22,Female,Sports,105.73,36.72,4,Debit Card,15,256.88,10,4,34,0
+65,Male,Electronics,477.5,31.8,2,Credit Card,13,66.47,5,4,21,1
+43,Female,Shoes,459.67,43.75,4,UPI,4,469.37,7,3,13,1
+35,Female,Electronics,28.26,4.14,9,UPI,11,483.3,0,2,25,1
+23,Male,Shoes,172.71,45.75,2,UPI,8,487.03,7,4,21,1
+54,Male,Beauty,205.55,14.67,4,Debit Card,8,24.37,6,5,1,1
+65,Female,Shoes,123.31,24.53,2,Credit Card,13,473.37,0,4,5,1
+30,Male,Books,316.29,21.93,5,Cash on Delivery,5,498.72,8,1,22,1
+45,Female,Beauty,321.99,38.02,3,UPI,13,471.5,10,2,7,1
+22,Female,Beauty,426.0,21.02,10,UPI,6,337.11,2,3,13,0
+30,Male,Shoes,371.73,47.18,2,Cash on Delivery,8,352.11,1,4,45,1
+34,Male,Clothing,273.57,45.13,9,Credit Card,15,65.52,6,1,23,1
+67,Female,Home & Kitchen,328.53,43.61,5,UPI,1,437.78,10,5,21,0
+57,Female,Electronics,140.62,3.56,10,Credit Card,5,34.52,2,5,6,0
+62,Female,Sports,298.56,42.71,5,UPI,4,162.28,0,3,20,1
+49,Male,Home & Kitchen,247.17,39.08,1,Net Banking,4,495.62,9,3,12,0
+46,Female,Electronics,71.01,5.18,6,UPI,11,214.05,2,4,40,0
+68,Female,Electronics,125.06,5.37,7,Net Banking,2,69.92,5,3,9,1
+20,Female,Beauty,149.39,5.06,1,Credit Card,10,484.8,2,1,50,0
+57,Female,Electronics,462.53,0.57,9,UPI,1,492.15,4,1,28,1
+51,Female,Sports,119.04,27.43,8,Debit Card,14,97.59,8,1,11,0
+57,Male,Electronics,148.18,48.67,8,Debit Card,15,433.08,6,4,32,1
+44,Female,Shoes,187.83,21.93,7,Cash on Delivery,6,198.26,1,4,11,1
+30,Female,Home & Kitchen,333.55,27.04,5,Debit Card,7,193.78,0,3,24,0
+62,Female,Shoes,63.53,48.4,3,Net Banking,5,135.04,6,4,15,1
+50,Female,Sports,477.2,12.76,9,Debit Card,15,27.13,3,1,41,1
+23,Male,Electronics,433.46,42.92,7,Debit Card,8,137.66,10,2,35,1
+41,Male,Books,290.72,27.32,10,Debit Card,9,31.62,6,1,17,1
+36,Male,Sports,338.65,28.47,10,UPI,11,462.56,5,2,25,1
+33,Female,Beauty,13.25,17.16,8,Cash on Delivery,11,332.55,6,3,49,1
+57,Female,Shoes,172.78,28.08,6,Credit Card,2,443.88,3,5,35,0
+45,Male,Shoes,398.85,3.66,5,Cash on Delivery,11,360.06,2,4,19,1
+50,Male,Clothing,43.35,38.23,8,Net Banking,13,69.99,4,4,41,1
+65,Male,Electronics,144.75,14.23,3,UPI,4,470.59,2,1,31,0
+58,Female,Beauty,294.72,44.38,7,UPI,11,450.45,2,1,17,1
+30,Female,Books,131.92,18.39,2,Debit Card,9,177.3,3,2,50,0
+60,Male,Shoes,467.32,7.14,3,Debit Card,5,60.21,7,4,23,1
+62,Male,Shoes,69.87,34.79,2,Net Banking,3,353.56,1,3,47,0
+42,Male,Beauty,399.71,8.23,5,UPI,6,365.54,3,1,1,1
+70,Female,Sports,256.43,37.68,7,Credit Card,15,448.93,10,4,10,1
+59,Female,Sports,376.41,48.41,10,Cash on Delivery,3,31.06,2,5,8,0
+53,Female,Electronics,158.8,38.98,10,UPI,14,75.14,6,2,42,1
+44,Male,Clothing,259.67,1.12,1,Credit Card,5,301.13,1,1,26,1
+55,Male,Shoes,429.13,29.99,10,Credit Card,3,311.47,0,1,34,0
+24,Female,Clothing,236.1,34.77,9,Cash on Delivery,6,21.64,9,3,19,1
+22,Male,Sports,183.06,41.27,1,Credit Card,12,201.48,0,1,14,1
+60,Female,Sports,270.4,2.8,1,Net Banking,10,294.16,5,4,8,0
+62,Male,Home & Kitchen,360.09,24.01,10,Credit Card,5,370.27,2,4,1,0
+68,Male,Books,224.56,26.77,8,Net Banking,14,161.49,6,4,48,1
+48,Male,Electronics,469.74,8.46,6,Credit Card,9,244.53,7,5,25,0
+40,Male,Home & Kitchen,151.0,16.12,6,Debit Card,3,407.96,4,5,24,0
+59,Female,Books,240.35,22.01,9,Credit Card,6,477.18,4,1,47,1
+27,Male,Home & Kitchen,379.68,41.66,4,Net Banking,8,119.01,1,5,20,1
+49,Female,Home & Kitchen,346.11,46.47,8,Credit Card,7,130.26,7,5,30,1
+60,Female,Electronics,432.5,31.42,4,Credit Card,6,470.21,9,3,5,1
+70,Female,Electronics,498.42,19.75,2,Credit Card,14,200.98,0,5,3,1
+47,Male,Beauty,216.29,12.7,8,Net Banking,15,360.58,9,2,32,1
+56,Female,Clothing,60.02,49.11,7,Credit Card,2,308.07,8,2,17,1
+48,Female,Clothing,20.06,49.15,4,Cash on Delivery,15,146.37,0,2,42,1
+35,Female,Beauty,364.8,46.25,9,Cash on Delivery,7,328.51,0,1,5,1
+53,Male,Beauty,437.64,39.28,9,Net Banking,8,329.51,0,4,11,1
+19,Male,Sports,114.25,16.29,8,Debit Card,1,298.26,6,3,38,0
+31,Female,Books,83.43,40.85,1,Cash on Delivery,15,54.33,3,1,4,1
+30,Male,Home & Kitchen,35.79,20.44,7,UPI,9,497.61,6,4,39,1
+46,Female,Beauty,412.24,16.34,5,Cash on Delivery,4,203.21,4,3,19,0
+29,Female,Shoes,159.13,37.24,7,UPI,8,320.93,6,3,39,1
+56,Male,Clothing,203.84,3.98,9,Net Banking,15,443.45,9,3,46,1
+19,Female,Beauty,253.86,2.43,2,Debit Card,10,214.53,6,2,49,1
+49,Male,Shoes,420.53,22.4,4,UPI,7,388.09,3,2,23,1
+30,Male,Shoes,327.16,22.28,4,UPI,14,486.05,1,2,17,1
+63,Female,Shoes,309.46,44.78,2,Cash on Delivery,13,182.67,7,3,13,1
+44,Male,Sports,91.96,6.31,3,UPI,10,205.61,1,3,27,0
+66,Male,Sports,259.03,6.16,8,Net Banking,7,453.26,8,2,1,0
+58,Female,Shoes,359.11,7.37,9,Net Banking,2,84.02,4,3,2,1
+34,Female,Books,486.76,1.49,6,Net Banking,1,19.15,8,2,18,1
+57,Male,Sports,104.7,3.59,10,Cash on Delivery,4,454.9,8,2,36,0
+48,Male,Home & Kitchen,9.72,32.99,2,Debit Card,12,411.69,7,2,45,1
+51,Female,Shoes,42.27,21.58,2,Cash on Delivery,2,486.43,7,4,33,1
+41,Male,Home & Kitchen,191.05,38.18,7,Net Banking,8,33.83,3,3,36,0
+62,Male,Home & Kitchen,411.17,49.63,8,Cash on Delivery,10,82.31,3,1,2,1
+52,Male,Shoes,8.54,32.95,8,Net Banking,7,57.13,1,2,4,0
+65,Male,Clothing,231.08,2.52,6,Credit Card,8,343.29,3,1,16,1
+23,Male,Books,167.97,5.23,10,Credit Card,11,304.97,3,4,4,0
+36,Male,Shoes,30.98,44.05,8,UPI,6,182.87,5,3,9,0
+47,Male,Shoes,227.87,26.37,1,Debit Card,1,33.42,2,2,49,0
+24,Female,Sports,131.1,41.24,9,Credit Card,14,321.63,1,2,21,0
+27,Female,Shoes,179.18,42.83,1,Net Banking,13,287.21,7,2,23,0
+58,Female,Clothing,354.28,46.38,3,Cash on Delivery,13,60.89,1,1,2,1
+49,Female,Sports,263.17,47.49,9,Cash on Delivery,12,454.91,7,4,3,1
+51,Female,Electronics,66.7,27.74,5,UPI,9,103.48,6,3,23,1
+45,Male,Electronics,480.9,17.05,9,Cash on Delivery,6,373.04,2,4,26,1
+32,Male,Home & Kitchen,319.78,48.09,9,Credit Card,12,443.11,5,2,47,1
+47,Male,Books,384.1,27.37,6,Cash on Delivery,13,291.84,5,4,7,1
+54,Male,Home & Kitchen,44.21,3.21,1,Credit Card,10,127.19,9,1,36,1
+46,Female,Clothing,28.29,32.14,10,Credit Card,1,158.08,4,5,44,0
+39,Male,Beauty,14.63,29.38,7,Debit Card,1,443.45,7,5,33,0
+21,Male,Books,98.45,44.79,6,UPI,8,152.64,10,3,49,1
+37,Female,Electronics,210.13,32.66,9,Net Banking,6,374.36,4,3,36,1
+49,Male,Home & Kitchen,468.23,17.45,7,Credit Card,8,495.13,6,4,4,1
+53,Male,Electronics,231.24,48.31,4,UPI,8,499.91,5,3,23,0
+67,Female,Clothing,148.68,40.08,7,Net Banking,15,269.07,10,1,25,1
+21,Male,Clothing,283.16,31.52,2,Cash on Delivery,11,414.15,6,2,41,1
+44,Male,Beauty,60.41,14.65,6,UPI,14,495.17,8,2,26,1
+34,Male,Beauty,306.71,18.68,6,UPI,8,190.46,2,4,28,0
+29,Male,Sports,286.37,33.5,2,UPI,10,129.94,9,2,28,1
+39,Male,Books,397.04,3.6,4,Cash on Delivery,15,61.55,6,4,21,1
+34,Female,Clothing,493.41,12.83,8,Cash on Delivery,7,74.75,9,3,10,1
+27,Female,Home & Kitchen,129.18,35.7,8,UPI,7,427.51,2,3,27,0
+18,Female,Electronics,257.28,24.0,8,Debit Card,10,296.42,1,1,15,1
+39,Female,Shoes,454.89,20.12,8,Credit Card,4,437.49,6,2,17,1
+43,Female,Beauty,393.67,7.57,1,Cash on Delivery,9,395.78,3,1,39,1
+35,Female,Shoes,246.27,22.09,2,Debit Card,12,338.5,0,5,35,1
+67,Male,Home & Kitchen,472.96,38.53,4,Cash on Delivery,2,306.61,5,1,5,0
+31,Female,Beauty,33.33,13.2,9,UPI,11,28.93,10,4,16,0
+64,Female,Shoes,465.84,0.27,3,Debit Card,9,436.78,5,4,23,0
+46,Male,Books,30.0,33.43,6,Net Banking,10,211.83,5,1,39,1
+29,Male,Home & Kitchen,275.92,48.63,7,Credit Card,3,282.09,1,3,48,0
+53,Female,Electronics,445.77,30.34,8,Credit Card,14,15.87,0,5,9,0
+52,Male,Books,135.05,6.0,7,Cash on Delivery,13,468.36,2,1,33,1
+69,Female,Home & Kitchen,238.76,16.04,3,Credit Card,15,451.86,1,3,35,1
+29,Male,Sports,165.54,43.38,6,Net Banking,2,273.92,5,1,40,0
+24,Female,Beauty,476.31,11.63,5,Debit Card,13,290.77,5,2,50,1
+46,Male,Clothing,412.7,30.38,10,Debit Card,4,353.98,4,4,24,1
+28,Male,Electronics,355.96,20.13,4,UPI,5,136.02,9,2,24,0
+50,Female,Books,295.88,10.39,1,Debit Card,2,114.85,9,2,50,1
+23,Female,Books,411.19,40.67,7,Cash on Delivery,13,338.64,4,5,24,1
+64,Female,Shoes,199.17,37.14,8,Net Banking,15,56.69,8,3,19,1
+32,Female,Beauty,226.54,33.08,2,UPI,1,229.76,4,4,39,1
+49,Female,Clothing,366.35,11.82,7,Cash on Delivery,10,248.92,9,2,25,1
+68,Male,Home & Kitchen,182.09,4.89,6,Cash on Delivery,11,193.76,5,4,31,1
+28,Female,Clothing,36.63,28.81,5,Cash on Delivery,5,96.71,10,3,38,0
+40,Female,Beauty,41.8,27.68,4,Credit Card,9,180.88,3,1,25,1
+43,Male,Beauty,62.1,9.42,2,Cash on Delivery,15,172.09,9,2,27,1
+51,Male,Sports,435.49,2.81,10,Credit Card,12,252.14,0,3,32,0
+63,Female,Sports,238.75,4.04,6,Debit Card,12,338.97,3,4,11,0
+51,Male,Clothing,357.88,49.64,5,Credit Card,15,484.28,1,3,5,1
+46,Male,Home & Kitchen,199.49,39.18,2,Cash on Delivery,5,76.36,9,1,44,1
+21,Female,Clothing,133.06,46.1,10,Net Banking,12,437.14,2,3,33,0
+34,Male,Beauty,176.86,9.75,7,Net Banking,11,145.67,6,4,19,1
+52,Male,Beauty,398.12,48.03,6,Debit Card,10,297.73,6,2,43,1
+30,Female,Shoes,314.48,7.13,9,Cash on Delivery,9,275.63,0,2,47,1
+58,Female,Sports,469.13,25.45,10,Credit Card,14,280.69,7,5,16,1
+56,Male,Shoes,341.45,41.48,5,Net Banking,13,363.06,6,4,35,1
+32,Male,Electronics,287.24,17.49,9,UPI,12,193.94,0,5,11,0
+46,Female,Beauty,307.05,21.24,9,Cash on Delivery,10,162.95,7,5,11,0
+46,Male,Shoes,471.47,6.41,1,Cash on Delivery,6,427.15,1,1,10,1
+28,Male,Clothing,395.16,6.15,5,UPI,3,113.95,7,4,34,0
+69,Male,Sports,16.9,30.98,9,Net Banking,4,94.22,2,2,5,1
+49,Female,Sports,269.4,33.78,7,UPI,4,12.73,9,4,23,0
+19,Male,Home & Kitchen,345.73,38.87,6,Debit Card,1,109.24,6,1,25,1
+64,Male,Clothing,375.61,27.83,6,Credit Card,3,261.67,5,4,29,1
+31,Female,Home & Kitchen,110.51,32.29,7,Credit Card,3,271.56,4,4,40,0
+37,Male,Shoes,434.25,0.68,1,Net Banking,13,130.94,10,5,13,0
+39,Male,Books,478.14,8.11,4,UPI,14,40.78,9,4,47,1
+28,Female,Electronics,122.17,49.25,1,Cash on Delivery,1,373.6,10,5,32,1
+44,Female,Clothing,441.89,3.8,6,Cash on Delivery,13,380.2,1,5,34,1
+20,Female,Clothing,53.0,33.94,4,Cash on Delivery,9,498.93,1,3,12,1

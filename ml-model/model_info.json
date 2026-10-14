@@ -1,0 +1,101 @@
+{
+    "model_name": "Random Forest (Tuned)",
+    "best_model": "Random Forest (Tuned)",
+    "accuracy": 0.705,
+    "precision": 0.721875,
+    "recall": 0.8884615384615384,
+    "f1_score": 0.7965517241379311,
+    "training_date": "2026-10-12T21:56:57.389559",
+    "feature_names": [
+        "Customer_Age",
+        "Gender",
+        "Product_Category",
+        "Product_Price",
+        "Discount",
+        "Quantity",
+        "Payment_Method",
+        "Delivery_Time",
+        "Shipping_Distance",
+        "Previous_Returns",
+        "Customer_Rating",
+        "Order_Frequency"
+    ],
+    "features": [
+        "Customer_Age",
+        "Gender",
+        "Product_Category",
+        "Product_Price",
+        "Discount",
+        "Quantity",
+        "Payment_Method",
+        "Delivery_Time",
+        "Shipping_Distance",
+        "Previous_Returns",
+        "Customer_Rating",
+        "Order_Frequency"
+    ],
+    "feature_importances": [
+        0.08824447200593623,
+        0.013109250964397788,
+        0.05671787865494863,
+        0.10523834126143589,
+        0.14226152686069826,
+        0.05463547113561865,
+        0.04246099085824725,
+        0.08573405663677014,
+        0.11821682992844022,
+        0.13673218421683908,
+        0.065656992559694,
+        0.09099200491697372
+    ],
+    "feature_stats": {
+        "Customer_Age": {
+            "mean": 44.2375,
+            "std": 15.288997339583165
+        },
+        "Gender": {
+            "mean": 0.48,
+            "std": 0.4997560380435394
+        },
+        "Product_Category": {
+            "mean": 2.99625,
+            "std": 2.0081101199657088
+        },
+        "Product_Price": {
+            "mean": 249.599275,
+            "std": 140.96221824511076
+        },
+        "Discount": {
+            "mean": 24.676131249999997,
+            "std": 14.43643930155877
+        },
+        "Quantity": {
+            "mean": 5.551875,
+            "std": 2.8967746804149583
+        },
+        "Payment_Method": {
+            "mean": 1.98,
+            "std": 1.419809815589848
+        },
+        "Delivery_Time": {
+            "mean": 8.168125,
+            "std": 4.438431173165168
+        },
+        "Shipping_Distance": {
+            "mean": 255.07595625000002,
+            "std": 142.59191313067862
+        },
+        "Previous_Returns": {
+            "mean": 4.889375,
+            "std": 3.16083555571251
+        },
+        "Customer_Rating": {
+            "mean": 2.909375,
+            "std": 1.413297736123508
+        },
+        "Order_Frequency": {
+            "mean": 25.605625,
+            "std": 14.474107251306606
+        }
+    }
+}
