@@ -1,7 +1,16 @@
 import axios from 'axios';
 
+let rawBaseUrl = import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_URL || '/api';
+rawBaseUrl = typeof rawBaseUrl === 'string' ? rawBaseUrl.trim().replace(/\/+$/, '') : '/api';
+
+// If a remote URL is provided (e.g., https://xyz.onrender.com) without the '/api' suffix,
+// automatically append '/api' because the backend routes are mounted under /api/*
+if (/^https?:\/\//i.test(rawBaseUrl) && !/\/api$/i.test(rawBaseUrl)) {
+  rawBaseUrl = `${rawBaseUrl}/api`;
+}
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_URL || '/api'
+  baseURL: rawBaseUrl
 });
 
 // Attach JWT token on every request

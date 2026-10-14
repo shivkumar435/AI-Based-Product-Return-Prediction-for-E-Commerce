@@ -7,16 +7,7 @@ const Order = require('./models/Order');
 const Prediction = require('./models/Prediction');
 
 dotenv.config();
-
-const connectDB = async () => {
-  try {
-    await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/return_sense');
-    console.log('MongoDB Connected for Seeding');
-  } catch (err) {
-    console.error(`Error: ${err.message}`);
-    process.exit(1);
-  }
-};
+const connectDB = require('./config/db');
 
 const seedData = async () => {
   await connectDB();

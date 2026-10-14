@@ -1,4 +1,5 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -69,7 +70,12 @@ app.use('/api/reviews', require('./routes/reviewRoutes'));
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+  const isDbReady = mongoose.connection.readyState === 1;
+  res.status(200).json({
+    status: isDbReady ? 'ok' : 'degraded',
+    database: isDbReady ? 'connected' : 'disconnected',
+    timestamp: new Date().toISOString()
+  });
 });
 
 // Redirect browser visits to the frontend app
