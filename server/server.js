@@ -19,16 +19,34 @@ const app = express();
 
 // Security middleware
 app.use(helmet());
-const allowedOrigins = process.env.CORS_ORIGINS
-  ? process.env.CORS_ORIGINS.split(',').map(s => s.trim()).filter(Boolean)
+
+// Parse allowed CORS origins from environment variable
+// Supports exact domains and wildcard patterns (e.g. https://ai-based-product-return-prediction*.vercel.app)
+const rawOrigins = process.env.CORS_ORIGINS
+  ? process.env.CORS_ORIGINS.split(',').map(s => s.trim().replace(/\/+$/, '')).filter(Boolean)
   : ['http://localhost:5173', 'http://localhost:3000'];
+
+const isOriginAllowed = (origin) => {
+  if (!origin) return true; // Allow non-browser requests (e.g. curl, mobile apps, server-to-server)
+  const normalizedOrigin = origin.trim().replace(/\/+$/, '');
+
+  return rawOrigins.some(pattern => {
+    if (pattern === '*' || pattern === normalizedOrigin) return true;
+    if (pattern.includes('*')) {
+      const regexStr = '^' + pattern.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*') + '$';
+      return new RegExp(regexStr, 'i').test(normalizedOrigin);
+    }
+    return false;
+  });
+};
 
 app.use(cors({
   origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes('*') || allowedOrigins.includes(origin)) {
+    if (isOriginAllowed(origin)) {
       return callback(null, true);
     }
-    return callback(new Error(`Origin ${origin} not allowed by CORS`));
+    // Return callback(null, false) to disallow origin cleanly without crashing with an uncaught 500 error
+    return callback(null, false);
   },
   credentials: true
 }));
@@ -70,11 +88,22 @@ app.use('/api/wishlist', require('./routes/wishlistRoutes'));
 app.use('/api/reviews', require('./routes/reviewRoutes'));
 
 // Health check
-app.get('/api/health', (req, res) => {
+app.get('/api/health', async (req, res) => {
   const isDbReady = mongoose.connection.readyState === 1;
+  let productCount = null;
+  if (isDbReady) {
+    try {
+      productCount = await mongoose.model('Product').countDocuments();
+    } catch (e) {
+      productCount = 'unavailable';
+    }
+  }
+
   res.status(200).json({
     status: isDbReady ? 'ok' : 'degraded',
     database: isDbReady ? 'connected' : 'disconnected',
+    databaseName: isDbReady ? (mongoose.connection.name || 'unknown') : null,
+    productCount: isDbReady ? productCount : 0,
     timestamp: new Date().toISOString()
   });
 });
