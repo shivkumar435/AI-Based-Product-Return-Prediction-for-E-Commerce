@@ -3,6 +3,7 @@ const Product = require('../models/Product');
 const Order = require('../models/Order');
 const Prediction = require('../models/Prediction');
 const axios = require('axios');
+const { getNormalizedMlUrl } = require('../services/mlService');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
@@ -582,9 +583,10 @@ const uploadDataset = async (req, res) => {
       return res.status(400).json({ message: 'No file uploaded' });
     }
     let trainResult = null;
+    const mlApiUrl = getNormalizedMlUrl();
     try {
-      if (process.env.ML_API_URL) {
-        const response = await axios.post(`${process.env.ML_API_URL}/train`);
+      if (mlApiUrl) {
+        const response = await axios.post(`${mlApiUrl}/train`, {}, { timeout: 60000 });
         trainResult = response.data;
       }
     } catch (mlErr) {
@@ -911,10 +913,11 @@ const getInventory = async (req, res) => {
 // GET /api/admin/model-info
 const getModelInfo = async (req, res) => {
   try {
-    if (!process.env.ML_API_URL) {
+    const mlApiUrl = getNormalizedMlUrl();
+    if (!mlApiUrl) {
       return res.status(503).json({ success: false, message: 'ML API URL not configured' });
     }
-    const response = await axios.get(`${process.env.ML_API_URL}/model-info`);
+    const response = await axios.get(`${mlApiUrl}/model-info`, { timeout: 10000 });
     const info = response.data?.data || response.data;
     res.json({ success: true, data: info });
   } catch (error) {

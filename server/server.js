@@ -8,6 +8,7 @@ const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const connectDB = require('./config/db');
 const { errorHandler } = require('./middleware/errorHandler');
+const { checkMlHealth } = require('./services/mlService');
 
 // Load env vars
 dotenv.config({ path: path.join(__dirname, '.env') });
@@ -99,11 +100,15 @@ app.get('/api/health', async (req, res) => {
     }
   }
 
+  // Fast liveness probe for ML API (2500ms max timeout)
+  const mlHealth = await checkMlHealth(2500);
+
   res.status(200).json({
     status: isDbReady ? 'ok' : 'degraded',
     database: isDbReady ? 'connected' : 'disconnected',
     databaseName: isDbReady ? (mongoose.connection.name || 'unknown') : null,
     productCount: isDbReady ? productCount : 0,
+    mlService: mlHealth,
     timestamp: new Date().toISOString()
   });
 });

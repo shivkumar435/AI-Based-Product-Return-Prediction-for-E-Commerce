@@ -197,6 +197,139 @@ const runLocalPythonPrediction = (normalizedFeatures) => {
   });
 };
 
+const PRODUCTION_FALLBACK_ML_URL = 'https://returnsense-ml-api.onrender.com';
+
+/**
+ * Normalizes ML_API_URL:
+ * - Trims whitespace
+ * - Ensures scheme (https:// or http://)
+ * - Removes trailing slashes and /predict suffixes
+ * - In production, defaults to deployed Flask ML API if unset or pointing to localhost
+ */
+const getNormalizedMlUrl = () => {
+  let url = (process.env.ML_API_URL || '').trim();
+  const isProduction = process.env.NODE_ENV === 'production';
+
+  // If in production on Render and URL is missing or set to localhost, fallback to deployed service
+  if (isProduction && (!url || url.includes('localhost') || url.includes('127.0.0.1'))) {
+    return PRODUCTION_FALLBACK_ML_URL;
+  }
+
+  if (!url) {
+    return isProduction ? PRODUCTION_FALLBACK_ML_URL : null;
+  }
+
+  // Auto-prefix protocol if missing
+  if (!/^https?:\/\//i.test(url)) {
+    url = (url.includes('localhost') || url.includes('127.0.0.1')) ? `http://${url}` : `https://${url}`;
+  }
+
+  // Strip trailing slashes and redundant /predict path
+  url = url.replace(/\/+$/, '');
+  url = url.replace(/\/predict$/i, '');
+  url = url.replace(/\/+$/, '');
+
+  return url;
+};
+
+/**
+ * Strips sensitive query/auth credentials for safe logging.
+ */
+const sanitizeUrl = (rawUrl) => {
+  if (!rawUrl) return 'none';
+  try {
+    const u = new URL(rawUrl);
+    const path = (u.pathname || '').replace(/\/+$/, '');
+    return `${u.protocol}//${u.host}${path}`;
+  } catch (e) {
+    return rawUrl.replace(/:\/\/.*@/, '://<credentials>@').replace(/\/+$/, '');
+  }
+};
+
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+/**
+ * Makes an HTTP request to the Flask ML service with cold-start retry handling.
+ */
+const callRemotePredict = async (mlApiUrl, normalized, timeoutMs = 25000) => {
+  const targetEndpoint = `${mlApiUrl}/predict`;
+  const sanitizedHost = sanitizeUrl(mlApiUrl);
+  const maxAttempts = 2; // Initial attempt + 1 retry on cold start
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    const startTime = Date.now();
+    try {
+      console.log(`[ML Service] Attempt ${attempt}/${maxAttempts}: POST ${sanitizedHost}/predict (timeout: ${timeoutMs}ms)`);
+      const response = await axios.post(targetEndpoint, normalized, { timeout: timeoutMs });
+      const duration = Date.now() - startTime;
+      console.log(`[ML Service] Prediction success from ${sanitizedHost} in ${duration}ms (status ${response.status})`);
+      return response.data?.data || response.data;
+    } catch (err) {
+      const duration = Date.now() - startTime;
+      const statusCode = err.response?.status;
+      const errorCode = err.code || 'UNKNOWN';
+      const isTransient = (
+        errorCode === 'ECONNABORTED' ||
+        errorCode === 'ETIMEDOUT' ||
+        errorCode === 'ECONNREFUSED' ||
+        errorCode === 'ECONNRESET' ||
+        statusCode === 502 ||
+        statusCode === 503 ||
+        statusCode === 504
+      );
+
+      console.warn(`[ML Service Warning] Attempt ${attempt} to ${sanitizedHost} failed after ${duration}ms. Code: ${errorCode}, Status: ${statusCode || 'no-response'}, Error: ${err.message}`);
+
+      if (attempt < maxAttempts && isTransient) {
+        const retryDelay = 2500;
+        console.log(`[ML Service] Transient error detected (likely container cold-start). Retrying in ${retryDelay}ms...`);
+        await sleep(retryDelay);
+        continue;
+      }
+      throw err;
+    }
+  }
+};
+
+/**
+ * Lightweight health check for the upstream ML service.
+ */
+const checkMlHealth = async (timeoutMs = 2500) => {
+  const mlApiUrl = getNormalizedMlUrl();
+  if (!mlApiUrl) {
+    return {
+      configured: false,
+      host: null,
+      status: 'not_configured'
+    };
+  }
+
+  let host = 'unknown';
+  try {
+    host = new URL(mlApiUrl).host;
+  } catch (e) {
+    host = mlApiUrl;
+  }
+
+  try {
+    const res = await axios.get(`${mlApiUrl}/health`, { timeout: timeoutMs });
+    const isOk = res.status === 200 && (res.data?.data?.status === 'ok' || res.data?.status === 'ok' || res.data?.success === true);
+    return {
+      configured: true,
+      host,
+      status: isOk ? 'connected' : 'degraded',
+      modelType: res.data?.data?.model_type || null
+    };
+  } catch (err) {
+    return {
+      configured: true,
+      host,
+      status: 'unreachable',
+      error: err.code || err.message
+    };
+  }
+};
+
 /**
  * Predicts product return risk using the trained Random Forest model.
  * Connects to the Flask ML API if configured, or falls back to local Python runtime.
@@ -215,13 +348,16 @@ const predictReturn = async (features) => {
   }
 
   const normalized = validation.normalized;
-  const mlApiUrl = process.env.ML_API_URL ? process.env.ML_API_URL.replace(/\/+$/, '') : null;
+  const mlApiUrl = getNormalizedMlUrl();
+  const timeoutMs = parseInt(process.env.ML_API_TIMEOUT_MS, 10) || 25000;
+  const isProduction = process.env.NODE_ENV === 'production';
+  let httpFailed = false;
+  let httpError = null;
 
-  // 1. Attempt HTTP request to ML_API_URL if configured
+  // 1. Attempt HTTP request to ML_API_URL if configured or in production
   if (mlApiUrl) {
     try {
-      const response = await axios.post(`${mlApiUrl}/predict`, normalized, { timeout: 8000 });
-      const data = response.data?.data || response.data;
+      const data = await callRemotePredict(mlApiUrl, normalized, timeoutMs);
       if (data && typeof data === 'object' && data.probability !== undefined) {
         const prob = Number(data.probability);
         const conf = Number(data.confidence ?? (prob >= 50 ? prob : 100 - prob));
@@ -244,42 +380,53 @@ const predictReturn = async (features) => {
           source: 'ml_api'
         };
       }
-    } catch (httpErr) {
-      console.warn(`[ML Service Warning] HTTP connection to ${mlApiUrl} failed (${httpErr.message}). Attempting local Python fallback...`);
+    } catch (err) {
+      httpFailed = true;
+      httpError = err;
     }
   }
 
-  // 2. Attempt local Python model execution
-  try {
-    const localData = await runLocalPythonPrediction(normalized);
-    if (localData && typeof localData === 'object' && localData.probability !== undefined) {
-      const prob = Number(localData.probability);
-      const conf = Number(localData.confidence ?? (prob >= 50 ? prob : 100 - prob));
-      const risk = localData.risk_level || localData.riskLevel || (prob >= 70 ? 'High' : prob >= 40 ? 'Medium' : 'Low');
-      const factors = localData.risk_factors || localData.riskFactors || [];
-      const importance = localData.feature_importance || localData.featureImportance || [];
-      return {
-        isAvailable: true,
-        prediction: localData.prediction || (prob > 50 ? 'Likely to Return' : 'Not Likely to Return'),
-        probability: prob,
-        confidence: conf,
-        risk_level: risk,
-        riskLevel: risk,
-        risk_factors: factors,
-        riskFactors: factors,
-        feature_importance: importance,
-        featureImportance: importance,
-        recommendation: localData.recommendation || 'No specific action required.',
-        normalizedFeatures: normalized,
-        source: 'local_model'
-      };
+  // 2. In production, avoid running local Python child_process unless explicitly allowed,
+  // as standard Node.js production containers lack Python ML dependencies (joblib, scikit-learn).
+  const allowLocalPython = !isProduction || process.env.ALLOW_LOCAL_PYTHON_FALLBACK === 'true';
+
+  if (allowLocalPython) {
+    try {
+      console.log('[ML Service] Attempting local Python model execution fallback...');
+      const localData = await runLocalPythonPrediction(normalized);
+      if (localData && typeof localData === 'object' && localData.probability !== undefined) {
+        const prob = Number(localData.probability);
+        const conf = Number(localData.confidence ?? (prob >= 50 ? prob : 100 - prob));
+        const risk = localData.risk_level || localData.riskLevel || (prob >= 70 ? 'High' : prob >= 40 ? 'Medium' : 'Low');
+        const factors = localData.risk_factors || localData.riskFactors || [];
+        const importance = localData.feature_importance || localData.featureImportance || [];
+        return {
+          isAvailable: true,
+          prediction: localData.prediction || (prob > 50 ? 'Likely to Return' : 'Not Likely to Return'),
+          probability: prob,
+          confidence: conf,
+          risk_level: risk,
+          riskLevel: risk,
+          risk_factors: factors,
+          riskFactors: factors,
+          feature_importance: importance,
+          featureImportance: importance,
+          recommendation: localData.recommendation || 'No specific action required.',
+          normalizedFeatures: normalized,
+          source: 'local_model'
+        };
+      }
+    } catch (localErr) {
+      console.warn(`[ML Service Warning] Local Python model execution unavailable: ${localErr.message}`);
     }
-  } catch (localErr) {
-    console.warn(`[ML Service Warning] Local Python model execution unavailable: ${localErr.message}`);
+  } else if (httpFailed) {
+    console.warn('[ML Service] Production mode: skipping local Python child_process fallback to prevent missing-dependency overhead.');
   }
 
   // 3. Both failed: Report honest unavailability (Zero 50% fabrication)
-  const unavailableErr = new Error('Machine Learning prediction service is currently unavailable. No trained model could be reached.');
+  const hostLabel = mlApiUrl ? sanitizeUrl(mlApiUrl) : 'unconfigured';
+  const detail = httpError ? ` (upstream: ${httpError.code || httpError.message})` : '';
+  const unavailableErr = new Error(`Machine Learning prediction service is currently unavailable. No trained model could be reached at ${hostLabel}${detail}.`);
   unavailableErr.isServiceUnavailable = true;
   unavailableErr.normalizedFeatures = normalized;
   throw unavailableErr;
@@ -288,6 +435,8 @@ const predictReturn = async (features) => {
 module.exports = {
   validateFeatures,
   predictReturn,
+  getNormalizedMlUrl,
+  checkMlHealth,
   VALID_CATEGORIES,
   VALID_PAYMENT_METHODS
 };
