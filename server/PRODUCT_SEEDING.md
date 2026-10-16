@@ -14,8 +14,7 @@ Unlike the legacy `server/seed.js` script (which aggressively wiped all collecti
   * If a product already exists, it is **skipped**.
   * If a product is missing, it is **inserted**.
   * Running the script multiple times results in 0 duplicate insertions.
-* **Dry-Run by Default:** If executed without write authorization, the script performs a 100% read-only inspection and reports projected changes without writing a single record.
-* **Production Guard:** If the database host is identified as a cloud instance (`.mongodb.net`) or `NODE_ENV=production`, the script requires explicit production confirmation (`--confirm-production` or `ALLOW_PRODUCTION_SEED=true`).
+* **Production Guard:** If the database host is identified as a cloud instance (`.mongodb.net`) or `NODE_ENV=production`, the script strictly requires BOTH explicit command-line flags: `--confirm-write` AND `--confirm-production`. Environment variable alternatives like `ALLOW_PRODUCTION_SEED` are intentionally not permitted.
 
 ---
 

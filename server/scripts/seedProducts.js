@@ -1243,28 +1243,20 @@ const SAMPLE_PRODUCTS = [
 
 // Helper to escape regex special characters
 const readline = require('readline');
+const askMasked = require('./promptMasked');
 
 const escapeRegex = (string) => {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 };
 
-// Interactive URI prompt helper (avoids storing secrets in history or .env)
+// Interactive URI prompt helper (avoids storing secrets in history or .env, input is masked)
 const promptUriIfRequested = async () => {
   const args = process.argv.slice(2);
   if (args.includes('--prompt-uri') || args.includes('--interactive')) {
-    const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
-    });
-    return new Promise((resolve) => {
-      rl.question('Enter MongoDB Atlas URI (input will not be logged): ', (answer) => {
-        rl.close();
-        if (answer && answer.trim()) {
-          process.env.MONGO_URI = answer.trim();
-        }
-        resolve();
-      });
-    });
+    const answer = await askMasked('Enter MongoDB Atlas URI (input is masked): ');
+    if (answer && answer.trim()) {
+      process.env.MONGO_URI = answer.trim();
+    }
   }
 };
 
@@ -1274,7 +1266,7 @@ const runSeeder = async () => {
   const args = process.argv.slice(2);
   const isDryRun = args.includes('--dry-run') || !args.includes('--confirm-write');
   const isWriteConfirmed = args.includes('--confirm-write');
-  const isProductionConfirmed = args.includes('--confirm-production') || process.env.ALLOW_PRODUCTION_SEED === 'true';
+  const isProductionConfirmed = args.includes('--confirm-production');
   const isLocalWriteAllowed = args.includes('--allow-local-write');
 
   console.log('\n======================================================');
@@ -1315,9 +1307,8 @@ const runSeeder = async () => {
           console.error('The target database appears to be a remote / production MongoDB Atlas instance.');
           console.error(`Connected host: ${host}`);
           console.error(`Database name:  ${dbName}`);
-          console.error('\nTo prevent unintended writes, you must provide BOTH:');
+          console.error('\nTo prevent unintended writes, you must provide BOTH explicit command-line flags:');
           console.error('  --confirm-write AND --confirm-production');
-          console.error('Or set environment variable: ALLOW_PRODUCTION_SEED=true');
           console.error('\nNo data was modified. Exiting safely.');
           console.log('======================================================\n');
           await mongoose.connection.close();
@@ -1414,7 +1405,7 @@ const runSeeder = async () => {
       if (isRemote) {
         console.log('  node scripts/seedProducts.js --confirm-write --confirm-production');
       } else {
-        console.log('  node scripts/seedProducts.js --confirm-write');
+        console.log('  node scripts/seedProducts.js --confirm-write --allow-local-write');
       }
       console.log('======================================================\n');
       await mongoose.connection.close();
