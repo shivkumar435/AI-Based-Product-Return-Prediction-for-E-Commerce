@@ -1,11 +1,33 @@
 const path = require('path');
 const mongoose = require('mongoose');
+const readline = require('readline');
 require('dotenv').config({ path: path.join(__dirname, '../.env') });
 const connectDB = require('../config/db');
 const Product = require('../models/Product');
 
+// Interactive URI prompt helper (avoids storing secrets in history or .env)
+const promptUriIfRequested = async () => {
+  const args = process.argv.slice(2);
+  if (args.includes('--prompt-uri') || args.includes('--interactive')) {
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+    return new Promise((resolve) => {
+      rl.question('Enter MongoDB Atlas URI (input will not be logged): ', (answer) => {
+        rl.close();
+        if (answer && answer.trim()) {
+          process.env.MONGO_URI = answer.trim();
+        }
+        resolve();
+      });
+    });
+  }
+};
+
 const checkProducts = async () => {
   try {
+    await promptUriIfRequested();
     console.log('Connecting to database...');
     await connectDB();
 

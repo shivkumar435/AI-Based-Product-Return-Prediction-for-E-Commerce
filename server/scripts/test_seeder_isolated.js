@@ -73,7 +73,7 @@ async function runIsolatedTest() {
 
     // Run 2: Confirmed write against test DB
     console.log('\n--- Step 2: Testing Confirmed Write ---');
-    const writeOutput = execSync('node scripts/seedProducts.js --confirm-write', {
+    const writeOutput = execSync('node scripts/seedProducts.js --confirm-write --allow-local-write', {
       cwd: __dirname + '/..',
       env: { ...process.env, MONGO_URI: TEST_DB_URI },
       encoding: 'utf8'
@@ -102,7 +102,7 @@ async function runIsolatedTest() {
 
     // Run 3: Idempotency test (running seed a second time)
     console.log('\n--- Step 3: Testing Idempotency (Second Seed Execution) ---');
-    const secondWriteOutput = execSync('node scripts/seedProducts.js --confirm-write', {
+    const secondWriteOutput = execSync('node scripts/seedProducts.js --confirm-write --allow-local-write', {
       cwd: __dirname + '/..',
       env: { ...process.env, MONGO_URI: TEST_DB_URI },
       encoding: 'utf8'

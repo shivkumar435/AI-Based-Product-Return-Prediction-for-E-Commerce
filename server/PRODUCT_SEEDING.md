@@ -94,23 +94,52 @@ node scripts/seedProducts.js --confirm-write
 ### Step 4: Seed Products to Production MongoDB Atlas
 When ready to populate the live production database on MongoDB Atlas:
 
-1. **Option A (Via temporary CLI flag with your production URI):**
-   ```bash
-   MONGO_URI="mongodb+srv://<user>:<password>@cluster0.abcde.mongodb.net/return-prediction?retryWrites=true&w=majority" node scripts/seedProducts.js --confirm-write --confirm-production
-   ```
-2. **Option B (Via Render Shell or remote terminal where production env is set):**
-   ```bash
-   node scripts/seedProducts.js --confirm-write --confirm-production
-   ```
+> **Production Safety Invariants:**
+> - Production database name MUST be strictly `returnprediction` (as configured on Render).
+> - Production host MUST be an Atlas cluster (`*.mongodb.net`).
+> - Script requires BOTH `--confirm-write` AND `--confirm-production`.
+
+#### Option A: Interactive Zero-Exposure Prompt (Recommended on Windows)
+This prompts for your MongoDB Atlas connection URI at runtime in memory only. It **never writes the URI to disk, `.env`, or PowerShell command history**:
+
+**1. Dry Run against Atlas (Zero Writes):**
+```bash
+node scripts/seedProducts.js --prompt-uri --dry-run
+```
+*(Paste your MongoDB Atlas connection string when prompted)*
+
+**2. Confirmed Production Write to Atlas:**
+```bash
+node scripts/seedProducts.js --prompt-uri --confirm-write --confirm-production
+```
+
+#### Option B: Windows PowerShell In-Memory Session Variable
+```powershell
+# Set URI in temporary process memory
+$uri = Read-Host -Prompt "Enter MongoDB Atlas URI" -AsSecureString
+$bstr = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($uri)
+$env:MONGO_URI = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($bstr)
+[System.Runtime.InteropServices.Marshal]::ZeroFreeBSTR($bstr)
+
+# Run Dry Run
+node scripts/seedProducts.js --dry-run
+
+# Run Production Seed (when authorized)
+node scripts/seedProducts.js --confirm-write --confirm-production
+
+# Clear environment variable immediately
+Remove-Item Env:MONGO_URI
+```
 
 ### Step 5: Verify Final Catalog Count
 Confirm that the products are now present in the database:
 
+**Via Diagnostic Script with Prompt:**
 ```bash
-npm run products:count
+node scripts/checkProducts.js --prompt-uri
 ```
 
-Or query the backend health endpoint (which now reports `databaseName` and `productCount`):
+**Via Production Health Endpoint:**
 ```bash
 curl https://ai-based-product-return-prediction-for-e.onrender.com/api/health
 ```

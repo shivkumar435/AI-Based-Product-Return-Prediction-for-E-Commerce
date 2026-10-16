@@ -1242,15 +1242,40 @@ const SAMPLE_PRODUCTS = [
 ];
 
 // Helper to escape regex special characters
+const readline = require('readline');
+
 const escapeRegex = (string) => {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 };
 
+// Interactive URI prompt helper (avoids storing secrets in history or .env)
+const promptUriIfRequested = async () => {
+  const args = process.argv.slice(2);
+  if (args.includes('--prompt-uri') || args.includes('--interactive')) {
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+    return new Promise((resolve) => {
+      rl.question('Enter MongoDB Atlas URI (input will not be logged): ', (answer) => {
+        rl.close();
+        if (answer && answer.trim()) {
+          process.env.MONGO_URI = answer.trim();
+        }
+        resolve();
+      });
+    });
+  }
+};
+
 const runSeeder = async () => {
+  await promptUriIfRequested();
+
   const args = process.argv.slice(2);
   const isDryRun = args.includes('--dry-run') || !args.includes('--confirm-write');
   const isWriteConfirmed = args.includes('--confirm-write');
   const isProductionConfirmed = args.includes('--confirm-production') || process.env.ALLOW_PRODUCTION_SEED === 'true';
+  const isLocalWriteAllowed = args.includes('--allow-local-write');
 
   console.log('\n======================================================');
   console.log('       ReturnSense Safe Product Seeder & Sync         ');
@@ -1281,19 +1306,55 @@ const runSeeder = async () => {
       process.exit(1);
     }
 
-    // Remote / Production safety check
-    if (isRemote && isWriteConfirmed && !isProductionConfirmed) {
-      console.error('\n[PRODUCTION SAFETY GUARD ACTIVE]');
-      console.error('The target database appears to be a remote / production MongoDB Atlas instance.');
-      console.error(`Connected host: ${host}`);
-      console.error(`Database name:  ${dbName}`);
-      console.error('\nTo prevent unintended writes, you must provide BOTH:');
-      console.error('  --confirm-write AND --confirm-production');
-      console.error('Or set environment variable: ALLOW_PRODUCTION_SEED=true');
-      console.error('\nNo data was modified. Exiting safely.');
-      console.log('======================================================\n');
-      await mongoose.connection.close();
-      process.exit(1);
+    // Strict Production & Write Safety Guards
+    if (isWriteConfirmed) {
+      if (isRemote || isProductionConfirmed) {
+        // 1. Both confirmation flags are mandatory for production
+        if (!isProductionConfirmed) {
+          console.error('\n[PRODUCTION SAFETY GUARD ACTIVE]');
+          console.error('The target database appears to be a remote / production MongoDB Atlas instance.');
+          console.error(`Connected host: ${host}`);
+          console.error(`Database name:  ${dbName}`);
+          console.error('\nTo prevent unintended writes, you must provide BOTH:');
+          console.error('  --confirm-write AND --confirm-production');
+          console.error('Or set environment variable: ALLOW_PRODUCTION_SEED=true');
+          console.error('\nNo data was modified. Exiting safely.');
+          console.log('======================================================\n');
+          await mongoose.connection.close();
+          process.exit(1);
+        }
+
+        // 2. Strict Host Verification: Must be MongoDB Atlas
+        if (!host.includes('.mongodb.net')) {
+          console.error('\n[HOST VERIFICATION FAILED]');
+          console.error(`Expected MongoDB Atlas host (*.mongodb.net), but connected to: ${host}`);
+          console.error('Production writes are restricted exclusively to MongoDB Atlas.');
+          console.error('Aborting before writing any records. No data was modified.\n');
+          console.log('======================================================\n');
+          await mongoose.connection.close();
+          process.exit(1);
+        }
+
+        // 3. Strict Database Name Verification: Must be exactly 'returnprediction'
+        if (dbName !== 'returnprediction') {
+          console.error('\n[DATABASE NAME MISMATCH]');
+          console.error(`Expected target database 'returnprediction', but connected to: '${dbName}'`);
+          console.error('Production writes are only permitted against the designated database: returnprediction');
+          console.error('Aborting before writing any records. No data was modified.\n');
+          console.log('======================================================\n');
+          await mongoose.connection.close();
+          process.exit(1);
+        }
+      } else {
+        // Local write guard: requires explicit --allow-local-write
+        if (!isLocalWriteAllowed) {
+          console.error('\n[LOCAL WRITE GUARD ACTIVE]');
+          console.error('Target database is local. To authorize a local write, pass --allow-local-write.');
+          console.error('No data was modified. Exiting safely.\n');
+          await mongoose.connection.close();
+          process.exit(1);
+        }
+      }
     }
 
     // Step 1: Inspect existing products
