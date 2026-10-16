@@ -20,6 +20,17 @@ def log_request_info():
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_INFO_PATH = os.path.join(BASE_DIR, 'model_info.json')
 
+@app.route('/', methods=['GET'])
+def root_endpoint():
+    return jsonify({
+        'success': True,
+        'service': 'ReturnSense ML Prediction API',
+        'status': 'running',
+        'health': '/health',
+        'predict': '/predict',
+        'model_info': '/model-info'
+    }), 200
+
 @app.route('/predict', methods=['POST'])
 def predict_endpoint():
     try:
@@ -169,13 +180,38 @@ def model_metrics_endpoint():
 
 @app.route('/health', methods=['GET'])
 def health_endpoint():
-    model_exists = os.path.exists(os.path.join(BASE_DIR, 'model.pkl'))
-    encoders_exist = os.path.exists(os.path.join(BASE_DIR, 'label_encoders.pkl'))
-    if model_exists and encoders_exist:
-        return jsonify({'success': True, 'message': 'System healthy', 'data': {'status': 'ok'}}), 200
-    else:
-        return jsonify({'success': False, 'message': 'Missing model files', 'data': {'status': 'missing_model_files'}}), 503
+    try:
+        from predict import global_model, global_label_encoders
+        model_exists = os.path.exists(os.path.join(BASE_DIR, 'model.pkl'))
+        encoders_exist = os.path.exists(os.path.join(BASE_DIR, 'label_encoders.pkl'))
+        
+        if model_exists and encoders_exist and global_model is not None:
+            return jsonify({
+                'success': True,
+                'message': 'System healthy',
+                'data': {
+                    'status': 'ok',
+                    'model_loaded': True,
+                    'model_type': type(global_model).__name__
+                }
+            }), 200
+        elif model_exists and encoders_exist:
+            return jsonify({
+                'success': False,
+                'message': 'Model files exist but failed to load into memory',
+                'data': {'status': 'model_not_loaded'}
+            }), 500
+        else:
+            return jsonify({
+                'success': False,
+                'message': 'Missing model files',
+                'data': {'status': 'missing_model_files'}
+            }), 503
+    except Exception as e:
+        logger.error(f"Error in health check: {str(e)}")
+        return jsonify({'success': False, 'message': str(e)}), 500
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5001))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    debug_mode = os.environ.get('FLASK_DEBUG', 'false').lower() == 'true'
+    app.run(host='0.0.0.0', port=port, debug=debug_mode)
