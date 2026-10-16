@@ -1,8 +1,8 @@
 const Order = require('../models/Order');
 const Product = require('../models/Product');
 const Prediction = require('../models/Prediction');
-const axios = require('axios');
 const { calculateDeliveryWindow, addBusinessDays, getDeliveryStatusInfo } = require('../utils/deliveryDate');
+const { predictReturn } = require('../services/mlService');
 
 const createOrder = async (req, res) => {
   try {
@@ -53,25 +53,30 @@ const createOrder = async (req, res) => {
       Order_Frequency: orderFrequency
     };
 
-    let mlPrediction = 'Unknown';
-    let mlProbability = 50;
-    let mlRiskLevel = 'Medium';
+    let mlPrediction = 'Unavailable';
+    let mlProbability = 0;
+    let mlConfidence = 0;
+    let mlRiskLevel = 'Unknown';
     let mlRiskFactors = [];
+    let isFallback = false;
+    let fallbackReason = null;
 
     try {
-      if (process.env.ML_API_URL) {
-        const mlResponse = await axios.post(`${process.env.ML_API_URL}/predict`, features);
-        if (mlResponse.data) {
-          const mlData = mlResponse.data?.data || mlResponse.data || {};
-          mlPrediction = mlData.prediction || mlPrediction;
-          mlProbability = Number(mlData.probability ?? mlProbability);
-          mlRiskLevel = mlData.risk_level || mlData.riskLevel || 'Medium';
-          mlRiskFactors = mlData.risk_factors || mlData.riskFactors || [];
-        }
-      }
+      const mlResult = await predictReturn(features);
+      mlPrediction = mlResult.prediction;
+      mlProbability = Number(mlResult.probability);
+      mlConfidence = Number(mlResult.confidence);
+      mlRiskLevel = mlResult.riskLevel || 'Unknown';
+      mlRiskFactors = Array.isArray(mlResult.riskFactors) ? mlResult.riskFactors : [];
     } catch (mlError) {
-      console.error('ML API Error:', mlError.message);
-      // Fallback or continue without ML prediction
+      console.warn('ML Prediction failed during order creation:', mlError.message);
+      isFallback = true;
+      fallbackReason = mlError.message;
+      mlPrediction = 'Unavailable';
+      mlProbability = 0;
+      mlConfidence = 0;
+      mlRiskLevel = 'Unknown';
+      mlRiskFactors = [];
     }
 
     product.stock -= quantity;
@@ -87,8 +92,11 @@ const createOrder = async (req, res) => {
       shippingAddress: shippingAddress || undefined,
       prediction: mlPrediction,
       probability: mlProbability,
+      confidence: mlConfidence,
       riskLevel: mlRiskLevel,
       riskFactors: mlRiskFactors,
+      isFallback,
+      fallbackReason,
       statusHistory: [{
         status: 'Pending',
         timestamp: new Date(),
@@ -104,12 +112,14 @@ const createOrder = async (req, res) => {
         user: req.user._id,
         inputFeatures: features,
         prediction: mlPrediction,
-        confidence: Number(mlProbability) || 0,
+        confidence: mlConfidence,
         orderId: createdOrder._id,
-        probability: Number(mlProbability) || 0,
+        probability: mlProbability,
         riskLevel: mlRiskLevel,
         riskFactors: mlRiskFactors,
-        featureImportance: []
+        featureImportance: [],
+        isFallback,
+        fallbackReason
       };
 
       await Prediction.findOneAndUpdate(
@@ -122,10 +132,13 @@ const createOrder = async (req, res) => {
         // Ensure the Order document is updated in the database with prediction fields
         await Order.findByIdAndUpdate(createdOrder._id, {
           $set: {
-            probability: Number(predPayload.probability) || 0,
-            prediction: predPayload.prediction || createdOrder.prediction,
-            riskLevel: predPayload.riskLevel || createdOrder.riskLevel,
-            riskFactors: predPayload.riskFactors || createdOrder.riskFactors
+            probability: mlProbability,
+            confidence: mlConfidence,
+            prediction: mlPrediction,
+            riskLevel: mlRiskLevel,
+            riskFactors: mlRiskFactors,
+            isFallback,
+            fallbackReason
           }
         }, { new: true });
       } catch (eo) {

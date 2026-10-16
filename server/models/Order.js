@@ -59,6 +59,9 @@ const orderSchema = new mongoose.Schema({
   // ML Prediction (for backward compat with single-product orders)
   prediction: { type: String, default: 'Unknown' },
   probability: { type: Number, default: 0 },
+  confidence: { type: Number, default: 0 },
+  isFallback: { type: Boolean, default: false },
+  fallbackReason: { type: String, default: null },
   riskLevel: { type: String, enum: ['Low', 'Medium', 'High', 'Unknown'], default: 'Unknown' },
   riskFactors: [{
     feature: String,

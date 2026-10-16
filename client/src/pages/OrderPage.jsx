@@ -25,9 +25,10 @@ export default function OrderPage() {
         orderFrequency: Number(data.orderFrequency)
       };
       const result = await predictionService.predict(payload);
-      navigate('/prediction-result', { state: { result, input: payload, productName: 'Custom Manual Order' } });
+      const orderTitle = `${data.category || 'Product'} Simulation Order`;
+      navigate('/prediction-result', { state: { result, input: payload, productName: orderTitle } });
     } catch (err) {
-      toast.error('Prediction failed');
+      toast.error(err?.response?.data?.message || err?.message || 'Prediction failed');
     } finally {
       setPredicting(false);
     }

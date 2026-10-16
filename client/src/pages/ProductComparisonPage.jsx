@@ -6,6 +6,7 @@ import { useCart } from '../context/CartContext';
 import PageTransition from '../components/PageTransition';
 import RatingStars from '../components/RatingStars';
 import PriceDisplay from '../components/PriceDisplay';
+import { formatSpecifications, parseComparisonIds } from '../utils/productUtils';
 
 export default function ProductComparisonPage() {
   const location = useLocation();
@@ -23,12 +24,17 @@ export default function ProductComparisonPage() {
       setLoading(true);
       try {
         const params = new URLSearchParams(location.search);
-        const ids = params.getAll('id');
+        const ids = parseComparisonIds(params, 4);
         
         if (ids.length > 0) {
-          const promises = ids.slice(0, 4).map(id => productService.getProduct(id));
-          const results = await Promise.all(promises);
-          setProducts(results.filter(Boolean));
+          const promises = ids.map(id => productService.getProduct(id));
+          const results = await Promise.allSettled(promises);
+          const validProducts = results
+            .filter(r => r.status === 'fulfilled' && r.value)
+            .map(r => r.value?.data || r.value)
+            .filter(p => p && (p._id || p.id));
+
+          setProducts(validProducts);
         } else if (location.state?.products) {
           setProducts(location.state.products.slice(0, 4));
         }
@@ -40,7 +46,7 @@ export default function ProductComparisonPage() {
     };
 
     fetchComparisonProducts();
-  }, [location]);
+  }, [location.search, location.state]);
 
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -181,17 +187,22 @@ export default function ProductComparisonPage() {
                 </tr>
                 <tr>
                   <td className="p-4 border-b border-r border-gray-200 dark:border-slate-700 font-semibold text-slate-700 dark:text-gray-300 bg-gray-50 dark:bg-slate-800/50 text-sm">Details</td>
-                  {products.map(product => (
-                    <td key={`${product._id || product.id}-specs`} className="p-4 border-b border-r last:border-r-0 border-gray-200 dark:border-slate-700 text-sm text-gray-600 dark:text-gray-400 align-top">
-                      {product.specifications && Object.keys(product.specifications).length > 0 ? (
-                        <ul className="space-y-1">
-                          {Object.entries(product.specifications).map(([k, v]) => (
-                            <li key={k}><span className="font-medium text-slate-700 dark:text-gray-300">{k}:</span> {v}</li>
-                          ))}
-                        </ul>
-                      ) : 'N/A'}
-                    </td>
-                  ))}
+                  {products.map(product => {
+                    const specsList = formatSpecifications(product.specifications);
+                    return (
+                      <td key={`${product._id || product.id}-specs`} className="p-4 border-b border-r last:border-r-0 border-gray-200 dark:border-slate-700 text-sm text-gray-600 dark:text-gray-400 align-top">
+                        {specsList.length > 0 ? (
+                          <ul className="space-y-1">
+                            {specsList.map((spec, sIdx) => (
+                              <li key={sIdx}>
+                                <span className="font-medium text-slate-700 dark:text-gray-300">{spec.key}:</span> {spec.value}
+                              </li>
+                            ))}
+                          </ul>
+                        ) : 'N/A'}
+                      </td>
+                    );
+                  })}
                   {products.length < 4 && (
                     <td className="p-4 border-b border-gray-200 dark:border-slate-700 bg-gray-50/50 dark:bg-slate-800/20"></td>
                   )}

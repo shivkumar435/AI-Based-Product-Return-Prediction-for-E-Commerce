@@ -30,14 +30,35 @@ export default function PredictionResultPage() {
 
   const { result, input, productName } = location.state;
   const source = result?.savedPrediction || result || {};
-  const prob = result?.probability ?? source?.probability ?? 0;
-  const confidence = result?.confidence ?? source?.confidence ?? 85;
+  const isFallback = Boolean(result?.isFallback || source?.isFallback || result?.prediction === 'Unavailable' || source?.prediction === 'Unavailable');
+  const fallbackReason = result?.fallbackReason || source?.fallbackReason;
+
+  const prob = typeof result?.probability === 'number'
+    ? result.probability
+    : typeof source?.probability === 'number'
+    ? source.probability
+    : 0;
+
+  const confidence = typeof result?.confidence === 'number'
+    ? result.confidence
+    : typeof source?.confidence === 'number'
+    ? source.confidence
+    : 0;
   
   const riskLevel = result?.risk_level ?? source?.riskLevel ?? (prob > 70 ? 'High' : prob >= 40 ? 'Medium' : 'Low');
   const isHighRisk = riskLevel.toLowerCase() === 'high' || prob > 70;
   const isMedium = riskLevel.toLowerCase() === 'medium' || (prob >= 40 && prob <= 70);
 
-  const riskConfig = isHighRisk && !isMedium
+  const riskConfig = isFallback
+    ? {
+        label: 'Prediction Unavailable',
+        color: 'gray',
+        icon: 'ℹ',
+        bgClass: 'bg-amber-50 dark:bg-amber-900/10 border-amber-200 dark:border-amber-800/30',
+        textClass: 'text-amber-800 dark:text-amber-300',
+        rec: fallbackReason || 'The AI return prediction service was unavailable. Order parameters were saved safely without an automated prediction.'
+      }
+    : isHighRisk && !isMedium
     ? { label: 'High Risk (Likely to Return)', color: 'red', icon: '⚠', bgClass: 'bg-red-50 dark:bg-red-900/10 border-red-100 dark:border-red-900/20', textClass: 'text-red-700 dark:text-red-400', rec: result?.recommendation || source?.recommendation || 'Consider adding a return protection plan or adjusting the discount strategy for this order.' }
     : isMedium
     ? { label: 'Medium Risk (Moderate)', color: 'amber', icon: '~', bgClass: 'bg-amber-50 dark:bg-amber-900/10 border-amber-100 dark:border-amber-900/20', textClass: 'text-amber-700 dark:text-amber-400', rec: result?.recommendation || source?.recommendation || 'Monitor this order. Customer has a moderate chance of return based on their profile.' }
@@ -57,8 +78,10 @@ export default function PredictionResultPage() {
         >
           {/* Header */}
           <div className={`p-8 border-b ${riskConfig.bgClass} text-center`}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-2">AI Prediction Result</p>
-            <h1 className="text-2xl font-bold text-slate-900 dark:text-white mb-1">{productName}</h1>
+            <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-2">
+              {isFallback ? 'AI Service Notice' : 'AI Prediction Result'}
+            </p>
+            <h1 className="text-2xl font-bold text-slate-900 dark:text-white mb-1">{productName || 'Order Evaluation'}</h1>
             <span className={`inline-flex items-center gap-2 mt-2 px-4 py-1.5 rounded-full text-sm font-semibold border ${riskConfig.bgClass} ${riskConfig.textClass}`}>
               {riskConfig.icon} {riskConfig.label}
             </span>
@@ -67,13 +90,17 @@ export default function PredictionResultPage() {
           <div className="p-8">
             {/* Gauge + Analysis */}
             <div className="flex flex-col md:flex-row items-center justify-around gap-8 mb-10">
-              <PredictionGauge probability={prob} />
+              <PredictionGauge probability={prob} isFallback={isFallback} />
 
               <div className="flex-1 max-w-sm space-y-4">
                 <div>
-                  <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-1">Model Analysis</h3>
+                  <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-1">
+                    {isFallback ? 'Service Status' : 'Model Analysis'}
+                  </h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-                    Based on 12 input features and historical transaction data, the Random Forest model evaluated this order.
+                    {isFallback
+                      ? 'The prediction pipeline was offline during this evaluation. The system recorded all 12 input features without generating a synthetic score.'
+                      : 'Based on 12 input features and historical transaction data, the Random Forest model evaluated this order.'}
                   </p>
                 </div>
 
@@ -81,18 +108,22 @@ export default function PredictionResultPage() {
                   {/* Probability */}
                   <div className="p-4 bg-gray-50 dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-slate-700">
                     <span className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide block mb-1">Return Chance</span>
-                    <span className={`text-xl font-bold ${riskConfig.textClass}`}>{prob.toFixed(1)}%</span>
+                    <span className={`text-xl font-bold ${riskConfig.textClass}`}>
+                      {isFallback ? 'N/A' : `${prob.toFixed(1)}%`}
+                    </span>
                   </div>
                   {/* Confidence */}
                   <div className="p-4 bg-gray-50 dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-slate-700">
                     <span className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide block mb-1">Model Certainty</span>
-                    <span className="text-xl font-bold text-indigo-600 dark:text-indigo-400">{confidence.toFixed(1)}%</span>
+                    <span className="text-xl font-bold text-indigo-600 dark:text-indigo-400">
+                      {isFallback ? 'N/A' : `${confidence.toFixed(1)}%`}
+                    </span>
                   </div>
                 </div>
 
                 {/* Recommendation */}
                 <div className={`p-4 rounded-xl border text-sm ${riskConfig.bgClass} ${riskConfig.textClass}`}>
-                  <p className="font-semibold mb-1">Recommendation</p>
+                  <p className="font-semibold mb-1">Status Note</p>
                   <p className="leading-relaxed opacity-90">{riskConfig.rec}</p>
                 </div>
               </div>

@@ -90,10 +90,27 @@ export default function OrderConfirmationPage() {
                 <div className="flex items-start gap-3">
                   <span className="text-xl">🤖</span>
                   <div>
-                    <h4 className="font-semibold text-indigo-900 dark:text-indigo-300">AI Return Risk Assessment: {order.riskLevel || (order.probability > 50 ? 'High Risk' : 'Low Risk')} ({order.probability?.toFixed(1) || 0}%)</h4>
-                    <p className="text-sm text-indigo-700 dark:text-indigo-400 mt-1">
-                      Status: {order.prediction || (order.probability > 50 ? 'Likely to Return' : 'Not Likely to Return')}. Evaluated using our trained machine learning model.
-                    </p>
+                    {order.isFallback || order.prediction === 'Unavailable' ? (
+                      <>
+                        <h4 className="font-semibold text-indigo-900 dark:text-indigo-300">
+                          AI Return Risk: Temporarily Unavailable
+                        </h4>
+                        <p className="text-sm text-indigo-700 dark:text-indigo-400 mt-1">
+                          {order.fallbackReason
+                            ? `ML prediction service was offline: ${order.fallbackReason}. Your order was placed successfully without automated risk evaluation.`
+                            : 'Order placed successfully. Automated risk prediction is currently offline.'}
+                        </p>
+                      </>
+                    ) : (
+                      <>
+                        <h4 className="font-semibold text-indigo-900 dark:text-indigo-300">
+                          AI Return Risk Assessment: {order.riskLevel || (order.probability > 50 ? 'High Risk' : 'Low Risk')} ({Number(order.probability || 0).toFixed(1)}%)
+                        </h4>
+                        <p className="text-sm text-indigo-700 dark:text-indigo-400 mt-1">
+                          Status: {order.prediction || (order.probability > 50 ? 'Likely to Return' : 'Not Likely to Return')}. Evaluated using our trained machine learning model.
+                        </p>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>

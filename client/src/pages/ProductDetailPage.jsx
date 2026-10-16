@@ -10,6 +10,7 @@ import ProductCard from '../components/ProductCard';
 import WishlistButton from '../components/WishlistButton';
 import reviewService from '../services/reviewService';
 import toast from 'react-hot-toast';
+import { formatSpecifications } from '../utils/productUtils';
 
 export default function ProductDetailPage() {
   const { id } = useParams();
@@ -244,23 +245,27 @@ export default function ProductDetailPage() {
         </div>
 
         {/* Specifications Section */}
-        {product.specifications && Object.keys(product.specifications).length > 0 && (
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Specifications</h2>
-            <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-800 overflow-hidden">
-              <table className="w-full text-sm">
-                <tbody>
-                  {Object.entries(product.specifications).map(([key, value], idx) => (
-                    <tr key={key} className={idx % 2 === 0 ? 'bg-gray-50 dark:bg-slate-800/50' : ''}>
-                      <td className="px-6 py-4 font-medium text-slate-900 dark:text-white w-1/3">{key}</td>
-                      <td className="px-6 py-4 text-gray-600 dark:text-gray-400">{value}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+        {(() => {
+          const specsList = formatSpecifications(product.specifications);
+          if (specsList.length === 0) return null;
+          return (
+            <div className="mb-16">
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Specifications</h2>
+              <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-800 overflow-hidden">
+                <table className="w-full text-sm">
+                  <tbody>
+                    {specsList.map((spec, idx) => (
+                      <tr key={idx} className={idx % 2 === 0 ? 'bg-gray-50 dark:bg-slate-800/50' : ''}>
+                        <td className="px-6 py-4 font-medium text-slate-900 dark:text-white w-1/3">{spec.key}</td>
+                        <td className="px-6 py-4 text-gray-600 dark:text-gray-400">{spec.value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
 
         {/* Reviews Section */}
         <div className="mb-16">

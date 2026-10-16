@@ -1,53 +1,59 @@
 const Prediction = require('../models/Prediction');
-const axios = require('axios');
+const { predictReturn, validateFeatures } = require('../services/mlService');
 
 const predict = async (req, res) => {
   try {
     const features = req.body;
-    let mlPrediction = 'Unknown';
-    let mlProbability = 50;
-    let mlConfidence = 50;
-    let mlRiskLevel = 'Medium';
-    let mlRiskFactors = [];
-    let mlFeatureImportance = [];
-    let mlRecommendation = 'No specific action required.';
 
-    try {
-      const mlApiUrl = process.env.ML_API_URL || 'http://localhost:5001';
-      const mlResponse = await axios.post(`${mlApiUrl}/predict`, features, { timeout: 30000 });
-      const mlData = mlResponse.data?.data || mlResponse.data || {};
-
-      mlPrediction = mlData.prediction ?? mlPrediction;
-      mlProbability = Number(mlData.probability ?? mlProbability);
-      mlConfidence = Number(mlData.confidence ?? mlConfidence);
-      mlRiskLevel = mlData.risk_level ?? mlData.riskLevel ?? mlRiskLevel;
-      mlRiskFactors = mlData.risk_factors ?? mlData.riskFactors ?? [];
-      mlFeatureImportance = mlData.feature_importance ?? mlData.featureImportance ?? [];
-      mlRecommendation = mlData.recommendation ?? mlRecommendation;
-
-      if (mlPrediction === 'Likely to Return') {
-        mlProbability = Math.max(mlProbability, 50);
-      }
-    } catch (mlError) {
-      console.error('ML API Error:', mlError.message);
+    // 1. Validate input features
+    const validation = validateFeatures(features);
+    if (!validation.isValid) {
+      return res.status(400).json({
+        success: false,
+        message: 'Validation failed for prediction features.',
+        errors: validation.errors
+      });
     }
 
+    // 2. Invoke real trained model (HTTP or local Python)
+    let mlResult;
+    try {
+      mlResult = await predictReturn(features);
+    } catch (mlErr) {
+      if (mlErr.isValidationError) {
+        return res.status(400).json({
+          success: false,
+          message: mlErr.message,
+          errors: mlErr.validationErrors
+        });
+      }
+
+      // Explicit, honest error reporting when ML model is unreachable
+      return res.status(503).json({
+        success: false,
+        isAvailable: false,
+        message: 'The machine learning prediction service is currently unavailable. No model output could be generated.',
+        error: mlErr.message
+      });
+    }
+
+    // 3. Save genuine prediction record
     const predPayload = {
       user: req.user ? req.user._id : null,
-      inputFeatures: features,
-      prediction: mlPrediction,
-      confidence: Number(mlConfidence) || 0,
-      probability: Number(mlProbability) || 0,
-      riskLevel: mlRiskLevel,
-      riskFactors: mlRiskFactors,
-      featureImportance: mlFeatureImportance,
-      recommendation: mlRecommendation,
-      orderId: features.orderId || features.order_id || null
+      inputFeatures: mlResult.normalizedFeatures || features,
+      prediction: mlResult.prediction,
+      confidence: Number(mlResult.confidence) || 0,
+      probability: Number(mlResult.probability) || 0,
+      riskLevel: mlResult.risk_level,
+      riskFactors: mlResult.risk_factors || [],
+      featureImportance: mlResult.feature_importance || [],
+      recommendation: mlResult.recommendation,
+      orderId: features.orderId || features.order_id || null,
+      isFallback: false
     };
 
     let predictionRec;
     if (predPayload.orderId) {
-      // Upsert by orderId to avoid duplicate predictions on retries
       predictionRec = await Prediction.findOneAndUpdate(
         { orderId: predPayload.orderId },
         { $set: predPayload },
@@ -60,13 +66,15 @@ const predict = async (req, res) => {
     res.status(201).json({
       success: true,
       prediction: {
-        prediction: mlPrediction,
-        probability: mlProbability,
-        confidence: mlConfidence,
-        risk_level: mlRiskLevel,
-        risk_factors: mlRiskFactors,
-        feature_importance: mlFeatureImportance,
-        recommendation: mlRecommendation,
+        isAvailable: true,
+        prediction: mlResult.prediction,
+        probability: mlResult.probability,
+        confidence: mlResult.confidence,
+        risk_level: mlResult.risk_level,
+        risk_factors: mlResult.risk_factors,
+        feature_importance: mlResult.feature_importance,
+        recommendation: mlResult.recommendation,
+        source: mlResult.source,
         savedPrediction: predictionRec
       }
     });

@@ -1,5 +1,24 @@
-export default function PredictionGauge({ probability = 0 }) {
-  // probability is already 0–100 (percentage from Flask)
+export default function PredictionGauge({ probability = 0, isFallback = false }) {
+  if (isFallback || probability === null || isNaN(probability)) {
+    return (
+      <div className="flex flex-col items-center justify-center gap-3">
+        <div className="relative w-44 h-44">
+          <svg className="w-full h-full transform -rotate-90" viewBox="0 0 140 140">
+            <circle cx="70" cy="70" r={60} fill="none" stroke="#e2e8f0" strokeWidth="12" className="dark:opacity-20" />
+          </svg>
+          <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <span className="text-3xl font-extrabold text-slate-400 dark:text-slate-500 leading-none">N/A</span>
+            <span className="text-xs text-gray-400 dark:text-gray-500 mt-1">Prediction Offline</span>
+          </div>
+        </div>
+        <span className="text-sm font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400">
+          Unavailable
+        </span>
+      </div>
+    );
+  }
+
+  // probability is already 0–100 (percentage from Flask/model)
   const percentage = Math.min(Math.round(probability), 100);
 
   let strokeColor = '#10b981'; // green

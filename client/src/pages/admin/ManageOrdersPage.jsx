@@ -74,6 +74,13 @@ export default function ManageOrdersPage() {
     )},
     { key: 'price', label: 'Amount', render: (row) => `$${(row.totalPrice || 0).toFixed(2)}` },
     { key: 'risk', label: 'Return Risk', render: (row) => {
+      if (row.isFallback || row.prediction === 'Unavailable') {
+        return (
+          <span className="px-2 py-0.5 text-xs rounded-full font-medium bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400">
+            Unavailable
+          </span>
+        );
+      }
       const prob = row.probability || 0;
       const isHigh = prob > 50;
       return (

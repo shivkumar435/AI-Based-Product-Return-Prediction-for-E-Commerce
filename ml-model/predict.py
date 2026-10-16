@@ -57,30 +57,31 @@ def predict(features_dict):
     
     # Support both PascalCase (from orderController) and camelCase (from frontend direct)
     gender_raw = _get(features_dict, 'Gender', 'gender', default='Male')
-    category_raw = _get(features_dict, 'Product_Category', 'category', default='Electronics')
-    payment_raw = _get(features_dict, 'Payment_Method', 'paymentMethod', default='Credit Card')
+    category_raw = _get(features_dict, 'Product_Category', 'category', 'productCategory', default='Electronics')
+    payment_raw = _get(features_dict, 'Payment_Method', 'paymentMethod', 'payment_method', default='Credit Card')
 
-    try:
-        if global_label_encoders is None:
-            raise ValueError("Encoders not loaded")
-        gender_encoded = global_label_encoders['Gender'].transform([gender_raw])[0]
-        category_encoded = global_label_encoders['Product_Category'].transform([category_raw])[0]
-        payment_encoded = global_label_encoders['Payment_Method'].transform([payment_raw])[0]
-    except Exception:
-        gender_encoded = GENDER_MAP.get(gender_raw, 1)
-        category_encoded = CATEGORY_MAP.get(category_raw, 3)
-        payment_encoded = PAYMENT_MAP.get(payment_raw, 1)
+    def _encode_val(val, encoder_name, fallback_map, default_num):
+        if global_label_encoders and encoder_name in global_label_encoders:
+            try:
+                return global_label_encoders[encoder_name].transform([val])[0]
+            except Exception:
+                pass
+        return fallback_map.get(val, default_num)
+
+    gender_encoded = _encode_val(gender_raw, 'Gender', GENDER_MAP, 1)
+    category_encoded = _encode_val(category_raw, 'Product_Category', CATEGORY_MAP, 3)
+    payment_encoded = _encode_val(payment_raw, 'Payment_Method', PAYMENT_MAP, 1)
 
     # Extract values for risk factors and features
     discount = float(_get(features_dict, 'Discount', 'discount', default=0))
-    prev_returns = float(_get(features_dict, 'Previous_Returns', 'previousReturns', default=0))
-    rating = float(_get(features_dict, 'Customer_Rating', 'rating', default=4))
-    delivery_time = float(_get(features_dict, 'Delivery_Time', 'deliveryTime', default=5))
-    shipping_distance = float(_get(features_dict, 'Shipping_Distance', 'shippingDistance', default=100))
-    price = float(_get(features_dict, 'Product_Price', 'price', default=100))
+    prev_returns = float(_get(features_dict, 'Previous_Returns', 'previousReturns', 'previous_returns', default=0))
+    rating = float(_get(features_dict, 'Customer_Rating', 'rating', 'customerRating', 'customer_rating', default=4))
+    delivery_time = float(_get(features_dict, 'Delivery_Time', 'deliveryTime', 'delivery_time', default=5))
+    shipping_distance = float(_get(features_dict, 'Shipping_Distance', 'shippingDistance', 'shipping_distance', default=100))
+    price = float(_get(features_dict, 'Product_Price', 'price', 'product_price', default=100))
     quantity = float(_get(features_dict, 'Quantity', 'quantity', default=1))
-    age = float(_get(features_dict, 'Customer_Age', 'age', default=30))
-    order_freq = float(_get(features_dict, 'Order_Frequency', 'orderFrequency', default=5))
+    age = float(_get(features_dict, 'Customer_Age', 'age', 'customerAge', 'customer_age', default=30))
+    order_freq = float(_get(features_dict, 'Order_Frequency', 'orderFrequency', 'order_frequency', default=5))
 
     # Build feature DataFrame with correct column names — same order as training
     feature_names = [
@@ -256,3 +257,16 @@ def predict(features_dict):
         'feature_importance': feature_importance_list,
         'recommendation': recommendation
     }
+
+if __name__ == '__main__':
+    import sys
+    raw_input = sys.stdin.read()
+    if raw_input and raw_input.strip():
+        try:
+            payload = json.loads(raw_input)
+            output = predict(payload)
+            print(json.dumps(output))
+        except Exception as ex:
+            print(json.dumps({'error': str(ex)}), file=sys.stderr)
+            sys.exit(1)
+

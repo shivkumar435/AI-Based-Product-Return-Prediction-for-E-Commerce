@@ -26,7 +26,15 @@ const predictionSchema = new mongoose.Schema({
   },
   riskLevel: {
     type: String,
-    enum: ['Low', 'Medium', 'High']
+    enum: ['Low', 'Medium', 'High', 'Unknown'],
+    default: 'Unknown'
+  },
+  isFallback: {
+    type: Boolean,
+    default: false
+  },
+  fallbackReason: {
+    type: String
   },
   riskFactors: [{
     feature: String,

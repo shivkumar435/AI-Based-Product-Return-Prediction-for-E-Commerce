@@ -94,6 +94,13 @@ export default function OrderHistoryPage() {
       key: 'prediction', 
       label: 'Return Risk', 
       render: (row) => {
+        if (row.isFallback || row.prediction === 'Unavailable') {
+          return (
+            <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400">
+              Unavailable
+            </span>
+          );
+        }
         const prob = row.probability || 0;
         const isHigh = prob > 50;
         return (

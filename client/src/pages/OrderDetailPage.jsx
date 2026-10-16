@@ -153,7 +153,8 @@ export default function OrderDetailPage() {
 
   if (!order) return null;
 
-  const prob = order.probability ?? order.probability ?? 0;
+  const isFallback = Boolean(order.isFallback || order.prediction === 'Unavailable');
+  const prob = order.probability ?? 0;
   const riskFactors = order.riskFactors ?? order.risk_factors ?? [];
   
   // Create mock history if statusHistory doesn't exist
@@ -251,10 +252,23 @@ export default function OrderDetailPage() {
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                   AI Return Risk Analysis
                 </h3>
-                <span className={`px-2.5 py-1 rounded-full text-xs font-bold ${prob > 50 ? 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400' : 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400'}`}>
-                  {prob.toFixed(1)}% Return Risk
-                </span>
+                {isFallback ? (
+                  <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
+                    Risk Assessment Unavailable
+                  </span>
+                ) : (
+                  <span className={`px-2.5 py-1 rounded-full text-xs font-bold ${prob > 50 ? 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400' : 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400'}`}>
+                    {prob.toFixed(1)}% Return Risk
+                  </span>
+                )}
               </div>
+              {isFallback && (
+                <p className="text-xs text-amber-700 dark:text-amber-400">
+                  {order.fallbackReason
+                    ? `ML prediction pipeline was offline: ${order.fallbackReason}. Order was recorded safely.`
+                    : 'Automated ML return risk evaluation was offline when this order was placed.'}
+                </p>
+              )}
               
               {riskFactors && riskFactors.length > 0 && (
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
