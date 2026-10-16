@@ -1,4 +1,4 @@
-﻿const http = require('http');
+const http = require('http');
 const { getNormalizedMlUrl, checkMlHealth, predictReturn } = require('../services/mlService');
 
 let passed = 0;
@@ -76,6 +76,13 @@ async function runResilienceTests() {
     assert(
       getNormalizedMlUrl() === 'https://returnsense-ml-api.onrender.com',
       'Production fallback: safely overrides localhost with deployed Flask ML API in production'
+    );
+
+    // 1h: Strips "Copy URL" clipboard artifact from Render Dashboard
+    process.env.ML_API_URL = 'https://returnsense-ml-api.onrender.com\n Copy URL';
+    assert(
+      getNormalizedMlUrl() === 'https://returnsense-ml-api.onrender.com',
+      'Strips Render dashboard "Copy URL" button text artifact'
     );
 
     // -------------------------------------------------------------------------

@@ -208,6 +208,12 @@ const PRODUCTION_FALLBACK_ML_URL = 'https://returnsense-ml-api.onrender.com';
  */
 const getNormalizedMlUrl = () => {
   let url = (process.env.ML_API_URL || '').trim();
+
+  // If user copied "Copy URL" button text or newlines from Render dashboard UI
+  if (url) {
+    url = url.split(/[\r\n\s]+/)[0].trim();
+  }
+
   const isProduction = process.env.NODE_ENV === 'production';
 
   // If in production on Render and URL is missing or set to localhost, fallback to deployed service
